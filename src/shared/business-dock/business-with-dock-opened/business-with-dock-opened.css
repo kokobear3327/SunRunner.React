@@ -1,0 +1,99 @@
+.business-dock-panel {
+    width: 1534px;
+    height: 76px;
+    font-family: Montserrat;
+    font-size: 23px;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
+    position: absolute;
+    left: 1001px;
+    bottom: 2340px;
+    background-color: black;
+    color: white;
+    border: black;
+}
+
+.back-button-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:17px;
+    pointer-events: none;
+}
+.forward-button-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:103px;
+    pointer-events: none;
+}
+
+
+.balloon-wrench-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:474px;
+    pointer-events: none;
+}
+
+
+.previous-template-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:560px;
+    pointer-events: none;
+}
+
+.twirl-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:732px;
+}
+
+.next-template-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:646px;
+}
+
+.nav-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:818px;
+}
+
+.history-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:904px;
+}
+
+.menu-overflow-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:988px;
+}
+
+.snake-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:1450px;
+}
