@@ -30,7 +30,7 @@ function ConsumerWithDockOpened() {
             <img className="next-template-svg" src={ NextTemplatePic } alt="some" />
             <img className="nav-svg" src={ NavPic } alt="some" />
             <img className="history-svg" src={ HistoryPic } alt="some" />
-            <img className="menu-overflow-svg" src={ MenuOverflowPic } alt="some" />
+            <Link to="/MenuOverflowOpen"><img className="menu-overflow-svg" src={ MenuOverflowPic } alt="some" /></Link>
             <img className="snake-svg" src={ SnakePic } alt="some" />
         </div>
         </Link>
