@@ -13,6 +13,23 @@
     border: black;
 }
 
+.back-button-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:17px;
+    pointer-events: none;
+}
+.forward-button-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:103px;
+    pointer-events: none;
+}
+
 
 .balloon-wrench-svg {
     height: 66px;
@@ -73,3 +90,10 @@
     left:988px;
 }
 
+.snake-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 14px;
+    left:1450px;
+}

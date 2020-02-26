@@ -8,6 +8,9 @@ import NextTemplatePic from '../../buttons/mac-bar/next-template-button/next.svg
 import NavPic from '../../buttons/mac-bar/nav-button/nav.svg';
 import HistoryPic from '../../buttons/mac-bar/history-button/history.svg';
 import MenuOverflowPic from '../../buttons/mac-bar/menu-overflow/menu.svg';
+import BackButtonPic from './images/back.svg';
+import ForwardButtonPic from './images/forward.svg';
+import SnakePic from './images/snake.svg';
 
 function ConsumerWithDockOpened() {
     function handleClick() {
@@ -19,13 +22,16 @@ function ConsumerWithDockOpened() {
 
         <Link to="/Consumer">
         <div onClick={handleClick} className="consumer-dock-panel">
+        <img className="back-button-svg" src={ BackButtonPic } alt="some" />
+        <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
             <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
             <img className="previous-template-svg" src={ PreviousTemplatePic } alt="some" />
-            <img className="twirl-svg" src={ TwirlPic } alt="some" />
+            <Link to="/Business"><img className="twirl-svg" src={ TwirlPic } alt="some" /></Link>
             <img className="next-template-svg" src={ NextTemplatePic } alt="some" />
             <img className="nav-svg" src={ NavPic } alt="some" />
             <img className="history-svg" src={ HistoryPic } alt="some" />
             <img className="menu-overflow-svg" src={ MenuOverflowPic } alt="some" />
+            <img className="snake-svg" src={ SnakePic } alt="some" />
         </div>
         </Link>
 
