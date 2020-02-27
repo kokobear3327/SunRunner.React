@@ -4,18 +4,22 @@
     justify-content: center;
 }
 
-.consumer-dock-panel {
+.consumer-panel {
+    width: 1534px;
+    height: 76px;
+    font-family: Montserrat;
+    font-size: 23px;
     background-color: #000000;
     background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
-    height: 101px;
-    width: 1536px;
-    left: 0px;
-    color: white;
-    display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: 2053px;
+    display: flex;
+    left: 0px;
+    bottom: 1965px;
+    background-color: black;
+    color: white;
+    border: black;
 }
 
 .omnibox-bar-svg {

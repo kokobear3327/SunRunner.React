@@ -4,16 +4,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px blue solid;
 }
 
 .child-container {
-    height: 2048px;
     width: 1536px;
     background: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px green solid;
 }
 
 .treeButton2 {

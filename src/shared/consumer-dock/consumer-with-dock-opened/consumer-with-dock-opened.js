@@ -20,13 +20,10 @@ function ConsumerWithDockOpened() {
     }
 
     return (
-        <div>
-        <img className="omnibox-bar-svg" src={ SearchBar } alt="some" />
-        <div>
         
         <div class="consumer-dock-panel-parent">
         <Link to="/Consumer">
-        <div onClick={handleClick} className="consumer-dock-panel">
+        <div onClick={handleClick} className="consumer-panel">
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
         <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
             <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
@@ -39,8 +36,6 @@ function ConsumerWithDockOpened() {
             <img className="snake-svg" src={ SnakePic } alt="some" />
         </div>
         </Link>
-        </div>
-        </div>
         </div>
     );
   }

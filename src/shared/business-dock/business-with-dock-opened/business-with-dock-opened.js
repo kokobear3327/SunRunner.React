@@ -19,7 +19,7 @@ function BusinessWithDockOpened() {
     }
 
     return (
-
+        <div class="business-dock-panel-parent">
         <Link to="/Business">
         <div onClick={handleClick} className="business-dock-panel">
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
@@ -34,6 +34,7 @@ function BusinessWithDockOpened() {
             <img className="snake-svg" src={ SnakePic } alt="some" />
         </div>
         </Link>
+        </div>
 
 
     );

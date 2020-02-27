@@ -7,15 +7,11 @@ import ConsumerDock from '../shared/consumer-dock/consumer-dock';
 
 function Consumer() {
     return (
-        <div className="parent-container">
-        <div className="child-container">
-        <div>
-        <img className="consumer" src={ consumer } alt="text" />
+        <div className="">
+        <img className="" src={ consumer } alt="text" />
         <ConsumerDock></ConsumerDock>
         <TreeButton></TreeButton>
         <MedicalInfoButton></MedicalInfoButton>
-        </div>
-        </div>
         </div>
     );
   }

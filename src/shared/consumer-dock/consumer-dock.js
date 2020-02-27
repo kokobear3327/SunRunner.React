@@ -11,8 +11,10 @@ function ConsumerDock() {
     }
     return (
         <Link to="/ConsumerWithDockOpened">
+        <div class="consumer-dock-panel-parent">
         <div onClick={handleClick} className="consumer-dock-panel">
             <h4 className="oea-text">Omnibox Extension App</h4>
+        </div>
         </div>
         </Link>
     );
