@@ -11,9 +11,11 @@ function MedicalInfoButton() {
         // Routing logic to take you to the treeView
     }
     return (
+        <div class="medical-info-container">
         <Link to="/Medical-Info">
-        <button onClick={handleClick} className="medical-info-button">Medical Info</button>
+        <button onClick={handleClick} className="medical-info">Medical Info</button>
         </Link>
+        </div>
     );
   }
   

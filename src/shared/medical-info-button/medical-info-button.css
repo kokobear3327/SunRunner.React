@@ -1,9 +1,18 @@
-.medical-info-button {
-    width: 190px;
+.medical-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medical-info {
+    width: 187px;
     height: 45px;
-    position: absolute;
-    left: 1370px;
-    bottom: 740px;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 25px;
+    display: flex;
+    right: 303px;
+    bottom: 455px;
     background-color: black;
     color: white;
     border: black;
