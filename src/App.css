@@ -1,14 +1,25 @@
 .App {
   text-align: center;
-  margin-top: 120px;
+  padding-top: 60px;
+  border: 4px pink solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgray;
 }
 
 .ipad-container {
-  top: 102px;
-  left: 100px;
-  margin-bottom: 300px;
-  right: 400px;
+  margin-bottom: 330px;
+  padding-top: 158px;
+  right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1700px;
+  height: 2100px;
+  background-image: url('./images/iPadRim.png');
 }
+
 
 .App-logo {
   height: 40vmin;
