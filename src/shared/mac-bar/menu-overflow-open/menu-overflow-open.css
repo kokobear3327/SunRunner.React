@@ -1,0 +1,23 @@
+.consumer-panel-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consumer-panel {
+    width: 1534px;
+    height: 76px;
+    font-family: Montserrat;
+    font-size: 23px;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 0px;
+    bottom: 1965px;
+    background-color: black;
+    color: white;
+    border: black;
+}

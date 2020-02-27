@@ -16,12 +16,12 @@ function MenuOverflowOpen() {
     return (
 
 
-
+<div class="consumer-panel-parent">
   <Link to="/Consumer">
-  <div className="consumer-dock-panel">
+  <div className="consumer-panel">
   <img className="back-button-svg" src={ BackButtonPic } alt="some" />
   <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
-      <Link to="/ConsumerWithBallonWrenchActive"> <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" /></Link>
+      <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
       <img className="previous-template-svg" src={ PreviousTemplatePic } alt="some" />
       <Link to="/BusinessWithDockOpened"><img className="twirl-svg" src={ TwirlPic } alt="some" /></Link>
       <img className="next-template-svg" src={ NextTemplatePic } alt="some" />
@@ -31,7 +31,7 @@ function MenuOverflowOpen() {
       <img className="snake-svg" src={ SnakePic } alt="some" />
   </div>
   </Link>
-
+  </div>
   );
 }
   
