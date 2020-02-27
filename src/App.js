@@ -15,6 +15,7 @@ function App() {
   return (
     <Router>
     <div className="App">
+      <div className="ipad-container">
       <Switch>
         <Route path="/Home" exact component={Home}></Route>
         <Route path="/Consumer" exact component={Consumer}></Route>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/tree" component={TreeView}></Route>
         <Route path="/Medical-Info" exact component={MedicalInfoView}></Route>
         </Switch>
+        </div>
     </div>
     </Router>
   );
