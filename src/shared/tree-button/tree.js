@@ -11,9 +11,11 @@ function TreeButton() {
         // Routing logic to take you to the treeView
     }
     return (
+        <div class="tree-button-parent">
         <Link to="/Tree">
         <button onClick={handleClick} className="tree-button">Tree of Knowledge</button>
         </Link>
+        </div>
     );
   }
   

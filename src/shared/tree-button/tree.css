@@ -1,9 +1,19 @@
+.tree-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tree-button {
     width: 266px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
     height: 45px;
-    position: absolute;
-    left: 1630px;
-    bottom: 580px;
+    display: flex;
+    position: relative;
+    right: 12px;
+    bottom: 247px;
     background-color: black;
     color: white;
     border: black;
