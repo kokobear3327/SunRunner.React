@@ -11,6 +11,7 @@ import MenuOverflowPic from '../../buttons/mac-bar/menu-overflow/menu.svg';
 import BackButtonPic from './images/back.svg';
 import ForwardButtonPic from './images/forward.svg';
 import SnakePic from './images/snake.svg';
+import SearchBar from './images/SearchBar.png'
 
 function ConsumerWithDockOpened() {
     function handleClick() {
@@ -19,7 +20,11 @@ function ConsumerWithDockOpened() {
     }
 
     return (
-
+        <div>
+        <img className="omnibox-bar-svg" src={ SearchBar } alt="some" />
+        <div>
+        
+        <div class="consumer-dock-panel-parent">
         <Link to="/Consumer">
         <div onClick={handleClick} className="consumer-dock-panel">
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
@@ -34,8 +39,9 @@ function ConsumerWithDockOpened() {
             <img className="snake-svg" src={ SnakePic } alt="some" />
         </div>
         </Link>
-
-
+        </div>
+        </div>
+        </div>
     );
   }
   

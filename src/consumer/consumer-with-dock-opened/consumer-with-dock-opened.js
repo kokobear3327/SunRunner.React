@@ -9,8 +9,8 @@ import ConsumerWithDockOpened from '../../shared/consumer-dock/consumer-with-doc
 
 function Consumer() {
     return (
-        <div>
-        <img className="consumer" src={ consumer } alt="text" />
+        <div className="consumer-container">
+        <img className="consumer-image" src={ consumer } alt="text" />
         <ConsumerWithDockOpened></ConsumerWithDockOpened>
         <TreeButton></TreeButton>
         <MedicalInfoButton></MedicalInfoButton>

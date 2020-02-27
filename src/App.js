@@ -9,12 +9,14 @@ import TreeView from './tree/treeView';
 import MedicalInfoView from './medical-info/medicalInfoView';
 import ConsumerWithMenuoverFlowOpen from './consumer/consumer-with-dock-opened/consumer-with-menu-overflow';
 import ConsumerWithBallonWrenchActive from './consumer/consumer-with-dock-opened/consumer-with-balloon-wrench-active.js';
+import Home from './home/home';
 
 function App() {
   return (
     <Router>
     <div className="App">
       <Switch>
+        <Route path="/Home" exact component={Home}></Route>
         <Route path="/Consumer" exact component={Consumer}></Route>
         <Route path="/ConsumerWithDockOpened" exact component={ConsumerWithDockOpened}></Route>
         <Route path="/Business" component={Business}></Route>

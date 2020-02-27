@@ -1,16 +1,26 @@
+.consumer-dock-panel-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .consumer-dock-panel {
-    width: 1534px;
-    height: 76px;
-    font-family: Montserrat;
-    font-size: 23px;
     background-color: #000000;
     background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
-    position: absolute;
-    left: 1001px;
-    bottom: 2340px;
-    background-color: black;
+    height: 101px;
+    width: 1536px;
+    left: 0px;
     color: white;
-    border: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 2053px;
+}
+
+.omnibox-bar-svg {
+    position: relative;
+    bottom: 2051px;
 }
 
 .back-button-svg {
