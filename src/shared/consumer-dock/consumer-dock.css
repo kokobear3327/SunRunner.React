@@ -15,8 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        right: 16px!important;
-        bottom: 1967px;
+        bottom: 1964px;
         background-color: black;
         color: white;
         border: black;
@@ -25,7 +24,7 @@
     .search-bar-png2 {
         width: 1507px;
         top:0px;
-        padding-bottom: 162px;
+        padding-bottom: 158px;
     }
 
     .oea-text {

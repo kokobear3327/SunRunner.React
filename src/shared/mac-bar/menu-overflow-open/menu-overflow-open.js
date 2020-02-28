@@ -7,7 +7,7 @@ import PreviousTemplatePic from '../../buttons/mac-bar/previous-template-button/
 import NextTemplatePic from '../../buttons/mac-bar/next-template-button/next.svg';
 import NavPic from '../../buttons/mac-bar/nav-button/nav.svg';
 import HistoryPic from '../../buttons/mac-bar/history-button/history.svg';
-import MenuOverflowPic from './menu-open.svg';
+import MenuOverflowPic from './illuminati.svg';
 import BackButtonPic from '../../consumer-dock/consumer-with-dock-opened/images/back.svg';
 import ForwardButtonPic from '../../consumer-dock/consumer-with-dock-opened/images/forward.svg';
 import SnakePic from '../../business-dock/business-with-dock-opened/images/snake.svg';

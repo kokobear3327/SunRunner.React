@@ -6,7 +6,7 @@
 
 .search-bar-png3 {
     width: 1507px;
-    padding-bottom: 162px;
+    padding-bottom: 158px;
 }
 
 .consumer-panel2 {
@@ -20,8 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 16px!important;
-    bottom: 1967px;
+    bottom: 1964px;
     background-color: black;
     color: white;
     border: black;
@@ -30,7 +29,7 @@
 .omnibox-bar-svg {
     width: 1507px;
     position: relative;
-    bottom: 2051px;
+    bottom: 2048px;
 }
 
 .back-button-svg {
