@@ -12,9 +12,9 @@
     height: 45px;
     display: flex;
     position: relative;
-    right: 9px;
-    bottom: 243px;
+    left: 11%;
+    bottom: 300px;
     background-color: black;
     color: white;
-    border: black;
+    border:black;
 }

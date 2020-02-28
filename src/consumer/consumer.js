@@ -1,6 +1,6 @@
 import './consumer.css';
 import React from 'react'
-import consumer from '../images/Consumer.png'; 
+import consumer from '../images/ConsumerCAD2.png'; 
 import TreeButton from '../shared/tree-button/tree';
 import MedicalInfoButton from '../shared/medical-info-button/medical-info-button';
 import ConsumerDock from '../shared/consumer-dock/consumer-dock';
