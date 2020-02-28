@@ -14,18 +14,16 @@ import SnakePic from './images/snake.svg';
 import SearchBar from './images/SearchBar.png';
 
 function ConsumerWithDockOpened() {
-    function handleClick() {
-    console.log('handleClick for consumer dock Called');
-        // Routing logic to take you to the treeView
-    }
 
     return (
         
         <div class="consumer-dock-panel-parent">
         <Link to="/Consumer">
 
-        <div onClick={handleClick} className="consumer-panel2">
+        <div className="consumer-panel2">
+        <div className="search-bar-parent">
         <img className="search-bar-png3" src={SearchBar} alt="-" />
+        </div>
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
         <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
             <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />

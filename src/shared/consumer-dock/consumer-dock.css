@@ -21,6 +21,10 @@
         border: black;
     } 
 
+    .search-bar-parent {
+        pointer-events: none;
+    }
+
     .search-bar-png2 {
         width: 1507px;
         top:0px;

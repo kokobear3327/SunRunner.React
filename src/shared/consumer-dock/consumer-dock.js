@@ -11,7 +11,9 @@ function ConsumerDock() {
         <Link to="/ConsumerWithDockOpened">
         <div class="consumer-dock-panel-parent">
         <div className="consumer-dock-panel">
+            <div className="search-bar-parent">
             <img className="search-bar-png2" src={SearchBar} alt="-" />
+            </div>
             <h4 className="oea-text">Omnibox Extension App</h4>
         </div>
         </div>

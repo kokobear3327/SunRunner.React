@@ -4,9 +4,14 @@
     justify-content: center;
 }
 
+.search-bar-parent {
+    pointer-events: none;
+}
+
 .search-bar-png3 {
     width: 1507px;
     padding-bottom: 158px;
+    pointer-events: none;
 }
 
 .consumer-panel2 {
