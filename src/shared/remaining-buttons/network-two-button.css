@@ -1,0 +1,21 @@
+.network-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-two-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    right: 124px;
+    bottom: 1913px;
+    white-space: nowrap;
+}

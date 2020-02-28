@@ -1,0 +1,20 @@
+.compose-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compose-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 4px;
+    height: 45px;
+    position: relative;
+    left:  155px;
+    bottom: 1369px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

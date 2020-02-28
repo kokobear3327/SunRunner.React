@@ -12,6 +12,9 @@ import NewsButton from '../../shared/news-button/news-button';
 import InvestmentsButton from '../../shared/investments-button/investments-button';
 import DashboardButton from '../../shared/dashboard-button/dashboard-button';
 import ProductsButtons from '../../shared/products-buttons/products-buttons';
+import MessagingButtons from '../../shared/messaging-buttons/messaging-buttons';
+import ConsumerFinancialsButtons from '../../shared/consumer-financials-buttons/consumer-financials-buttons';
+import RemainingButtons from '../../shared/remaining-buttons/remaining-buttons';
 
 function Consumer() {
     return (
@@ -28,6 +31,9 @@ function Consumer() {
         <InvestmentsButton></InvestmentsButton>
         <DashboardButton></DashboardButton>
         <ProductsButtons></ProductsButtons>
+        <MessagingButtons></MessagingButtons>
+        <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
+        <RemainingButtons></RemainingButtons>
         </div>
     );
   }

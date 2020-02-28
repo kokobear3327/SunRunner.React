@@ -1,0 +1,20 @@
+.flows-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flows-button {
+    width: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  723px;
+    bottom: 1457px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

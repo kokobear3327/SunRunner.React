@@ -1,0 +1,20 @@
+.income-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.income-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  683px;
+    bottom: 1457px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

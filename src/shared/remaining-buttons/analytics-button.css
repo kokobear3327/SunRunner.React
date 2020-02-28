@@ -1,0 +1,20 @@
+.analytics-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  580px;
+    bottom: 1230px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

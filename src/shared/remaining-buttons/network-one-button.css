@@ -1,0 +1,20 @@
+.network-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-one-button {
+    width: 140px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right:  23px;
+    bottom: 2064px;
+    background-color: black;
+    color: white;
+    border:black;
+    white-space: nowrap;
+}

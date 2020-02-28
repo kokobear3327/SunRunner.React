@@ -1,0 +1,20 @@
+.balance-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-button {
+    width: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  649px;
+    bottom: 1333px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
