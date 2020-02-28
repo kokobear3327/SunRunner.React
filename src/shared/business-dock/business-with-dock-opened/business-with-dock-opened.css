@@ -1,11 +1,11 @@
-.business-dock-panel-parent {
+.business-panel-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.business-dock-panel {
-    width: 1534px;
+.business-panel {
+    width: 1507px;
     height: 76px;
     font-family: Montserrat;
     font-size: 23px;
@@ -15,8 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 0px;
-    bottom: 1965px;
+    bottom: 1964px;
     background-color: black;
     color: white;
     border: black;

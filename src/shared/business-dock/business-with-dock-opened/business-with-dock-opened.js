@@ -11,17 +11,17 @@ import MenuOverflowPic from '../../buttons/mac-bar/menu-overflow/illuminati.svg'
 import BackButtonPic from './images/back.svg';
 import ForwardButtonPic from './images/forward.svg';
 import SnakePic from './images/snake.svg';
+import SearchBar from './images/SearchBar.png';
 
 function BusinessWithDockOpened() {
-    function handleClick() {
-    console.log('handleClick for consumer dock Called');
-        // Routing logic to take you to the treeView
-    }
 
     return (
-        <div class="business-dock-panel-parent">
+        <div class="business-panel-parent">
         <Link to="/Business">
-        <div onClick={handleClick} className="business-dock-panel">
+        <div className="business-panel">
+        <div className="search-bar-parent">
+        <img className="search-bar-png3" src={SearchBar} alt="-" />
+        </div>
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
         <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
             <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
