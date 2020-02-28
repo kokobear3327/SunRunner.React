@@ -26,7 +26,7 @@
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
+    top: 9px;
     left:17px;
     pointer-events: none;
 }
@@ -34,7 +34,7 @@
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
+    top: 9px;
     left:103px;
     pointer-events: none;
 }
@@ -44,8 +44,8 @@
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:474px;
+    top: 9px;
+    left:486px;
     pointer-events: none;
 }
 
@@ -54,8 +54,8 @@
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:560px;
+    top: 9px;
+    left:572px;
     pointer-events: none;
 }
 
@@ -63,46 +63,46 @@
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:732px;
+    top: 9px;
+    left:744px;
 }
 
 .next-template-svg {
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:646px;
+    top: 9px;
+    left:658px;
 }
 
 .nav-svg {
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:818px;
+    top: 9px;
+    left:830px;
 }
 
 .history-svg {
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:904px;
+    top: 9px;
+    left:916px;
 }
 
 .menu-overflow-svg {
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:988px;
+    top: 9px;
+    left:1000px;
 }
 
 .snake-svg {
     height: 66px;
     width: 66px;
     position: absolute;
-    top: 14px;
-    left:1450px;
+    top: 9px;
+    left:1434px;
 }
