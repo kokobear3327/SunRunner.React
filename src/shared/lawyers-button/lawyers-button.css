@@ -1,0 +1,20 @@
+.lawyers-button-parent {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.lawyers-button {
+    width: 130px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    display: flex;
+    position: relative;
+    left: 64%;
+    bottom: 660px;
+    background-color: black;
+    color: white;
+    border:black;
+}

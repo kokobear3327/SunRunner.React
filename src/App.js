@@ -7,6 +7,9 @@ import Business from './business/business';
 import BusinessWithDockOpened from './business/business-with-dock-opened/business-with-dock-opened';
 import TreeView from './tree/treeView';
 import MedicalInfoView from './medical-info/medicalInfoView';
+import LegalInfoView from './legal-info/legal-info-view';
+import DoctorsView from './doctors/doctors-view';
+import LawyersView from './lawyers/lawyers-view';
 import ConsumerWithMenuoverFlowOpen from './consumer/consumer-with-dock-opened/consumer-with-menu-overflow';
 import ConsumerWithBallonWrenchActive from './consumer/consumer-with-dock-opened/consumer-with-balloon-wrench-active.js';
 import Home from './home/home';
@@ -26,6 +29,9 @@ function App() {
         <Route path="/BalloonWrenchActive" exact component={ConsumerWithBallonWrenchActive}></Route>
         <Route path="/tree" component={TreeView}></Route>
         <Route path="/Medical-Info" exact component={MedicalInfoView}></Route>
+        <Route path="/Legal-Info" exact component={LegalInfoView}></Route>
+        <Route path="/Doctors" exact component={DoctorsView}></Route>
+        <Route path="/Lawyers" exact component={LawyersView}></Route>
         </Switch>
         </div>
     </div>

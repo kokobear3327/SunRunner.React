@@ -1,0 +1,13 @@
+.legal-info-button {
+    display: flex;
+    position: relative;
+    bottom: 550px;
+    font-family: Montserrat;
+    color: white;
+    left: 1009px;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border:black;
+}

@@ -1,7 +1,7 @@
 import './business-with-dock-opened.css';
 import React from 'react'
 import business from '../../images/Business.png'; 
-import TreeButton from '../../shared/tree-button/tree';
+import TreeButton from '../../shared/tree-button/tree-button';
 import MedicalInfoButton from '../../shared/medical-info-button/medical-info-button';
 import BusinessWithDockOpened from '../../shared/business-dock/business-with-dock-opened/business-with-dock-opened';
 //import ConsumerWithDockOpened from '../../shared/consumer-dock/consumer-with-dock-opened/consumer-with-dock-opened';

@@ -1,20 +1,19 @@
-.tree-button-parent {
+.doctors-button-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.tree-button {
-    width: 265px;
+.doctors-button {
     font-family: Montserrat;
     font-size: 25px;
-    padding-left: 20px;
-    height: 45px;
+    padding-left: 30px;
     display: flex;
     position: relative;
-    left: 11%;
-    bottom: 300px;
+    right: 240px;
+    bottom: 620px;
     background-color: black;
     color: white;
     border:black;
 }
+
