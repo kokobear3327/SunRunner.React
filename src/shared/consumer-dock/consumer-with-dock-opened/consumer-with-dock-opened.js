@@ -24,8 +24,8 @@ function ConsumerWithDockOpened() {
         <div class="consumer-dock-panel-parent">
         <Link to="/Consumer">
 
-        <div onClick={handleClick} className="consumer-panel">
-        <img className="search-bar-png" src={SearchBar} alt="-" />
+        <div onClick={handleClick} className="consumer-panel2">
+        <img className="search-bar-png3" src={SearchBar} alt="-" />
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
         <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
             <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
