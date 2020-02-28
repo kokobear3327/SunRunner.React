@@ -10,6 +10,7 @@ import LegalInfoButton from '../../shared/legal-info-button/legal-info-button';
 import ReviewsButton from '../../shared/reviews-button/reviews-button';
 import NewsButton from '../../shared/news-button/news-button';
 import InvestmentsButton from '../../shared/investments-button/investments-button';
+import DashboardButton from '../../shared/dashboard-button/dashboard-button';
 
 function Consumer() {
     return (
@@ -24,6 +25,7 @@ function Consumer() {
         <ReviewsButton></ReviewsButton>
         <NewsButton></NewsButton>
         <InvestmentsButton></InvestmentsButton>
+        <DashboardButton></DashboardButton>
         </div>
     );
   }
