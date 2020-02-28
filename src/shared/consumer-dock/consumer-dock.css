@@ -5,7 +5,7 @@
 }
 
 .consumer-dock-panel {
-        width: 1534px;
+        width: 1507px;
         height: 76px;
         font-family: Montserrat;
         font-size: 23px;
@@ -15,17 +15,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 0px;
-        bottom: 1964px;
+        right: 16px!important;
+        bottom: 1967px;
         background-color: black;
         color: white;
         border: black;
     } 
 
+    .search-bar-png2 {
+        top:0px;
+        padding-bottom: 163px;
+    }
+
     .oea-text {
         font-family: Montserrat;
         font-size: 38px;
-        bottom: -30px;
+        bottom: -37px;
         position: absolute;
         left: 523px;
     }

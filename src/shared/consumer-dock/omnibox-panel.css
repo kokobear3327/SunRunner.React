@@ -1,0 +1,9 @@
+.omnibox-panel {
+    width: 1534px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom:2047px;
+    left:760px;
+}
