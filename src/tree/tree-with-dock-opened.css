@@ -1,0 +1,107 @@
+.consumer-dock-panel-parent2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-parent2 {
+    pointer-events: none;
+}
+
+.search-bar-png4 {
+    width: 1507px;
+    padding-bottom: 158px;
+    pointer-events: none;
+}
+
+.consumer-panel3 {
+    width: 1507px;
+    height: 76px;
+    font-family: Montserrat;
+    font-size: 23px;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1964px;
+    background-color: black;
+    color: white;
+    border: black;
+}
+
+.omnibox-bar-svg2 {
+    width: 1507px;
+    position: relative;
+    bottom: 2048px;
+}
+
+.back-button-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:17px;
+    pointer-events: none;
+}
+.forward-button-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:103px;
+    pointer-events: none;
+}
+
+
+.balloon-wrench-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:486px;
+    pointer-events: none;
+}
+
+
+.previous-template-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:572px;
+    pointer-events: none;
+}
+
+.next-template-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:658px;
+}
+
+.history-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:830px;
+}
+
+.menu-overflow-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:744px;
+}
+
+.snake-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:1434px;
+}

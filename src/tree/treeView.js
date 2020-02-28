@@ -1,11 +1,16 @@
 import React from 'react'
 import TreePic from '../images/Tree.png';
-import BackButton from '../shared/buttons/back-button'
+import BackButton from '../shared/buttons/back-button';
+import './treeView.css';
+import TreeWithDockOpened from './tree-with-dock-opened';
 
 function TreeView() {
     return (
-        <div>
-        <img src={ TreePic } alt="something"/>
+        <div className="tree-parent">
+        <img className="tree-image" src={ TreePic } alt="something"/>
+        <div className="consumer-dock">
+        <TreeWithDockOpened></TreeWithDockOpened>
+        </div>
         <BackButton></BackButton>
         </div>
     );
