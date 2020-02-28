@@ -1,18 +1,18 @@
-.tree-button-parent {
+.reviews-button-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.tree-button {
-    width: 265px;
+.reviews-button {
+    width: 120px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left: 11%;
-    bottom: 253px;
+    right: 238px;
+    bottom: 1349px;
     background-color: black;
     color: white;
     border:black;

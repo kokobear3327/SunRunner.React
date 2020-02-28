@@ -1,0 +1,18 @@
+.investments-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .investments-button {
+        position: relative;
+        bottom: 913px;
+        font-family: Montserrat;
+        color: white;
+        left: 34px;
+        font-size: 25px;
+        padding-left: 10px;
+        background-color: black;
+        color: white;
+        border:black;
+    }

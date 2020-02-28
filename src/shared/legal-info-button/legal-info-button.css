@@ -1,10 +1,15 @@
-.legal-info-button {
+.legal-info-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legal-info {
     position: relative;
     bottom: 550px;
     font-family: Montserrat;
     color: white;
-    left: 1009px;
+    left: 320px;
     font-size: 25px;
     padding-left: 10px;
     background-color: black;

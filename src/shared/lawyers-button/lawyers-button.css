@@ -5,15 +5,13 @@ justify-content: center;
 }
 
 .lawyers-button {
-    width: 130px;
-    font-family: Montserrat;
-    font-size: 25px;
-    padding-left: 20px;
-    height: 45px;
-    display: flex;
     position: relative;
-    left: 64%;
     bottom: 660px;
+    font-family: Montserrat;
+    color: white;
+    left:280px;
+    font-size: 25px;
+    padding-left: 10px;
     background-color: black;
     color: white;
     border:black;

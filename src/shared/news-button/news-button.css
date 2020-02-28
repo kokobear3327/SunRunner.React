@@ -1,18 +1,18 @@
-.tree-button-parent {
+.news-button-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.tree-button {
-    width: 265px;
+.news-button {
+    width: 120px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left: 11%;
-    bottom: 253px;
+    left: 296px;
+    bottom: 1412px;
     background-color: black;
     color: white;
     border:black;

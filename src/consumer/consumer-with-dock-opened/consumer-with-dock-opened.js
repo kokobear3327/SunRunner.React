@@ -7,6 +7,9 @@ import ConsumerWithDockOpened from '../../shared/consumer-dock/consumer-with-doc
 import DoctorsButton from '../../shared/doctors-button/doctors-button';
 import LawyersButton from '../../shared/lawyers-button/lawyers-button';
 import LegalInfoButton from '../../shared/legal-info-button/legal-info-button';
+import ReviewsButton from '../../shared/reviews-button/reviews-button';
+import NewsButton from '../../shared/news-button/news-button';
+import InvestmentsButton from '../../shared/investments-button/investments-button';
 
 function Consumer() {
     return (
@@ -18,6 +21,9 @@ function Consumer() {
         <DoctorsButton></DoctorsButton>
         <LawyersButton></LawyersButton>
         <LegalInfoButton></LegalInfoButton>
+        <ReviewsButton></ReviewsButton>
+        <NewsButton></NewsButton>
+        <InvestmentsButton></InvestmentsButton>
         </div>
     );
   }
