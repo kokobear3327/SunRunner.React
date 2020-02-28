@@ -1,0 +1,20 @@
+.services-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-button {
+    width: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 10px;
+    height: 45px;
+    position: relative;
+    right: 8px;
+    bottom: 1674px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

@@ -1,0 +1,20 @@
+.goods-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goods-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right:  33px;
+    bottom: 1674px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
