@@ -1,0 +1,20 @@
+.labor-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.labor-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  369px;
+    bottom: 922px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

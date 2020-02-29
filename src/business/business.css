@@ -1,4 +1,16 @@
 .business-image {
-    display: relative;
-    padding-left:0px;
+    top: 60px;
+    position: relative;
+    height: 2048px;
+    width: 1540px;
+}
+
+.business-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-child {
+    padding-top: 430px;
 }

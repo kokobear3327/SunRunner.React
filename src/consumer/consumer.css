@@ -1,8 +1,7 @@
 .consumer-image {
     top: 60px;
     position: relative;
-    height: 2048px;
-    width: 1540px;
+
 }
 
 .consumer-parent {
@@ -13,5 +12,5 @@
 
 
 .consumer-child {
-    padding-top: 385px;
+    padding-top: 430px;
 }
