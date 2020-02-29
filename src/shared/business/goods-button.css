@@ -1,18 +1,18 @@
-.operations-button-parent {
+.business-goods-button-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.operations-button {
+.business-goods-button {
     width: 100px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  511px;
-    bottom: 1360px;
+    left:  188px;
+    bottom: 650px;
     background-color: black;
     color: white;
     border:black;
