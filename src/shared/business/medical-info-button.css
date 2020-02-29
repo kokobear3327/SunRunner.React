@@ -1,0 +1,18 @@
+.business-medical-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-medical-info {
+    width: 168px;
+    height: 45px;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 25px;
+    right: 1093px;
+    bottom: 1610px;
+    background-color: black;
+    color: white;
+    border: black;
+}

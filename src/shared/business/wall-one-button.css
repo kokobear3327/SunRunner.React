@@ -1,0 +1,20 @@
+.business-wall-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-wall-one-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right: 179px;
+    bottom: 429px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

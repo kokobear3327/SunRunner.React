@@ -1,0 +1,20 @@
+.business-mailbox-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-mailbox-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  243px;
+    bottom: 1018px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

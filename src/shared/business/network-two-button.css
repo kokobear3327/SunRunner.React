@@ -1,0 +1,21 @@
+.business-network-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-network-two-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    left: 544px;
+    bottom: 432px;
+    white-space: nowrap;
+}

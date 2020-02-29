@@ -1,0 +1,20 @@
+.business-analytics-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-analytics-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  66px;
+    bottom: 1120px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

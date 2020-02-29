@@ -16,7 +16,7 @@ import SearchBar from './images/SearchBar.png';
 function BusinessWithDockOpened() {
 
     return (
-        <div class="business-panel-parent">
+        <div className="business-panel-parent">
         <Link to="/Business">
         <div className="business-panel">
         <div className="search-bar-parent">

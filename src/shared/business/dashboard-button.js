@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export default function DashboardButton() {
 
     return (
-        <div class="dashboard-button-parent">
-        <Link to="/Dashboard">
-        <button className="dashboard-button">Dashboard</button>
+        <div class="business-dashboard-button-parent">
+        <Link to="/BusinessDashboard">
+        <button className="business-dashboard-button">Dashboard</button>
         </Link>
         </div>
     );

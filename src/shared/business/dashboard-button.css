@@ -1,18 +1,18 @@
-.dashboard-button-parent {
+.business-dashboard-button-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.dashboard-button {
+.business-dashboard-button {
     width: 100px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  1208px;
-    bottom: 332px;
+    left:  1240px;
+    bottom: 269px;
     background-color: black;
     color: white;
     border:black;

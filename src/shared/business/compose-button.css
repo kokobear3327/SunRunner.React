@@ -1,0 +1,20 @@
+.business-compose-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-compose-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 4px;
+    height: 45px;
+    position: relative;
+    right:  289px;
+    bottom: 1018px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}

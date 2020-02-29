@@ -1,0 +1,20 @@
+.business-network-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-network-one-button {
+    width: 140px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    left: 638px;
+    position: relative;
+    bottom: 580px;
+    background-color: black;
+    color: white;
+    border:black;
+    white-space: nowrap;
+}

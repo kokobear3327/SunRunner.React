@@ -1,0 +1,18 @@
+.business-lawyers-button-parent {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.business-lawyers-button {
+    position: relative;
+    bottom: 1460px;
+    font-family: Montserrat;
+    color: white;
+    right:1370px;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border:black;
+}

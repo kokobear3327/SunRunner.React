@@ -3,10 +3,12 @@ import './business-remaining-buttons.css';
 import CapexButton from './capex-button';
 import LaborButton from './labor-button';
 import OperationsButton from './operations-button';
-import DashboardButton from '../dashboard-button/dashboard-button';
+import DashboardButton from './dashboard-button';
 import BusinessGoodsButton from './goods-button';
 import BusinessServicesButton from './services-button';
 import BusinessTreeButton from './tree-of-knowledge-button';
+import RemainingButtons from './remaining-buttons';
+import BusinessFinancialsButtons from '../business-financials-buttons/business-financials-buttons';
 
 
 export default function BusinessRemainingButtons() {
@@ -20,6 +22,7 @@ export default function BusinessRemainingButtons() {
             <BusinessGoodsButton></BusinessGoodsButton>
             <BusinessServicesButton></BusinessServicesButton>
             <BusinessTreeButton></BusinessTreeButton>
+            <RemainingButtons></RemainingButtons>
         </div>
     );
   }
