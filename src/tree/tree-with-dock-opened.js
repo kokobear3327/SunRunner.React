@@ -8,15 +8,13 @@ import BackButtonPic from './images/back.svg';
 import ForwardButtonPic from './images/forward.svg';
 import SnakePic from './images/snake.svg';
 import SearchBar from './images/SearchBar.png';
-
-// Link should link to tree-view without the bar on...
+import TreeButtons from './tree-buttons/tree-buttons';
 
 function TreeWithDockOpened() {
 
     return (
         
         <div class="consumer-dock-panel-parent2">
-
         <div className="consumer-panel3">
         <div className="search-bar-parent2">
         <img className="search-bar-png4" src={SearchBar} alt="-" />
@@ -27,6 +25,7 @@ function TreeWithDockOpened() {
             <img className="history-svg2" src={ HistoryPic } alt="some" />
             <Link to="/MenuOverflowOpen"><img className="menu-overflow-svg2" src={ MenuOverflowPic } alt="some" /></Link>
             <img className="snake-svg2" src={ SnakePic } alt="some" />
+            <TreeButtons></TreeButtons>
         </div>
         </div>
     );

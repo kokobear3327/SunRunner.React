@@ -1,14 +1,15 @@
-.tree-parent {
+/* .tree-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tree-image {
-    top: 9px;
-    left: 19px;
     position: relative;
 }
 
-.consumer-dock {
+.tree-dock {
     display: flex;
     margin-bottom: 111px;
     padding-left: 53px;
-}
+} */

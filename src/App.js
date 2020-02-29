@@ -5,7 +5,7 @@ import Consumer from './consumer/consumer';
 import ConsumerWithDockOpened from './consumer/consumer-with-dock-opened/consumer-with-dock-opened';
 import Business from './business/business';
 import BusinessWithDockOpened from './business/business-with-dock-opened/business-with-dock-opened';
-import TreeView from './tree/treeView';
+import TreeView from './tree/tree-view';
 import MedicalInfoView from './medical-info/medicalInfoView';
 import LegalInfoView from './legal-info/legal-info-view';
 import DoctorsView from './doctors/doctors-view';

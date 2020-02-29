@@ -8,8 +8,6 @@ import BusinessGoodsButton from './goods-button';
 import BusinessServicesButton from './services-button';
 import BusinessTreeButton from './tree-of-knowledge-button';
 import RemainingButtons from './remaining-buttons';
-import BusinessFinancialsButtons from '../business-financials-buttons/business-financials-buttons';
-
 
 export default function BusinessRemainingButtons() {
 

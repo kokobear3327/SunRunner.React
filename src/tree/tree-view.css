@@ -1,0 +1,14 @@
+.tree-image {
+    position: relative;
+}
+
+.tree-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:182px;
+}
+
+
+.tree-child {
+}
