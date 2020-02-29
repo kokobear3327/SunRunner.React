@@ -8,10 +8,11 @@
     width: 140px;
     font-family: Montserrat;
     font-size: 25px;
-    padding-left: 20px;
+    padding-left: 2px;
     height: 45px;
+    right: 10px;
     position: relative;
-    bottom: 2064px;
+    bottom: 2110px;
     background-color: black;
     color: white;
     border:black;
