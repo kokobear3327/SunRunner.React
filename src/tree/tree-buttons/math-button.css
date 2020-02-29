@@ -1,10 +1,10 @@
-.life-sciences-parent {
+.math-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.life-sciences-button {
+.math-button {
     width: 187px;
     height: 45px;
     position: relative;

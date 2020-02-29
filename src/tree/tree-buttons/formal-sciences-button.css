@@ -1,0 +1,18 @@
+.formal-sciences-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formal-sciences-button {
+    width: 187px;
+    height: 45px;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 25px;
+    right: 292px;
+    bottom: 1470px;
+    background-color: black;
+    color: white;
+    border: black;
+}

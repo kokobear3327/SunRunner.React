@@ -1,13 +1,13 @@
-import './wall-two-button.css';
+import './metadata-button.css';
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export default function WallTwoButton() {
+export default function MetaButton() {
 
     return (
-        <div class="business-wall-two-button-parent">
-        <Link to="/BusinessWallTwo">
-        <button className="business-wall-two-button">Wall 2</button>
+        <div class="metadata-parent">
+        <Link to="/Metadata">
+        <button className="metadata-button">Wall 2</button>
         </Link>
         </div>
     );
