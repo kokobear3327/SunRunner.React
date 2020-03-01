@@ -1,3 +1,15 @@
-/* .mac-bar-container {
-    
-} */
+.left-blank {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:230px;
+}
+
+.right-blank {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:1300px;
+}

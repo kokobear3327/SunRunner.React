@@ -15,13 +15,31 @@ import SnakePic from '../../tree/images/snake.svg';
 import SearchBar from '../../images/SearchBar.png';
 import IrisPic from '../../images/iris.svg'
 import SoundPic from '../../images/sound.svg'
-// import SoundPicOn from '../../images/sound-on.svg'
+import SoundPicOn from '../../images/sound-on.svg'
 
-export default function MacBar(props) {
-    let { business } = props;
-    const ConsumerWithDockOpened = "/ConsumerWithDockOpened";
-    const BusinessWithDockOpened = "/BusinessWithDockOpened";
+export default class MacBar extends React.Component {
+    state = {
+        soundBoolean: false,
+    }
+    constructor(props) {
+        super(props);
 
+        this.business = props;
+        this.ConsumerWithDockOpened = "/ConsumerWithDockOpened";
+        this.BusinessWithDockOpened = "/BusinessWithDockOpened";
+        this.Consumer = "/Consumer";
+        this.Business = "/Business";
+
+        console.log(this.state);
+    }
+
+    SoundOn = () => {
+        this.setState({
+            soundBoolean: !this.state.soundBoolean 
+    })
+}
+
+render() {
     return (
 
         <div className="consumer-panel2">
@@ -30,22 +48,25 @@ export default function MacBar(props) {
         </div>
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
         <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
-            <img className="iris-svg" src={ IrisPic } alt="some" />
+        <img className="iris-svg" src={ IrisPic } alt="some" />
+        <Link to={ this.props.business ? this.Business : this.Consumer}><img className="left-blank" src={ BalloonWrenchPic } alt="some" /></Link>
             <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
             <img className="previous-template-svg" src={ PreviousTemplatePic } alt="some" />
-            <Link to={props.business ? ConsumerWithDockOpened : BusinessWithDockOpened}><img className="twirl-svg" src={ props.business ? TwirlPicFilled : TwirlPic} alt="some" /></Link>
+            <Link to={this.props.business ? this.ConsumerWithDockOpened : this.BusinessWithDockOpened}><img className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" /></Link>
             <img className="next-template-svg" src={ NextTemplatePic } alt="some" />
             <img className="nav-svg" src={ NavPic } alt="some" />
             <img className="history-svg" src={ HistoryPic } alt="some" />
             <Link to="/MenuOverflowOpen"><img className="menu-overflow-svg" src={ MenuOverflowPic } alt="some" /></Link>
             <img className="snake-svg" src={ SnakePic } alt="some" />
-            <img className="sound-svg" src={ SoundPic } alt="some" />
-     
-        </div>
+            <img onClick={ this.SoundOn } className="sound-svg" src={ this.state.soundBoolean ? SoundPic : SoundPicOn } alt="some" />
+            <Link to={ this.props.business ? this.Business : this.Consumer}><img className="right-blank" src={ BalloonWrenchPic } alt="some" /></Link>
+        
+            </div>
     
      
 
 
     );
   }
-  
+}
+
