@@ -13,6 +13,9 @@ import LawyersView from './lawyers/lawyers-view';
 import ConsumerWithMenuoverFlowOpen from './consumer/consumer-with-dock-opened/consumer-with-menu-overflow';
 import ConsumerWithBallonWrenchActive from './consumer/consumer-with-dock-opened/consumer-with-balloon-wrench-active.js';
 import Home from './home/home';
+import TreeViewWithDockOpened from './tree/tree-view-with-dock-opened';
+import TreeViewVanilla from './tree/tree-view-vanilla';
+import TreeViewVanillaOpened from './tree/tree-view-vanilla-opened';
 
 function App() {
   return (
@@ -27,7 +30,10 @@ function App() {
         <Route path="/BusinessWithDockOpened" exact component={BusinessWithDockOpened}></Route>
         <Route path="/MenuOverflowOpen" exact component={ConsumerWithMenuoverFlowOpen}></Route>
         <Route path="/BalloonWrenchActive" exact component={ConsumerWithBallonWrenchActive}></Route>
-        <Route path="/tree" component={TreeView}></Route>
+        <Route path="/Tree" component={TreeView}></Route>
+        <Route path="/TreeViewWithDockOpened" component={TreeViewWithDockOpened}></Route>
+        <Route path="/TreeViewVanilla" component={TreeViewVanilla}></Route>
+        <Route path="/TreeViewVanillaOpened" component={TreeViewVanillaOpened}></Route>
         <Route path="/Medical-Info" exact component={MedicalInfoView}></Route>
         <Route path="/Legal-Info" exact component={LegalInfoView}></Route>
         <Route path="/Doctors" exact component={DoctorsView}></Route>

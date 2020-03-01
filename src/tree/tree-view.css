@@ -1,8 +1,4 @@
-.tree-image {
-    position: relative;
-}
-
-.tree-parent {
+.tree-view-parent {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,5 +6,5 @@
 }
 
 
-.tree-child {
+.tree-view-child {
 }

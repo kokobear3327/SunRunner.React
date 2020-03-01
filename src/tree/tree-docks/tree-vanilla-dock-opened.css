@@ -10,9 +10,8 @@
 
 .search-bar-png4 {
     width: 1507px;
-    padding-bottom: 157px;
+    padding-bottom: 158px;
     pointer-events: none;
-    padding-left:2429px;
 }
 
 .consumer-panel3 {
@@ -72,7 +71,14 @@
     position: absolute;
     top: 9px;
     left:572px;
-    pointer-events: none;
+}
+
+.twirl-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:744px;
 }
 
 .next-template-svg2 {
@@ -83,7 +89,7 @@
     left:658px;
 }
 
-.history-svg2 {
+.nav-svg2 {
     height: 66px;
     width: 66px;
     position: absolute;
@@ -91,12 +97,20 @@
     left:830px;
 }
 
+.history-svg2 {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:916px;
+}
+
 .menu-overflow-svg2 {
     height: 66px;
     width: 66px;
     position: absolute;
     top: 9px;
-    left:744px;
+    left:1000px;
 }
 
 .snake-svg2 {

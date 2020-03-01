@@ -1,0 +1,40 @@
+.tree-vanilla-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-vanilla-panel {
+        width: 1507px;
+        height: 76px;
+        font-family: Montserrat;
+        font-size: 23px;
+        background-color: #000000;
+        background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 1964px;
+        background-color: black;
+        color: white;
+        border: black;
+    } 
+
+    .search-bar-parent {
+        pointer-events: none;
+    }
+
+    .search-bar-png5 {
+        width: 1507px;
+        top:0px;
+        padding-bottom: 158px;
+    }
+
+    .oea-text {
+        font-family: Montserrat;
+        font-size: 38px;
+        bottom: -37px;
+        position: absolute;
+        left: 523px;
+    }
