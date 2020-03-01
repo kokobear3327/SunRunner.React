@@ -1,4 +1,4 @@
-import './life-sciences.css';
+import './life-sciences-button.css';
 import React from 'react'
 import { Link } from "react-router-dom";
 

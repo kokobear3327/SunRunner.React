@@ -1,18 +1,19 @@
-.formal-sciences-parent {
+.social-sciences-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.formal-sciences-button {
+.social-sciences-button {
     width: 187px;
     height: 45px;
     position: relative;
     font-family: Montserrat;
     font-size: 25px;
-    right: 292px;
-    bottom: 1470px;
+    right: 1390px;
+    bottom: 1194px;
     background-color: black;
     color: white;
     border: black;
+    white-space: nowrap;
 }

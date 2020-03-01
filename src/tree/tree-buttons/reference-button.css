@@ -1,17 +1,17 @@
-.formal-sciences-parent {
+.reference-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.formal-sciences-button {
+.reference-button {
     width: 187px;
     height: 45px;
     position: relative;
     font-family: Montserrat;
     font-size: 25px;
-    right: 292px;
-    bottom: 1470px;
+    right: 1472px;
+    bottom: 1370px;
     background-color: black;
     color: white;
     border: black;

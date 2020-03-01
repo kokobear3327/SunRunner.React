@@ -2,12 +2,12 @@ import './metadata-button.css';
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export default function MetaButton() {
+export default function MetadataButton() {
 
     return (
         <div class="metadata-parent">
         <Link to="/Metadata">
-        <button className="metadata-button">Wall 2</button>
+        <button className="metadata-button">Metadata</button>
         </Link>
         </div>
     );

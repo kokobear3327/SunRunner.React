@@ -1,13 +1,13 @@
-import './wall-two-button.css';
+import './reference-button.css';
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export default function WallTwoButton() {
+export default function ReferenceButton() {
 
     return (
-        <div class="business-wall-two-button-parent">
-        <Link to="/BusinessWallTwo">
-        <button className="business-wall-two-button">Wall 2</button>
+        <div class="reference-parent">
+        <Link to="/Reference">
+        <button className="reference-button">Reference</button>
         </Link>
         </div>
     );

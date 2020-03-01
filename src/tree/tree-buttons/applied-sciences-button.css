@@ -10,9 +10,10 @@
     position: relative;
     font-family: Montserrat;
     font-size: 25px;
-    right: 292px;
-    bottom: 470px;
+    left: 1109px;
+    bottom: 1368px;
     background-color: black;
     color: white;
     border: black;
+    white-space: nowrap;
 }

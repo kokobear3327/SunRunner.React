@@ -1,17 +1,17 @@
-.formal-sciences-parent {
+.philosophy-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.formal-sciences-button {
+.philosophy-button {
     width: 187px;
     height: 45px;
     position: relative;
     font-family: Montserrat;
     font-size: 25px;
-    right: 292px;
-    bottom: 1470px;
+    right: 1100px;
+    bottom: 673px;
     background-color: black;
     color: white;
     border: black;
