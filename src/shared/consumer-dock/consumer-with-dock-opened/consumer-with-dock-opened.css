@@ -54,6 +54,13 @@
     pointer-events: none;
 }
 
+.iris-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:400px;
+}
 
 .balloon-wrench-svg {
     height: 66px;
@@ -61,7 +68,6 @@
     position: absolute;
     top: 9px;
     left:486px;
-    pointer-events: none;
 }
 
 
@@ -71,7 +77,6 @@
     position: absolute;
     top: 9px;
     left:572px;
-    pointer-events: none;
 }
 
 .twirl-svg {
@@ -120,4 +125,12 @@
     position: absolute;
     top: 9px;
     left:1434px;
+}
+
+.sound-svg {
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left:1089px;
 }

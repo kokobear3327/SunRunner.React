@@ -1,5 +1,4 @@
 import React from 'react'
-import BackButton from '../shared/buttons/back-button';
 import './tree-view.css';
 import TreeButtons from './tree-buttons/tree-buttons';
 import TreeVid from '../videos/Tree.mp4';

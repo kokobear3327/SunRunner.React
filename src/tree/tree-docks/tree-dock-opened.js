@@ -12,6 +12,8 @@ import BackButtonPic from '../images/back.svg';
 import ForwardButtonPic from '../images/forward.svg';
 import SnakePic from '../images/snake.svg';
 import SearchBar from '../images/SearchBar.png';
+import IrisPic from '../../images/iris.svg'
+import SoundPic from '../../images/sound.svg'
 
 function TreeDockOpened() {
 
@@ -25,6 +27,8 @@ function TreeDockOpened() {
         <img className="search-bar-png3" src={SearchBar} alt="-" />
         </div>
         <img className="back-button-svg" src={ BackButtonPic } alt="some" />
+        <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
+        <img className="iris-svg" src={ IrisPic } alt="some" />
         <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
         <img className="previous-template-svg" src={ PreviousTemplatePic } alt="some" />
         <Link to="/BusinessWithDockOpened"><img className="twirl-svg" src={ TwirlPic } alt="some" /></Link>
@@ -33,6 +37,7 @@ function TreeDockOpened() {
         <img className="history-svg" src={ HistoryPic } alt="some" />
         <Link to="/MenuOverflowOpen"><img className="menu-overflow-svg" src={ MenuOverflowPic } alt="some" /></Link>
         <img className="snake-svg" src={ SnakePic } alt="some" />
+        <img className="sound-svg" src={ SoundPic } alt="some" />
         </div>
         </Link>
         </div>
