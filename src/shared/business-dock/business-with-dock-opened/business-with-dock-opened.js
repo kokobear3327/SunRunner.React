@@ -14,29 +14,14 @@ import SnakePic from './images/snake.svg';
 import SearchBar from './images/SearchBar.png';
 import IrisPic from '../../../images/iris.svg'
 import SoundPic from '../../../images/sound.svg'
+import MacBar from '../../mac-bar/mac-bar';
 
 function BusinessWithDockOpened() {
 
     return (
         <div className="business-panel-parent">
         <Link to="/Business">
-        <div className="business-panel">
-        <div className="search-bar-parent">
-        <img className="search-bar-png3" src={SearchBar} alt="-" />
-        </div>
-        <img className="back-button-svg" src={ BackButtonPic } alt="some" />
-        <img className="forward-button-svg" src={ ForwardButtonPic } alt="some" />
-        <img className="iris-svg" src={ IrisPic } alt="some" />
-            <img className="balloon-wrench-svg" src={ BalloonWrenchPic } alt="some" />
-            <img className="previous-template-svg" src={ PreviousTemplatePic } alt="some" />
-            <Link to="/ConsumerWithDockOpened"><img className="twirl-svg" src={ TwirlPic } alt="some" /></Link>
-            <img className="next-template-svg" src={ NextTemplatePic } alt="some" />
-            <img className="nav-svg" src={ NavPic } alt="some" />
-            <img className="history-svg" src={ HistoryPic } alt="some" />
-            <img className="menu-overflow-svg" src={ MenuOverflowPic } alt="some" />
-            <img className="snake-svg" src={ SnakePic } alt="some" />
-            <img className="sound-svg" src={ SoundPic } alt="some" />
-        </div>
+        <MacBar business={true}></MacBar>
         </Link>
         </div>
 

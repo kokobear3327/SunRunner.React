@@ -10,7 +10,7 @@ function ConsumerWithDockOpened() {
         <div class="consumer-dock-panel-parent">
         <Link to="/Consumer">
 
-        <MacBar></MacBar>
+        <MacBar business={false}></MacBar>
         </Link>
         </div>
     );
