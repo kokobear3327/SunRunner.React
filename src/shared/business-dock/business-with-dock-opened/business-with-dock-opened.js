@@ -20,9 +20,7 @@ function BusinessWithDockOpened() {
 
     return (
         <div className="business-panel-parent">
-        <Link to="/Business">
         <MacBar business={true}></MacBar>
-        </Link>
         </div>
 
 

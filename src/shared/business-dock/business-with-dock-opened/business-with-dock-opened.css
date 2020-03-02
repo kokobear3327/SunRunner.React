@@ -27,7 +27,6 @@
     position: absolute;
     top: 9px;
     left:17px;
-    pointer-events: none;
 }
 .forward-button-svg {
     height: 66px;
@@ -35,7 +34,6 @@
     position: absolute;
     top: 9px;
     left:103px;
-    pointer-events: none;
 }
 
 
@@ -45,7 +43,6 @@
     position: absolute;
     top: 9px;
     left:486px;
-    pointer-events: none;
 }
 
 
@@ -55,7 +52,6 @@
     position: absolute;
     top: 9px;
     left:572px;
-    pointer-events: none;
 }
 
 .twirl-svg {
