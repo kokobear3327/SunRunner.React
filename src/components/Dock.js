@@ -118,11 +118,11 @@ class Dock extends React.Component {
             {balloonBoolean: !this.state.balloonBoolean}
         )
         if (this.state.balloonBoolean) {
-            let jam = document.querySelector(".balloon-wrench-svg")
+            let jam = document.querySelector(".balloon-svg")
             jam.src = "/balloon-wrench.svg" 
         } 
         else {
-            let jam = document.querySelector(".balloon-wrench-svg")
+            let jam = document.querySelector(".balloon-svg")
             jam.src = "/balloon-wrench-filled.svg"
         }
 
