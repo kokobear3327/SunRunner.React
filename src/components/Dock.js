@@ -30,17 +30,18 @@ class Dock extends React.Component {
     }
 
     DockClicked = () => {
+        // let searchBar = document.querySelector(".search-bar-png2")
+        // searchBar.style.left = 1020 + "px"
+        // console.log(searchBar.style)
         this.setState({ dockBoolean: !this.state.dockBoolean } )
-        console.log(this.state.dockBoolean)
         if (this.state.dockBoolean) {
-            console.log("true called")
         let title = document.querySelector(".oea-title")
         title.style.display = "none"
         let content = document.querySelector(".oea-content")
-        content.style.display = "inline"
+        content.style.display = "flex"
         } else {
             let title = document.querySelector(".oea-title")
-            title.style = "inline"
+            title.style = "flex"
             let content = document.querySelector(".oea-content")
             content.style = "none"
         }
@@ -49,13 +50,6 @@ class Dock extends React.Component {
     SoundOn = () => {
         console.log("SoundOn called")
     }
-
-    // let jam = document.querySelector(".twirl-svg")
-    // if (jam.src === "/twirl-filled.svg") {
-    //     jam.src = "/twirl.svg"
-    // } else if (jam.src === "/twirl.svg") {
-    //  jam.src = "twirl-filled.svg"
-    // }
 
     twirlContainerClicked = () => {
         console.log("twirlContainerClicked")
@@ -86,27 +80,25 @@ class Dock extends React.Component {
             <div className="oea-content">
             <img className="back-button-svg" src="/back.svg"  alt="some" />
             <img className="forward-button-svg" src="/forward.svg" alt="some" />
-            <img className="left-hexagons" src="/hexagons.png" alt="some" />
+            <img onClick={this.DockClicked} className="left-hexagons" src="/hexagons.png" alt="some" />
             <img className="iris-svg" src="/iris.svg" alt="some" />
             <div id="twirl-container" onClick={this.twirlContainerClicked}>
             <img onClick={this.props.data} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
             </div>
             <img onClick={ this.BalloonOn } className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
-            <img className="next-template-svg" src="/down-arrow.png"  alt="some" />
+            <img onClick={this.NextTemplateClicked}className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
             <img className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
             <img className="menu-overflow-svg" src="/illuminati.svg" alt="some" />
             <img className="nav-svg" src="/nav.svg" alt="some" />
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
             <img onClick={ this.SoundOn } className="sound-svg" src={ this.state.soundBoolean ? SoundPicOn : SoundPic } alt="some" />
-            <img className="right-hexagons" src="/hexagons.png" alt="some" />
+            <img onClick={this.DockClicked} className="right-hexagons" src="/hexagons.png" alt="some" />
             </div>
             </div>
 
         <style jsx>{`
-        .input-thingy {
-            top: 400px;
-        }
+        
 
         .dock-panel-parent {
             display: flex;
@@ -129,10 +121,12 @@ class Dock extends React.Component {
                 color: #2FA4E7;
                 border: black;
                 z-index: 1;
+                border: 5px green solid;
             } 
         
             .search-bar-parent {
                 pointer-events: none;
+                position: absolute;
             }
         
             .search-bar-png2 {
@@ -142,7 +136,6 @@ class Dock extends React.Component {
             }
 
             .oea-title {
-
             }
         
             .oea-text {
@@ -154,12 +147,13 @@ class Dock extends React.Component {
             }
 
             .oea-content {
+                display: none;
                 font-family: Montserrat;
                 font-size: 38px;
-                bottom: 4px;
-                position: absolute;
-                left: 523px;
-                display: none
+                position: relative;
+                width: 1507px;
+                height: 76px;
+                border: 5px yellow solid;
             }
 
 
@@ -167,113 +161,102 @@ class Dock extends React.Component {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 0px;
-                right: 480px;
             }
             .forward-button-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 9px;
-                right: 394px;
+                left: 76px;
             }
 
             .left-hexagons {
                 height: 66px;
+                width: 260px;
+                position: absolute;
+                left: 152px;
+            }
+
+            .previous-template-svg {
+                height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 9px;
-                right: 234px;
+                left:410px;
             }
-            
             
             .balloon-wrench-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 9px;
-                right:100px;
-            }
-            
-            
-            .previous-template-svg {
-                height: 66px;
-                width: 66px;
-                position: absolute;
-                top: 9px;
-                left:300px;
-            }
-
-            .next-template-svg {
-                height: 66px;
-                width: 66px;
-                position: absolute;
-                top: 9px;
-                left:100px;
-            }
-            
-            .twirl-svg {
-                height: 66px;
-                width: 66px;
-                position: absolute;
-                top: 9px;
-                left: 200px;
-            }
-        
+                left:492px;
+            }        
 
             .nav-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 9px;
-                right:20px;
+                 
+                left: 574px;
             }
             
             .history-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                left:502px;
+                left:656px;
+            }
+
+            .twirl-svg {
+                height: 66px;
+                width: 66px;
+                position: absolute;
+                left: 738px;
             }
             
             .menu-overflow-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 9px;
-                left:100px;
+                left:820px;
             }
             
-            .snake-svg {
-                height: 66px;
-                width: 66px;
-                position: absolute;
-                top: 9px;
-                left: 700px;
-            }
-
             .iris-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 9px;
-                left:400px;
+                left:902px;
             }
 
             .sound-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
-                top: 9px;
-                left: 286px;
+                 
+                left: 984px;
             }
+
+            .next-template-svg {
+                height: 66px;
+                width: 66px;
+                position: absolute;
+                left:1066px;
+            }
+
             .right-hexagons {
                 height: 66px;
-                width: 177px;
+                width: 260px;
                 position: absolute;
-                top: 9px;
-                left: 786px;
+                left: 1148px;
             }
+
+            .snake-svg {
+                height: 66px;
+                width: 66px;
+                position: absolute;
+                
+                left: 1420px;
+            }
+
+            
             
             
 
