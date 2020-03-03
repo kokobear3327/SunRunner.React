@@ -37,7 +37,10 @@ export default class Index extends React.Component {
     businessClickedParent(value) {
 
     }
+    twirlFunction = () => {
+        this.setState({businessBoolean: !this.state.businessBoolean})
 
+    }
 
 
     render() { 
@@ -45,7 +48,7 @@ export default class Index extends React.Component {
     <Layout>
     <div className="parent">
     <div className="child">
-    <Dock onClick={this.toggleDock}></Dock>
+    <Dock data={this.twirlFunction} onClick={this.toggleDock}></Dock>
     <img className="image" src={ consumer } alt="text" />
     <div>
     <TreeButton></TreeButton>

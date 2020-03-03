@@ -14,11 +14,16 @@ const SoundPic = "/sound.svg"
 
 class Dock extends React.Component {
 
-    state = {
-        dockBoolean: false,
-        balloonBoolean: false,
-        soundBoolean: false
+    constructor(props) {
+        super(props);
+        this.state = {
+            dockBoolean: true,
+            balloonBoolean: false,
+            soundBoolean: false,
+            businessBoolean:false
+        }
     }
+
 
     buttonClicked() {
         
@@ -45,7 +50,26 @@ class Dock extends React.Component {
         console.log("SoundOn called")
     }
 
-    businessClicked = () => {
+    // let jam = document.querySelector(".twirl-svg")
+    // if (jam.src === "/twirl-filled.svg") {
+    //     jam.src = "/twirl.svg"
+    // } else if (jam.src === "/twirl.svg") {
+    //  jam.src = "twirl-filled.svg"
+    // }
+
+    twirlContainerClicked = () => {
+        console.log("twirlContainerClicked")
+        this.setState(
+            {businessBoolean: !this.state.businessBoolean}
+        )
+        if (this.state.businessBoolean) {
+            let jam = document.querySelector(".twirl-svg")
+            jam.src = "/twirl-filled.svg" 
+        } 
+        else {
+            let jam = document.querySelector(".twirl-svg")
+            jam.src = "/twirl.svg"
+        }
 
     }
 
@@ -57,37 +81,33 @@ class Dock extends React.Component {
                 <img className="search-bar-png2" src="/SearchBar.png" alt="-" />
             </div>
             <div className="oea-title">
-            <h4 className="oea-text">{this.props.data.businessBoolean}</h4>
+            <h4 className="oea-text">Omnibox Extension App</h4>
             </div>
             <div className="oea-content">
             <img className="back-button-svg" src="/back.svg"  alt="some" />
             <img className="forward-button-svg" src="/forward.svg" alt="some" />
+            <img className="left-hexagons" src="/hexagons.png" alt="some" />
             <img className="iris-svg" src="/iris.svg" alt="some" />
-            <Link href="/business"><img onClick={businessClicked} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" /></Link>
+            <div id="twirl-container" onClick={this.twirlContainerClicked}>
+            <img onClick={this.props.data} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
+            </div>
             <img onClick={ this.BalloonOn } className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
-            <img className="next-template.svg" src="/next-template.svg"  alt="some" />
-            <img className="previous-template.svg" src="/previous-template.svg" alt="some" />
+            <img className="next-template-svg" src="/down-arrow.png"  alt="some" />
+            <img className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
             <img className="menu-overflow-svg" src="/illuminati.svg" alt="some" />
             <img className="nav-svg" src="/nav.svg" alt="some" />
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
             <img onClick={ this.SoundOn } className="sound-svg" src={ this.state.soundBoolean ? SoundPicOn : SoundPic } alt="some" />
-
-
+            <img className="right-hexagons" src="/hexagons.png" alt="some" />
             </div>
             </div>
-
-
-
-          
-         
-
-
-
-
-
 
         <style jsx>{`
+        .input-thingy {
+            top: 400px;
+        }
+
         .dock-panel-parent {
             display: flex;
             align-items: center;
@@ -157,6 +177,14 @@ class Dock extends React.Component {
                 top: 9px;
                 right: 394px;
             }
+
+            .left-hexagons {
+                height: 66px;
+                width: 66px;
+                position: absolute;
+                top: 9px;
+                right: 234px;
+            }
             
             
             .balloon-wrench-svg {
@@ -173,7 +201,7 @@ class Dock extends React.Component {
                 width: 66px;
                 position: absolute;
                 top: 9px;
-                right:300px;
+                left:300px;
             }
 
             .next-template-svg {
@@ -181,7 +209,7 @@ class Dock extends React.Component {
                 width: 66px;
                 position: absolute;
                 top: 9px;
-                right:20px;
+                left:100px;
             }
             
             .twirl-svg {
@@ -238,6 +266,13 @@ class Dock extends React.Component {
                 position: absolute;
                 top: 9px;
                 left: 286px;
+            }
+            .right-hexagons {
+                height: 66px;
+                width: 177px;
+                position: absolute;
+                top: 9px;
+                left: 786px;
             }
             
             
