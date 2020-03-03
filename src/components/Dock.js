@@ -110,6 +110,24 @@ class Dock extends React.Component {
 
     }
 
+    balloonContainerClicked = (event) => {
+        event.stopPropagation()
+        console.log("balloonContainerClicked")
+        console.log(this.state.soundBoolean)
+        this.setState(
+            {balloonBoolean: !this.state.balloonBoolean}
+        )
+        if (this.state.balloonBoolean) {
+            let jam = document.querySelector(".balloon-wrench-svg")
+            jam.src = "/balloon-wrench.svg" 
+        } 
+        else {
+            let jam = document.querySelector(".balloon-wrench-svg")
+            jam.src = "/balloon-wrench-filled.svg"
+        }
+
+    }
+
 
 
 
@@ -130,7 +148,9 @@ class Dock extends React.Component {
             <div id="twirl-container" onClick={this.twirlContainerClicked}>
             <img onClick={this.props.twirl} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
             </div>
-            <img onClick={ this.BalloonOn } className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
+            <div onClick={ this.balloonContainerClicked } className="balloon-container">
+            <img className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
+            </div>
             <img onClick={this.NextTemplateClicked}className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
             <img className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
             <img className="menu-overflow-svg" src="/illuminati.svg" alt="some" />
