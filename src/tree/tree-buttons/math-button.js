@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function MathButton() {
 
     return (
-        <div class="math-parent">
+        <div className="math-parent">
         <Link to="/Math">
         <button className="math-button">Math</button>
         </Link>

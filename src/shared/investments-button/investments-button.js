@@ -5,7 +5,7 @@ import './investments-button.css';
 export default function InvestmentsButton() {
 
     return (
-        <div class="investments-button-parent">
+        <div className="investments-button-parent">
         <Link to="/Investments">
         <button className="investments-button">Investments</button>
         </Link>

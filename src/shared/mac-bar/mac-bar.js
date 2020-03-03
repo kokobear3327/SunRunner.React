@@ -55,7 +55,6 @@ export default class MacBar extends React.Component {
 
 render() {
     return (
-
         <div className="consumer-panel2">
         <div className="search-bar-parent">
         <img className="search-bar-png3" src={SearchBar} alt="-" />

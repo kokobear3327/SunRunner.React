@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function ReferenceButton() {
 
     return (
-        <div class="reference-parent">
+        <div className="reference-parent">
         <Link to="/Reference">
         <button className="reference-button">Reference</button>
         </Link>

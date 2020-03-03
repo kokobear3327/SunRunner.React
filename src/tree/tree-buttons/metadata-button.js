@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function MetadataButton() {
 
     return (
-        <div class="metadata-parent">
+        <div className="metadata-parent">
         <Link to="/Metadata">
         <button className="metadata-button">Metadata</button>
         </Link>

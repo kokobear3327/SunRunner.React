@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function DashboardButton() {
     return (
-        <div class="dashboard-button-container">
+        <div className="dashboard-button-container">
         <Link to="/Dashboard">
         <button className="dashboard-button">Dashboard</button>
         </Link>

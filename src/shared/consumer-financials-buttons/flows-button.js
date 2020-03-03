@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function ComposeButton() {
 
     return (
-        <div class="flows-button-parent">
+        <div className="flows-button-parent">
         <Link to="/Compose">
         <button className="flows-button">Flows</button>
         </Link>

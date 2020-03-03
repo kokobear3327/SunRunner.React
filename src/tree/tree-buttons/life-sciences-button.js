@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function LifeSciencesButton() {
 
     return (
-        <div class="life-sciences-parent">
+        <div className="life-sciences-parent">
         <Link to="/LifeSciences">
         <button className="life-sciences-button">Life Sciences</button>
         </Link>

@@ -5,7 +5,7 @@ import './legal-info-button.css';
 export default function LegalInfoButton() {
 
     return (
-        <div class="legal-info-container">
+        <div className="legal-info-container">
         <Link to="/Legal-Info">
         <button className="legal-info">Legal Info</button>
         </Link>

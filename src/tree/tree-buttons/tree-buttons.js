@@ -1,5 +1,4 @@
 import React from 'react';
-import './tree-buttons.css';
 import AppliedSciencesButton from './applied-sciences-button';
 import BusinessButton from './business-button';
 import ComputerSciencesButton from './computer-sciences-button';

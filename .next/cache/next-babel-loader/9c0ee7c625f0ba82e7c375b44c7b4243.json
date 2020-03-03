@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nexport default (() => {});","map":{"version":3,"sources":["/Users/websites/Documents/OEA-Next/src/pages/index.js"],"names":["React"],"mappings":"AACA,OAAOA,KAAP,MAAkB,OAAlB;AAEA,gBAAe,MAAM,CAEpB,CAFD","sourcesContent":["\nimport React from 'react';\n\nexport default () => { \n\n}\n"]},"metadata":{},"sourceType":"module"}
