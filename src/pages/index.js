@@ -39,7 +39,10 @@ export default class Index extends React.Component {
     }
     twirlFunction = () => {
         this.setState({businessBoolean: !this.state.businessBoolean})
+    }
 
+    soundFunction = () => {
+        this.setState({soundBoolean: !this.state.soundBoolean})
     }
 
 
@@ -48,7 +51,7 @@ export default class Index extends React.Component {
     <Layout>
     <div className="parent">
     <div className="child">
-    <Dock data={this.twirlFunction} onClick={this.toggleDock}></Dock>
+    <Dock twirl={this.twirlFunction} sound={ this.soundFunction } onClick={this.toggleDock}></Dock>
     <img className="image" src={ consumer } alt="text" />
     <div>
     <TreeButton></TreeButton>

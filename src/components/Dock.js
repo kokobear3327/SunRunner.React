@@ -19,7 +19,7 @@ class Dock extends React.Component {
         this.state = {
             dockBoolean: true,
             balloonBoolean: false,
-            soundBoolean: false,
+            soundBoolean: true,
             businessBoolean:true
         }
     }
@@ -47,8 +47,13 @@ class Dock extends React.Component {
         }
     }
 
-    SoundOn = () => {
-        console.log("SoundOn called")
+    SoundClicked = (event) => {
+        event.stopPropagation()
+        console.log("SoundClicked called")
+        this.setState({
+            soundBoolean: !this.state.soundBoolean
+        })
+
     }
 
     twirlContainerClicked = (event) => {
@@ -67,8 +72,46 @@ class Dock extends React.Component {
             let jam = document.querySelector(".twirl-svg")
             jam.src = "/twirl.svg"
         }
+    }
+
+    twirlContainerClicked = (event) => {
+        event.stopPropagation()
+        console.log("twirlContainerClicked")
+        console.log(this.state.businessBoolean)
+        this.setState(
+            {businessBoolean: !this.state.businessBoolean}
+        )
+        console.log(this.state.businessBoolean)
+        if (this.state.businessBoolean) {
+            let jam = document.querySelector(".twirl-svg")
+            jam.src = "/twirl-filled.svg" 
+        } 
+        else {
+            let jam = document.querySelector(".twirl-svg")
+            jam.src = "/twirl.svg"
+        }
+    }
+
+    soundContainerClicked = (event) => {
+        event.stopPropagation()
+        console.log("soundContainerClicked")
+        console.log(this.state.soundBoolean)
+        this.setState(
+            {soundBoolean: !this.state.soundBoolean}
+        )
+        if (this.state.soundBoolean) {
+            let jam = document.querySelector(".sound-svg")
+            jam.src = "/sound.svg" 
+        } 
+        else {
+            let jam = document.querySelector(".sound-svg")
+            jam.src = "/sound-filled.svg"
+        }
 
     }
+
+
+
 
     render() {
     return (
@@ -85,7 +128,7 @@ class Dock extends React.Component {
             <img className="forward-button-svg" src="/forward.svg" alt="some" />
             <img className="iris-svg" src="/iris.svg" alt="some" />
             <div id="twirl-container" onClick={this.twirlContainerClicked}>
-            <img onClick={this.props.data} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
+            <img onClick={this.props.twirl} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
             </div>
             <img onClick={ this.BalloonOn } className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
             <img onClick={this.NextTemplateClicked}className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
@@ -94,8 +137,9 @@ class Dock extends React.Component {
             <img className="nav-svg" src="/nav.svg" alt="some" />
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
-            <img onClick={ this.SoundOn } className="sound-svg" src={ this.state.soundBoolean ? SoundPicOn : SoundPic } alt="some" />
-
+            <div onClick={ this.soundContainerClicked } className="sound-container">
+            <img className="sound-svg" src="/sound.svg" alt="some" />
+            </div>
             </div>
             </div>
 
