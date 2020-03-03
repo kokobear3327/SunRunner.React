@@ -20,7 +20,7 @@ class Dock extends React.Component {
             dockBoolean: true,
             balloonBoolean: false,
             soundBoolean: false,
-            businessBoolean:false
+            businessBoolean:true
         }
     }
 
@@ -51,11 +51,14 @@ class Dock extends React.Component {
         console.log("SoundOn called")
     }
 
-    twirlContainerClicked = () => {
+    twirlContainerClicked = (event) => {
+        event.stopPropagation()
         console.log("twirlContainerClicked")
+        console.log(this.state.businessBoolean)
         this.setState(
             {businessBoolean: !this.state.businessBoolean}
         )
+        console.log(this.state.businessBoolean)
         if (this.state.businessBoolean) {
             let jam = document.querySelector(".twirl-svg")
             jam.src = "/twirl-filled.svg" 
@@ -80,7 +83,6 @@ class Dock extends React.Component {
             <div className="oea-content">
             <img className="back-button-svg" src="/back.svg"  alt="some" />
             <img className="forward-button-svg" src="/forward.svg" alt="some" />
-            <img onClick={this.DockClicked} className="left-hexagons" src="/hexagons.png" alt="some" />
             <img className="iris-svg" src="/iris.svg" alt="some" />
             <div id="twirl-container" onClick={this.twirlContainerClicked}>
             <img onClick={this.props.data} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
@@ -93,7 +95,7 @@ class Dock extends React.Component {
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
             <img onClick={ this.SoundOn } className="sound-svg" src={ this.state.soundBoolean ? SoundPicOn : SoundPic } alt="some" />
-            <img onClick={this.DockClicked} className="right-hexagons" src="/hexagons.png" alt="some" />
+
             </div>
             </div>
 
@@ -198,7 +200,7 @@ class Dock extends React.Component {
                 left: 574px;
             }
             
-            .history-svg {
+            .menu-overflow-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
@@ -211,14 +213,14 @@ class Dock extends React.Component {
                 position: absolute;
                 left: 738px;
             }
-            
-            .menu-overflow-svg {
+
+            .history-svg {
                 height: 66px;
                 width: 66px;
                 position: absolute;
                 left:820px;
             }
-            
+        
             .iris-svg {
                 height: 66px;
                 width: 66px;
@@ -291,3 +293,6 @@ class Dock extends React.Component {
 //       <img onClick={ this.SoundOn } className="sound-svg" src={ this.state.soundBoolean ? SoundPicOn : SoundPic } alt="some" />
 //       <Sound playStatus={this.state.soundBoolean ? this.Playing : this.Paused} className="sound-svg2" id="s" url={BackgroundMusic}></Sound>
 //       <Link to={ this.props.business ? this.Business : this.Consumer}><img className="right-blank" src="./NextTemplatePic" alt="some" /></Link>
+
+//        <img onClick={this.DockClicked} className="right-hexagons" src="/hexagons.png" alt="some" />
+// <img onClick={this.DockClicked} className="left-hexagons" src="/hexagons.png" alt="some" />
