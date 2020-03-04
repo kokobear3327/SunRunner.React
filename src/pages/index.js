@@ -139,7 +139,6 @@ export default class Index extends React.Component {
         justify-content: center;
         width: 1700px;
         height: 2200px;
-        border: 8px red solid;
           }
     
     
@@ -150,14 +149,17 @@ export default class Index extends React.Component {
     .main-container {
         display: flex;
         justify-content: center;
+        margin-left: 29px;
     }
 
     .nav{
         display: none;
+        margin-left: 21px;
     }
 
     .menu { 
         display: none;
+        margin-left: 82px;
     }
 
     .consumer {

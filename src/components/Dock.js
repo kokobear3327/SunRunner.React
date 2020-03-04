@@ -217,7 +217,6 @@ class Dock extends React.Component {
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 10px orange solid;
         }
         
         .dock-panel {
@@ -228,7 +227,6 @@ class Dock extends React.Component {
                 background-color: #000000;
                 background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
                 position: relative;
-                border: 10px yellow solid;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -272,7 +270,7 @@ class Dock extends React.Component {
                 width: 1507px;
                 height: 76px;
                 top:13px;
-                right: 1132px;
+                right: 1513px;
             }
 
 

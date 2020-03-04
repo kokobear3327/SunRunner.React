@@ -48,7 +48,7 @@ export default class Menu extends React.Component {
     <Layout>
     <div className="parent">
     <div className="child">
-    <img className="image" src="/MenuOverflow.png" alt="text" />
+    <img className="menu-overflow-image" src="/MenuOverflow.png" alt="text" />
     </div>
     </div>
     <style jsx>{` 
@@ -66,7 +66,7 @@ export default class Menu extends React.Component {
     .child {
     }
 
-    .image {
+    .menu-overflow-image {
         width: 1536px;
         height: 2048px;
     }

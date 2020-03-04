@@ -89,7 +89,6 @@ export default class Consumer extends React.Component {
     </div>
     <style jsx>{` 
     .parent {
-        border: 5px solid green;
         height:2048px;
         width: 1536px;
     }

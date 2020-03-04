@@ -14,7 +14,6 @@ const Layout = (props) => (
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 8px blue solid;
         }
     
     `}

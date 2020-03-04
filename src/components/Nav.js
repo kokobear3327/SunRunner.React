@@ -45,7 +45,6 @@ export default class Nav extends React.Component {
 
     render() { 
         return (
-    <Layout>
     <div className="parent">
     <div className="child">
             <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
@@ -53,12 +52,20 @@ export default class Nav extends React.Component {
         </video>
     <div className="menu-buttons">
     <TreeButton></TreeButton>
+
     </div>
     </div>
-    <div>
-    </div>
-    </div>
+
     <style jsx>{` 
+    .parent {
+        height:2048px;
+        width: 1536px;
+        padding-left: 60px;
+    }
+    
+    .child {
+    }
+
     .menu-buttons {
         display: hidden;
     }
@@ -68,22 +75,12 @@ export default class Nav extends React.Component {
         width: 2048;
     }
 
-    .parent {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom:60px;
-    }
-    
-    .child {
-    }
-
     .image {
         width: 1536px;
         height: 2048px;
     }
   `}</style>
-    </Layout>
+  </div>
         )
     }
 }
