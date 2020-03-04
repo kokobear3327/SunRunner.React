@@ -15,6 +15,10 @@ import LawyersButton from '../shared/lawyers-button/lawyers-button';
 // import MessagingButtons from '../shared/messaging-buttons/messaging-buttons';
 // import ConsumerFinancialsButtons from '../shared/consumer-financials-buttons/consumer-financials-buttons';
 // import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
+import Business from '../components/Business';
+import Consumer from '../components/Consumer';
+import Menu from '../components/Menu';
+import Nav from '../components/Nav';
 
 // So you want it to conditionally render the consumer or business component contingent on whether business is true
 // Same with the dock
@@ -27,7 +31,9 @@ export default class Index extends React.Component {
         soundBoolean: false,
         balloonBoolean: false,
         panelOpen: false,
-        businessBoolean: false
+        businessBoolean: true,
+        menuBoolean: true,
+        navBoolean: true
     }
     constructor(props) {
         super(props);
@@ -39,10 +45,54 @@ export default class Index extends React.Component {
     }
     twirlFunction = () => {
         this.setState({businessBoolean: !this.state.businessBoolean})
+        console.log("parent businessBoolean State changed:" + this.state.businessBoolean)
+        if (this.state.businessBoolean) {
+            console.log("True logged")
+            let business = document.querySelector(".business")
+            business.style.display = "inline"
+        let consumer = document.querySelector(".consumer")
+        consumer.style.display = "none"
+        } else if (!this.state.businessBoolean) {
+            console.log("false logged")
+            let consumer = document.querySelector(".consumer")
+            consumer.style.display = "inline"
+            let business = document.querySelector(".business")
+            business.style.display = "none"
+        }
     }
 
     soundFunction = () => {
         this.setState({soundBoolean: !this.state.soundBoolean})
+    }
+
+    menuFunction = () => {
+        this.setState({menuBoolean: !this.state.menuBoolean})
+        if (this.state.menuBoolean) { 
+            let menu = document.querySelector(".menu")
+            menu.style.display = "inline"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "none"
+        } else if (!this.state.menuBoolean) {
+            let menu = document.querySelector(".menu")
+            menu.style.display = "none"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "inline"
+        }
+    }
+
+    navFunction = () => {
+        this.setState({navBoolean: !this.state.navBoolean})
+        if (this.state.navBoolean) { 
+            let nav = document.querySelector(".nav")
+            nav.style.display = "inline"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "none"
+        } else if (!this.state.menuBoolean) {
+            let nav = document.querySelector(".nav")
+            nav.style.display = "none"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "inline"
+        }
     }
 
 
@@ -51,22 +101,54 @@ export default class Index extends React.Component {
     <Layout>
     <div className="parent">
     <div className="child">
-    <Dock twirl={this.twirlFunction} sound={ this.soundFunction } onClick={this.toggleDock}></Dock>
-    <img className="image" src={ consumer } alt="text" />
-    <div>
-    <TreeButton></TreeButton>
-    <MedicalInfoButton></MedicalInfoButton>
-    <DoctorsButton></DoctorsButton>
-    <LawyersButton></LawyersButton>
+    <Dock nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
+          
+    <div className="business">
+    <Business></Business>
+    </div>
+
+    <div className="consumer">
+    <Consumer></Consumer>
+    </div>
+    
+    <div className="menu">
+    <Menu></Menu>
+    </div>
+
+    <div className="nav">
+    <Nav></Nav>
+    </div>
+
     </div>
     </div>
-    </div>
+
     <style jsx>{` 
+
+    .mock-image { 
+        height:1536px;
+        width:2048px;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .menu { 
+        display: none;
+    }
+
+    .consumer {
+        display: flex;
+    }
+
+    .business {
+        display: none;
+    }
+
     .parent {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom:60px;
     }
     
     .child {

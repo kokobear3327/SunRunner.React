@@ -9,7 +9,8 @@ const TwirlPicFilled = "/twirl-filled.svg"
 const TwirlPic = "/twirl.svg"
 const SoundPicOn = "/sound-on.svg"
 const SoundPic = "/sound.svg"
-
+const MenuOverflowUp = "menu-overflow-up.png"
+const MenuOverflowDown = "menu-overflow-down.png"
 
 
 class Dock extends React.Component {
@@ -20,7 +21,8 @@ class Dock extends React.Component {
             dockBoolean: true,
             balloonBoolean: false,
             soundBoolean: true,
-            businessBoolean:true
+            businessBoolean:true,
+            menuOverflowBoolean: true
         }
     }
 
@@ -76,12 +78,9 @@ class Dock extends React.Component {
 
     twirlContainerClicked = (event) => {
         event.stopPropagation()
-        console.log("twirlContainerClicked")
-        console.log(this.state.businessBoolean)
         this.setState(
             {businessBoolean: !this.state.businessBoolean}
         )
-        console.log(this.state.businessBoolean)
         if (this.state.businessBoolean) {
             let jam = document.querySelector(".twirl-svg")
             jam.src = "/twirl-filled.svg" 
@@ -101,13 +100,12 @@ class Dock extends React.Component {
         )
         if (this.state.soundBoolean) {
             let jam = document.querySelector(".sound-svg")
-            jam.src = "/sound.svg" 
+            jam.src = "/sound-filled.svg" 
         } 
         else {
             let jam = document.querySelector(".sound-svg")
-            jam.src = "/sound-filled.svg"
+            jam.src = "/sound.svg"
         }
-
     }
 
     balloonContainerClicked = (event) => {
@@ -118,14 +116,31 @@ class Dock extends React.Component {
             {balloonBoolean: !this.state.balloonBoolean}
         )
         if (this.state.balloonBoolean) {
-            let jam = document.querySelector(".balloon-svg")
-            jam.src = "/balloon-wrench.svg" 
+            let jam = document.querySelector(".balloon-wrench-svg")
+            jam.src = "/balloon-wrench-filled.svg" 
         } 
         else {
-            let jam = document.querySelector(".balloon-svg")
-            jam.src = "/balloon-wrench-filled.svg"
+            let jam = document.querySelector(".balloon-wrench-svg")
+            jam.src = "/balloon-wrench.svg"
         }
+    }
 
+    menuOverflowClicked = (event) => {
+        event.stopPropagation()
+        console.log("menuOverflowClicked")
+        console.log(this.state.menuOverflowBoolean)
+        this.setState(
+            {menuOverflowBoolean: !this.state.menuOverflowBoolean}
+        )
+        if (this.state.menuOverflowBoolean) {
+            let jam = document.querySelector(".menu-overflow-svg")
+            jam.src = "/menu-overflow-down.png" 
+        } 
+        else {
+            let jam = document.querySelector(".menu-overflow-svg")
+            jam.src = "/menu-overflow-up.png" 
+        }
+    
     }
 
 
@@ -151,10 +166,13 @@ class Dock extends React.Component {
             <div onClick={ this.balloonContainerClicked } className="balloon-container">
             <img className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
             </div>
-            <img onClick={this.NextTemplateClicked}className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
+            <img onClick={this.NextTemplateClicked} className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
             <img className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
-            <img className="menu-overflow-svg" src="/illuminati.svg" alt="some" />
-            <img className="nav-svg" src="/nav.svg" alt="some" />
+            <div onClick={this.menuOverflowClicked}>
+            <img onClick={this.props.menu} className="menu-overflow-svg" src={MenuOverflowUp} alt="some" />
+            </div>
+            
+            <img onClick={this.props.nav} className="nav-svg" src="/nav.svg" alt="some" />
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
             <div onClick={ this.soundContainerClicked } className="sound-container">
@@ -173,7 +191,7 @@ class Dock extends React.Component {
         }
         
         .dock-panel {
-                width: 1507px;
+                width: 1536px;
                 height: 76px;
                 font-family: Montserrat;
                 font-size: 23px;
@@ -183,11 +201,10 @@ class Dock extends React.Component {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                top: 177px;
+                top: 161px;
                 color: #2FA4E7;
                 border: black;
                 z-index: 1;
-                border: 5px green solid;
             } 
         
             .search-bar-parent {
@@ -196,7 +213,7 @@ class Dock extends React.Component {
             }
         
             .search-bar-png2 {
-                width: 1507px;
+                width: 1536px;
                 top:0px;
                 padding-bottom: 158px;
             }
@@ -219,7 +236,8 @@ class Dock extends React.Component {
                 position: relative;
                 width: 1507px;
                 height: 76px;
-                border: 5px yellow solid;
+                top:13px;
+                left: 12px;
             }
 
 
