@@ -77,14 +77,14 @@ export default class Index extends React.Component {
         this.setState({menuBoolean: !this.state.menuBoolean})
         if (this.state.menuBoolean) { 
             let menu = document.querySelector(".menu")
-            menu.style.display = "inline"
+            menu.style.display = "flex"
             let mainContainer = document.querySelector(".main-container")
             mainContainer.style.display = "none"
         } else if (!this.state.menuBoolean) {
             let menu = document.querySelector(".menu")
             menu.style.display = "none"
             let mainContainer = document.querySelector(".main-container")
-            mainContainer.style.display = "inline"
+            mainContainer.style.display = "flex"
         }
     }
 
@@ -134,13 +134,22 @@ export default class Index extends React.Component {
 
     <style jsx>{` 
 
-    .main-container {
-        display: flex;
+    .parent {
+        align-items: center;
+        justify-content: center;
+        width: 1700px;
+        height: 2200px;
+        border: 8px red solid;
+          }
+    
+    
+    .child {
+
     }
 
-    .mock-image { 
-        height:1536px;
-        width:2048px;
+    .main-container {
+        display: flex;
+        justify-content: center;
     }
 
     .nav{
@@ -159,19 +168,7 @@ export default class Index extends React.Component {
         display: none;
     }
 
-    .parent {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .child {
-    }
 
-    .image {
-        width: 1536px;
-        height: 2048px;
-    }
   `}</style>
     </Layout>
         )

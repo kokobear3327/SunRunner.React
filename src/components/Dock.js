@@ -30,7 +30,8 @@ class Dock extends React.Component {
             balloonBoolean: false,
             soundBoolean: true,
             businessBoolean:true,
-            menuOverflowBoolean: true
+            menuOverflowBoolean: true,
+            navBoolean: true
         }
     }
 
@@ -40,9 +41,6 @@ class Dock extends React.Component {
     }
 
     DockClicked = () => {
-        // let searchBar = document.querySelector(".search-bar-png2")
-        // searchBar.style.left = 1020 + "px"
-        // console.log(searchBar.style)
         this.setState({ dockBoolean: !this.state.dockBoolean } )
         if (this.state.dockBoolean) {
         let title = document.querySelector(".oea-title")
@@ -148,7 +146,28 @@ class Dock extends React.Component {
             let jam = document.querySelector(".menu-overflow-svg")
             jam.src = "/menu-overflow-up.png" 
         }
-    
+    }
+
+    navContainerClicked = (event) => {
+        event.stopPropagation()
+        let title = document.querySelector(".oea-title")
+        title.style.display = "none"
+        let content = document.querySelector(".oea-content")
+        content.style.display = "flex"
+        this.setState(
+            {navBoolean: !this.state.navBoolean}
+        )
+        if (this.state.navBoolean) {
+            let title = document.querySelector(".oea-title")
+            title.style.display = "none"
+            let content = document.querySelector(".oea-content")
+            content.style.display = "flex"
+            } else {
+                let title = document.querySelector(".oea-title")
+                title.style = "flex"
+                let content = document.querySelector(".oea-content")
+                content.style = "none"
+            }
     }
 
 
@@ -180,7 +199,9 @@ class Dock extends React.Component {
             <img onClick={this.props.menu} className="menu-overflow-svg" src={MenuOverflowUp} alt="some" />
             </div>
             
+            <div className="nav-container" onClick={this.navContainerClicked}>
             <img onClick={this.props.nav} className="nav-svg" src="/earth2.png" alt="some" />
+            </div>
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
             <div onClick={ this.soundContainerClicked } className="sound-container">
@@ -196,6 +217,7 @@ class Dock extends React.Component {
             display: flex;
             align-items: center;
             justify-content: center;
+            border: 10px orange solid;
         }
         
         .dock-panel {
@@ -206,6 +228,7 @@ class Dock extends React.Component {
                 background-color: #000000;
                 background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
                 position: relative;
+                border: 10px yellow solid;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -217,24 +240,28 @@ class Dock extends React.Component {
         
             .search-bar-parent {
                 pointer-events: none;
-                position: absolute;
+                justifty-items: center;
+                position: relat;
             }
         
             .search-bar-png2 {
-                width: 1536px;
-                top:0px;
-                padding-bottom: 158px;
+                width:1536px;
+
             }
 
             .oea-title {
+                display: flex;
+                margin: auto;
             }
         
             .oea-text {
                 font-family: Montserrat;
                 font-size: 38px;
-                bottom: 4px;
-                position: absolute;
-                left: 523px;
+                bottom: 7px;
+                position: absolute;                
+                background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
             .oea-content {
@@ -245,7 +272,7 @@ class Dock extends React.Component {
                 width: 1507px;
                 height: 76px;
                 top:13px;
-                left: 12px;
+                right: 1132px;
             }
 
 

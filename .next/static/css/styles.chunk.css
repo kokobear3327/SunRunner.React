@@ -54,6 +54,207 @@
         position: absolute;
         left: 523px;
     }
+.legal-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legal-info {
+    position: relative;
+    bottom: 580px;
+    font-family: Montserrat;
+    color: white;
+    left: 320px;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border:black;
+}
+.reviews-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right: 276px;
+    bottom: 1382px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.news-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left: 283px;
+    bottom: 1450px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.investments-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .investments-button {
+        position: relative;
+        bottom: 957px;
+        font-family: Montserrat;
+        color: white;
+        left: 9px;
+        font-size: 25px;
+        padding-left: 10px;
+        background-color: black;
+        color: white;
+        border:black;
+    }
+.dashboard-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-button {
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 30px;
+    position: relative;
+    left: 1px;
+    bottom: 2086px;
+    background-color: black;
+    color: white;
+    border:black;
+}
+
+
+.goods-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goods-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right:  60px;
+    bottom: 1723px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.services-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-button {
+    width: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 10px;
+    height: 45px;
+    position: relative;
+    right: 34px;
+    bottom: 1723px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.messaging-buttons-parent {
+    display: flex;
+}
+.mailbox-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mailbox-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  121px;
+    bottom: 1418px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.compose-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compose-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 4px;
+    height: 45px;
+    position: relative;
+    left:  148px;
+    bottom: 1418px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.consumer-financials-parent {
+    display: flex;
+}
+.income-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.income-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  648px;
+    bottom: 1500px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
 .balance-button-parent {
     display: flex;
     align-items: center;
@@ -67,7 +268,7 @@
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  654px;
+    left:  614px;
     bottom: 1377px;
     background-color: black;
     color: white;
@@ -149,5 +350,310 @@ justify-content: center;
 }
 
 
+.flows-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flows-button {
+    width: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  700px;
+    bottom: 1500px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.remaining-buttons-parent {
+    display: flex;
+}
+.applications-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.applications-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  170px;
+    bottom: 1078px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.projects-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  960px;
+    bottom: 1404px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.templates-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.templates-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left:  210px;
+    bottom: 1414px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.drive-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drive-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right:  190px;
+    bottom: 1920px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.network-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-one-button {
+    width: 140px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    right: 10px;
+    position: relative;
+    bottom: 2110px;
+    background-color: black;
+    color: white;
+    border:black;
+    white-space: nowrap;
+}
+.network-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-two-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    right: 110px;
+    bottom: 1960px;
+    white-space: nowrap;
+}
+.wall-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wall-one-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left:  330px;
+    bottom: 2093px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.wall-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wall-two-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left: 147px;
+    bottom: 1950px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.social-media-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  30px;
+    bottom: 1250px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.analytics-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analytics-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  584px;
+    bottom: 1260px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.calendars-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendars-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  128px;
+    bottom:1080px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.phone-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  40px;
+    bottom: 1504px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.messages-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  5px;
+    bottom: 1504px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.research-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  133px;
+    bottom: 1910px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
 
 /*# sourceMappingURL=styles.chunk.css.map*/

@@ -6,9 +6,7 @@ export default function SocialMediaButton() {
 
     return (
         <div class="social-media-button-parent">
-        <Link to="/social-media">
         <button className="social-media-button">Social Media</button>
-        </Link>
         </div>
     );
   }

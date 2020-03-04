@@ -59,12 +59,10 @@ export default class Business extends React.Component {
 
     render() { 
         return (
-    <Layout>
     <div className="parent">
     <div className="child">
     <img className="image" src={ business } alt="text" />
     
-    </div>
     </div>
     <style jsx>{` 
     .parent {
@@ -72,6 +70,7 @@ export default class Business extends React.Component {
         align-items: center;
         justify-content: center;
         padding-bottom:60px;
+
     }
     
     .child {
@@ -82,7 +81,7 @@ export default class Business extends React.Component {
         height: 2048px;
     }
   `}</style>
-    </Layout>
+  </div>
         )
     }
 }

@@ -6,14 +6,15 @@ const Layout = (props) => (
       <title>OEA</title>
       <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"/>
     </Head>
-    <div className="container23">
+    <div className="highest-parent">
       {props.children}
     </div>
     <style jsx>{`
-        .container {
+        .highest-parent {
             display: flex;
             align-items: center;
             justify-content: center;
+            border: 8px blue solid;
         }
     
     `}

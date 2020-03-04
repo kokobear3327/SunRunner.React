@@ -6,9 +6,7 @@ export default function ComposeButton() {
 
     return (
         <div className="income-button-parent">
-        <Link to="/Income">
         <button className="income-button">Income</button>
-        </Link>
         </div>
     );
   }

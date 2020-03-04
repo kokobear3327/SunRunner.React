@@ -1,6 +1,5 @@
 import './dashboard-button.css';
 import React from 'react'
-import { Link } from "react-router-dom";
 
 
 // So you would add an onclick event where the router would take you to the route specified. 
@@ -8,9 +7,7 @@ import { Link } from "react-router-dom";
 function DashboardButton() {
     return (
         <div className="dashboard-button-container">
-        <Link to="/Dashboard">
         <button className="dashboard-button">Dashboard</button>
-        </Link>
         </div>
     );
   }
