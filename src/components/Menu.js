@@ -49,12 +49,6 @@ export default class Menu extends React.Component {
     <div className="parent">
     <div className="child">
     <img className="image" src="/MenuOverflow.png" alt="text" />
-    <div className="menu-buttons">
-    <TreeButton></TreeButton>
-    <MedicalInfoButton></MedicalInfoButton>
-    <DoctorsButton></DoctorsButton>
-    <LawyersButton></LawyersButton>
-    </div>
     </div>
     </div>
     <style jsx>{` 

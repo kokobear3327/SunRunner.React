@@ -15,6 +15,14 @@ const MenuOverflowDown = "menu-overflow-down.png"
 
 class Dock extends React.Component {
 
+    componentDidMount() {
+        console.log("componentDidMount() called")
+    }
+
+    componentDidUpdate() {
+        console.log("componentDidUpdate() called")
+    }
+
     constructor(props) {
         super(props);
         this.state = {
@@ -172,7 +180,7 @@ class Dock extends React.Component {
             <img onClick={this.props.menu} className="menu-overflow-svg" src={MenuOverflowUp} alt="some" />
             </div>
             
-            <img onClick={this.props.nav} className="nav-svg" src="/nav.svg" alt="some" />
+            <img onClick={this.props.nav} className="nav-svg" src="/earth2.png" alt="some" />
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
             <div onClick={ this.soundContainerClicked } className="sound-container">

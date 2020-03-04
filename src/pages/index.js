@@ -27,6 +27,14 @@ let consumer = "/Consumer.png"
 let business = "/Business.png"
 
 export default class Index extends React.Component {
+    componentDidMount() {
+        console.log("index.js componentDidMount() called")
+    }
+
+    componentDidUpdate() {
+        console.log("index.js componentDidUpdate() called")
+    }
+
     state = {
         soundBoolean: false,
         balloonBoolean: false,
@@ -84,14 +92,14 @@ export default class Index extends React.Component {
         this.setState({navBoolean: !this.state.navBoolean})
         if (this.state.navBoolean) { 
             let nav = document.querySelector(".nav")
-            nav.style.display = "inline"
+            nav.style.display = "flex"
             let mainContainer = document.querySelector(".main-container")
             mainContainer.style.display = "none"
-        } else if (!this.state.menuBoolean) {
+        } else if (!this.state.navBoolean) {
             let nav = document.querySelector(".nav")
             nav.style.display = "none"
             let mainContainer = document.querySelector(".main-container")
-            mainContainer.style.display = "inline"
+            mainContainer.style.display = "flex"
         }
     }
 
@@ -102,13 +110,15 @@ export default class Index extends React.Component {
     <div className="parent">
     <div className="child">
     <Dock nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
-          
+        
+    <div className="main-container">
     <div className="business">
     <Business></Business>
     </div>
 
     <div className="consumer">
     <Consumer></Consumer>
+    </div>
     </div>
     
     <div className="menu">
@@ -123,6 +133,10 @@ export default class Index extends React.Component {
     </div>
 
     <style jsx>{` 
+
+    .main-container {
+        display: flex;
+    }
 
     .mock-image { 
         height:1536px;

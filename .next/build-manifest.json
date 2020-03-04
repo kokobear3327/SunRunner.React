@@ -26,6 +26,10 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/tree": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

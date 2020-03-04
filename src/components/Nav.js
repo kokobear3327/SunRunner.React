@@ -48,14 +48,11 @@ export default class Nav extends React.Component {
     <Layout>
     <div className="parent">
     <div className="child">
-    <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
-    <source src="/Tree.mp4" type="video/mp4"></source>
-    </video>
+            <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
+        <source src="/Tree.mp4" type="video/mp4"></source>
+        </video>
     <div className="menu-buttons">
     <TreeButton></TreeButton>
-    <MedicalInfoButton></MedicalInfoButton>
-    <DoctorsButton></DoctorsButton>
-    <LawyersButton></LawyersButton>
     </div>
     </div>
     <div>
