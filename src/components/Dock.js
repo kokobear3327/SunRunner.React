@@ -217,6 +217,7 @@ class Dock extends React.Component {
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-left: 31px;
         }
         
         .dock-panel {

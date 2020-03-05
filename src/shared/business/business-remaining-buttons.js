@@ -12,7 +12,7 @@ import RemainingButtons from './remaining-buttons';
 export default function BusinessRemainingButtons() {
 
     return (
-        <div class="business-remaining-buttons-parent">
+        <div className="business-remaining-buttons-parent">
             <CapexButton></CapexButton>
             <LaborButton></LaborButton>
             <OperationsButton></OperationsButton>

@@ -6,7 +6,7 @@ import React from 'react'
 export default function ProductsButtons() {
 
     return (
-        <div class="goods-button-parent">
+        <div className="goods-button-parent">
             <GoodsButton></GoodsButton>
             <ServicesButton></ServicesButton>
         </div>

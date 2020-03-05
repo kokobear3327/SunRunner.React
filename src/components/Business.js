@@ -6,6 +6,7 @@ import TreeButton from '../shared/tree-button/tree-button';
 import MedicalInfoButton from '../shared/medical-info-button/medical-info-button';
 import DoctorsButton from '../shared/doctors-button/doctors-button';
 import LawyersButton from '../shared/lawyers-button/lawyers-button';
+import BusinessRemainingButtons from '../shared/business/business-remaining-buttons';
 // import LegalInfoButton from '../shared/legal-info-button/legal-info-button'
 // import ReviewsButton from '../shared/reviews-button/reviews-button';
 // import NewsButton from '../shared/news-button/news-button';
@@ -62,7 +63,11 @@ export default class Business extends React.Component {
     <div className="parent">
     <div className="child">
     <img className="image" src={ business } alt="text" />
-    
+    <div className="business-button-container">
+    <TreeButton></TreeButton>
+    <MedicalInfoButton></MedicalInfoButton>
+    <BusinessRemainingButtons></BusinessRemainingButtons>
+    </div>
     </div>
     <style jsx>{` 
     .parent {
@@ -79,6 +84,7 @@ export default class Business extends React.Component {
     .image {
         width: 1536px;
         height: 2048px;
+        margin-left: 839px;
     }
   `}</style>
   </div>

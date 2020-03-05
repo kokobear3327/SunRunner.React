@@ -11,7 +11,7 @@ function TreeButton() {
     }
     return (
         <div className="tree-button-parent">
-        <Link href="/tree"><button onClick={handleClick} className="tree-button">Tree of Knowledge</button></Link>
+        <button onClick={handleClick} className="tree-button">Tree of Knowledge</button>
         </div>
     );
   }
