@@ -75,6 +75,7 @@ export default class Business extends React.Component {
         align-items: center;
         justify-content: center;
         padding-bottom:60px;
+        overflow-y: none;
 
     }
     
@@ -113,16 +114,3 @@ Business.getInitialProps = async function() {
 //     vid.play()
 // }
 
-// <TreeButton></TreeButton>
-// <MedicalInfoButton></MedicalInfoButton>
-// <DoctorsButton></DoctorsButton>
-// <LawyersButton></LawyersButton>
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>

@@ -52,9 +52,6 @@ export default class Menu extends React.Component {
     </div>
     </div>
     <style jsx>{` 
-    .menu-buttons {
-        visibility: hidden;
-    }
 
     .parent {
         display: flex;

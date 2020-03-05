@@ -2,23 +2,11 @@ import Fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import Dock from '../components/Dock';
 import React from 'react';
-import TreeButton from '../shared/tree-button/tree-button';
-import MedicalInfoButton from '../shared/medical-info-button/medical-info-button';
-import DoctorsButton from '../shared/doctors-button/doctors-button';
-import LawyersButton from '../shared/lawyers-button/lawyers-button';
-// import LegalInfoButton from '../shared/legal-info-button/legal-info-button'
-// import ReviewsButton from '../shared/reviews-button/reviews-button';
-// import NewsButton from '../shared/news-button/news-button';
-// import InvestmentsButton from '../shared/investments-button/investments-button';
-// import DashboardButton from '../shared/dashboard-button/dashboard-button';
-// import ProductsButtons from '../shared/products-buttons/products-buttons';
-// import MessagingButtons from '../shared/messaging-buttons/messaging-buttons';
-// import ConsumerFinancialsButtons from '../shared/consumer-financials-buttons/consumer-financials-buttons';
-// import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
 import Business from '../components/Business';
 import Consumer from '../components/Consumer';
 import Menu from '../components/Menu';
 import Nav from '../components/Nav';
+import BalloonWrench from '../components/BalloonWrench';
 
 // So you want it to conditionally render the consumer or business component contingent on whether business is true
 // Same with the dock
@@ -37,7 +25,7 @@ export default class Index extends React.Component {
 
     state = {
         soundBoolean: false,
-        balloonBoolean: false,
+        balloonBoolean: true,
         panelOpen: false,
         businessBoolean: true,
         menuBoolean: true,
@@ -55,15 +43,13 @@ export default class Index extends React.Component {
         this.setState({businessBoolean: !this.state.businessBoolean})
         console.log("parent businessBoolean State changed:" + this.state.businessBoolean)
         if (this.state.businessBoolean) {
-            console.log("True logged")
             let business = document.querySelector(".business")
-            business.style.display = "inline"
+            business.style.display = "flex"
         let consumer = document.querySelector(".consumer")
         consumer.style.display = "none"
         } else if (!this.state.businessBoolean) {
-            console.log("false logged")
             let consumer = document.querySelector(".consumer")
-            consumer.style.display = "inline"
+            consumer.style.display = "flex"
             let business = document.querySelector(".business")
             business.style.display = "none"
         }
@@ -103,13 +89,28 @@ export default class Index extends React.Component {
         }
     }
 
+    balloonFunction = () => {
+        this.setState({balloonBoolean: !this.state.balloonBoolean})
+        if (this.state.balloonBoolean) { 
+            let balloon = document.querySelector(".balloon")
+            balloon.style.display = "flex"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "none"
+        } else if (!this.state.balloonBoolean) {
+            let balloon = document.querySelector(".balloon")
+            balloon.style.display = "none"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "flex"
+        }
+    }
+
 
     render() { 
         return (
     <Layout>
-    <div className="parent">
-    <div className="child">
-    <Dock nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
+    <div className="index-parent">
+    <div className="index-child">
+    <Dock balloon={this.balloonFunction} nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
         
     <div className="main-container">
     <div className="business">
@@ -120,13 +121,18 @@ export default class Index extends React.Component {
     <Consumer></Consumer>
     </div>
     </div>
-    
+    <div className="menu-container">
     <div className="menu">
     <Menu></Menu>
     </div>
-
+    </div>
+    
     <div className="nav">
     <Nav></Nav>
+    </div>
+
+    <div className="balloon">
+    <BalloonWrench></BalloonWrench>
     </div>
 
     </div>
@@ -134,32 +140,23 @@ export default class Index extends React.Component {
 
     <style jsx>{` 
 
-    .parent {
+    .index-parent {
         align-items: center;
         justify-content: center;
-        width: 1700px;
-        height: 2200px;
+        width: 1623px;
+        height: 2109px;
+        background-image: url('./iPadRim.png');
+        margin-top: 30px;
           }
     
     
-    .child {
-
+    .index-child {
+        justify-content: center;
     }
 
     .main-container {
         display: flex;
         justify-content: center;
-        margin-left: 29px;
-    }
-
-    .nav{
-        display: none;
-        margin-left: 21px;
-    }
-
-    .menu { 
-        display: none;
-        margin-left: 82px;
     }
 
     .consumer {
@@ -169,6 +166,22 @@ export default class Index extends React.Component {
     .business {
         display: none;
     }
+
+    .nav{
+        display: none;
+        margin-left: 30px;
+    }
+
+    .menu { 
+        display: none;
+        margin-left: 30px;
+    }
+
+    .balloon { 
+        display: none;
+        margin-left: 30px;
+    }
+
 
 
   `}</style>

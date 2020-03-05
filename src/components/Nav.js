@@ -1,13 +1,4 @@
-import Fetch from 'isomorphic-unfetch';
-import Layout from '../components/Layout';
 import React from 'react';
-import TreeButton from '../shared/tree-button/tree-button';
-import MedicalInfoButton from '../shared/medical-info-button/medical-info-button';
-import DoctorsButton from '../shared/doctors-button/doctors-button';
-import LawyersButton from '../shared/lawyers-button/lawyers-button';
-
-let consumer = "/Consumer.png"
-let business = "/Business.png"
 
 export default class Nav extends React.Component {
     state = {
@@ -19,6 +10,7 @@ export default class Nav extends React.Component {
     }
     constructor(props) {
         super(props);
+
     }
 
     businessClickedParent(value) {
@@ -35,7 +27,7 @@ export default class Nav extends React.Component {
 
     menuFunction = () => {
         this.setState({menuBoolean: !this.state.menuBoolean})
-        console.log("menu parent menuBoolean State changed")
+        console.log("parent menuBoolean State changed")
         if (this.state.menuBoolean) { 
             console.log("This menu" + this.state.menuBoolean)
             let child = document.querySelector(".image")
@@ -45,46 +37,35 @@ export default class Nav extends React.Component {
 
     render() { 
         return (
-    <div className="parent">
-    <div className="child">
-            <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
+    <div className="nav-parent">
+    <div className="nav-child">
+            <video preload="auto" autoPlay loop className="nav-video" width="1536" height="2048">
         <source src="/Tree.mp4" type="video/mp4"></source>
         </video>
-    <div className="menu-buttons">
-    <TreeButton></TreeButton>
 
     </div>
-    </div>
-
     <style jsx>{` 
-    .parent {
+    .nav-parent {
         height:2048px;
         width: 1536px;
-        padding-left: 60px;
-    }
-    
-    .child {
     }
 
-    .menu-buttons {
-        display: hidden;
-    }
-
-    .nav-video {
-        height: 1536;
-        width: 2048;
-    }
-
-    .image {
-        width: 1536px;
-        height: 2048px;
+    .nav-child {
+        margin-left: 13px;
     }
   `}</style>
-  </div>
+      </div>
         )
     }
 }
 
+Nav.getInitialProps = async function() {
+  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+  const data = await res.json();
 
+  return {
+    bpi: data.bpi
+  };
+}
 
 

@@ -191,7 +191,7 @@ class Dock extends React.Component {
             <img onClick={this.props.twirl} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
             </div>
             <div onClick={ this.balloonContainerClicked } className="balloon-container">
-            <img className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
+            <img onClick={this.props.balloon} className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
             </div>
             <img onClick={this.NextTemplateClicked} className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
             <img className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
@@ -217,7 +217,7 @@ class Dock extends React.Component {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 31px;
+
         }
         
         .dock-panel {
@@ -412,3 +412,6 @@ class Dock extends React.Component {
 
 //        <img onClick={this.DockClicked} className="right-hexagons" src="/hexagons.png" alt="some" />
 // <img onClick={this.DockClicked} className="left-hexagons" src="/hexagons.png" alt="some" />
+
+
+// margin-left: 29px;
