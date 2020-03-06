@@ -178,7 +178,7 @@ class Dock extends React.Component {
         <div className="dock-panel-parent">
         <div className="dock-panel" onClick={this.DockClicked}>
             <div className="search-bar-parent">
-                <img className="search-bar-png2" src="/SearchBar.png" alt="-" />
+                <img className="search-bar-png2" src="/Omnibar.png" alt="-" />
             </div>
             <div className="oea-title">
             <h4 className="oea-text">Omnibox Extension App</h4>
