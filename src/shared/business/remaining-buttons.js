@@ -25,7 +25,7 @@ import BusinessFinancialsButtons from '../business-financials-buttons/business-f
 export default function RemainingButtons() {
 
     return (
-        <div class="remaining-buttons-parent">
+        <div className="remaining-buttons-parent">
             <ApplicationsButton></ApplicationsButton>
             <ProjectsButton></ProjectsButton>
             <TemplatesButton></TemplatesButton>

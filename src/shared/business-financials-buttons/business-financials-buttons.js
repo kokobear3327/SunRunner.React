@@ -7,7 +7,7 @@ import React from 'react';
 export default function BusinessFinancialsButtons() {
 
     return (
-        <div class="business-financials-parent">
+        <div className="business-financials-parent">
             <IncomeButton></IncomeButton>
             <BalanceButton></BalanceButton>
             <FlowsButton></FlowsButton>

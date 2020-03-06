@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function NetworkOneButton() {
 
     return (
-        <div class="network-one-button-parent">
+        <div className="network-one-button-parent">
         <button className="network-one-button">Network 1</button>
         </div>
     );

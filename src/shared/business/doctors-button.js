@@ -6,7 +6,7 @@ import React from 'react'
 
 function DoctorsButton() {
     return (
-        <div class="business-doctors-button-container">
+        <div className="business-doctors-button-container">
         <button className="business-doctors-button">Doctors</button>
         </div>
     );

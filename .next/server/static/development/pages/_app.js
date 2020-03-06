@@ -124,12 +124,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_consumer_financials_buttons_balance_button_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_shared_consumer_financials_buttons_balance_button_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _shared_tree_button_tree_button_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/tree-button/tree-button.css */ "./src/shared/tree-button/tree-button.css");
 /* harmony import */ var _shared_tree_button_tree_button_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_shared_tree_button_tree_button_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _shared_medical_info_button_medical_info_button_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../shared/medical-info-button/medical-info-button.css */ "./src/shared/medical-info-button/medical-info-button.css");
-/* harmony import */ var _shared_medical_info_button_medical_info_button_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_shared_medical_info_button_medical_info_button_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/lawyers-button/lawyers-button.css */ "./src/shared/lawyers-button/lawyers-button.css");
-/* harmony import */ var _shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../shared/doctors-button/doctors-button.css */ "./src/shared/doctors-button/doctors-button.css");
-/* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../shared/lawyers-button/lawyers-button.css */ "./src/shared/lawyers-button/lawyers-button.css");
+/* harmony import */ var _shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/doctors-button/doctors-button.css */ "./src/shared/doctors-button/doctors-button.css");
+/* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "/Users/websites/Documents/OEA-Next/src/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -143,7 +141,6 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
-
 function MyApp({
   Component,
   pageProps
@@ -151,7 +148,7 @@ function MyApp({
   return __jsx(Component, _extends({}, pageProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }));
@@ -196,17 +193,6 @@ function MyApp({
 /*!******************************************************!*\
   !*** ./src/shared/lawyers-button/lawyers-button.css ***!
   \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./src/shared/medical-info-button/medical-info-button.css":
-/*!****************************************************************!*\
-  !*** ./src/shared/medical-info-button/medical-info-button.css ***!
-  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

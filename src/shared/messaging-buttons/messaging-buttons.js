@@ -6,7 +6,7 @@ import React from 'react';
 export default function MessagingButtons() {
 
     return (
-        <div class="messaging-buttons-parent">
+        <div className="messaging-buttons-parent">
             <MailboxButton></MailboxButton>
             <ComposeButton></ComposeButton>
         </div>

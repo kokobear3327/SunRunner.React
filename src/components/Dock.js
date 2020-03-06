@@ -186,7 +186,7 @@ class Dock extends React.Component {
             <div className="oea-content">
             <img className="back-button-svg" src="/back.svg"  alt="some" />
             <img className="forward-button-svg" src="/forward.svg" alt="some" />
-            <img className="iris-svg" src="/iris.svg" alt="some" />
+            <img onClick={this.props.iris} className="iris-svg" src="/iris.svg" alt="some" />
             <div id="twirl-container" onClick={this.twirlContainerClicked}>
             <img onClick={this.props.twirl} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
             </div>

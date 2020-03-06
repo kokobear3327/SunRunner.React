@@ -1,22 +1,20 @@
 import Fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import Dock from '../components/Dock';
-import React from 'react';
+import React, { useRef } from 'react';
 import Business from '../components/Business';
 import Consumer from '../components/Consumer';
 import Menu from '../components/Menu';
 import Nav from '../components/Nav';
+import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
 
-// So you want it to conditionally render the consumer or business component contingent on whether business is true
-// Same with the dock
-
-let consumer = "/Consumer.png"
-let business = "/Business.png"
-
 export default class Index extends React.Component {
+
+
+    
     componentDidMount() {
-        console.log("index.js componentDidMount() called")
+        
     }
 
     componentDidUpdate() {
@@ -29,16 +27,13 @@ export default class Index extends React.Component {
         panelOpen: false,
         businessBoolean: true,
         menuBoolean: true,
-        navBoolean: true
+        navBoolean: true,
+        irisBoolean: true
     }
     constructor(props) {
         super(props);
-
     }
 
-    businessClickedParent(value) {
-
-    }
     twirlFunction = () => {
         this.setState({businessBoolean: !this.state.businessBoolean})
         console.log("parent businessBoolean State changed:" + this.state.businessBoolean)
@@ -104,14 +99,29 @@ export default class Index extends React.Component {
         }
     }
 
+    irisFunction = () => {
+        this.setState({irisBoolean: !this.state.irisBoolean})
+        if (this.state.irisBoolean) {
+            let iris = document.querySelector(".iris")
+            iris.style.display = "flex"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "none"
+        } else if (!this.state.irisBoolean) {
+            let iris = document.querySelector(".iris")
+            iris.style.display = "none"
+            let mainContainer = document.querySelector(".main-container")
+            mainContainer.style.display = "flex"
+        }
+    }
+
 
     render() { 
         return (
     <Layout>
     <div className="index-parent">
     <div className="index-child">
-    <Dock balloon={this.balloonFunction} nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
-        
+    <Dock iris={this.irisFunction} balloon={this.balloonFunction} nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
+    <div className="balloon-cursor"></div>
     <div className="main-container">
     <div className="business">
     <Business></Business>
@@ -135,6 +145,10 @@ export default class Index extends React.Component {
     <BalloonWrench></BalloonWrench>
     </div>
 
+    <div className="iris">
+    <Iris></Iris>
+    </div>
+
     </div>
     </div>
 
@@ -144,7 +158,7 @@ export default class Index extends React.Component {
         align-items: center;
         justify-content: center;
         width: 1623px;
-        height: 2109px;
+        height: 2149px;
         background-image: url('./iPadRim.png');
         margin-top: 30px;
           }
@@ -152,6 +166,15 @@ export default class Index extends React.Component {
     
     .index-child {
         justify-content: center;
+    }
+
+    .balloon-cursor {
+        width: 33px;
+        height: 33px;
+        
+        position: absolute;
+        transform: translate(-50%, -50%);
+
     }
 
     .main-container {
@@ -179,6 +202,11 @@ export default class Index extends React.Component {
     }
 
     .balloon { 
+        display: none;
+        margin-left: 30px;
+    }
+
+    .iris { 
         display: none;
         margin-left: 30px;
     }
@@ -211,17 +239,3 @@ Index.getInitialProps = async function() {
 //     console.log(vid)
 //     vid.play()
 // }
-
-// <TreeButton></TreeButton>
-// <MedicalInfoButton></MedicalInfoButton>
-// <DoctorsButton></DoctorsButton>
-// <LawyersButton></LawyersButton>
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>

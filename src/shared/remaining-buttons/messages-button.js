@@ -4,7 +4,7 @@ import React from 'react'
 export default function MessagesButton() {
 
     return (
-        <div class="messages-button-parent">
+        <div className="messages-button-parent">
         <button className="messages-button">Messages</button>
         </div>
     );

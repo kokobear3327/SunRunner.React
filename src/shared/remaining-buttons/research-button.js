@@ -4,7 +4,7 @@ import React from 'react'
 export default function ResearchButton() {
 
     return (
-        <div class="research-button-parent">
+        <div className="research-button-parent">
         <button className="research-button">Research</button>
         </div>
     );

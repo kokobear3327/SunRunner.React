@@ -4,7 +4,7 @@ import React from 'react'
 export default function DriveButton() {
 
     return (
-        <div class="business-drive-button-parent">
+        <div className="business-drive-button-parent">
         <button className="business-drive-button">Drive</button>
         </div>
     );

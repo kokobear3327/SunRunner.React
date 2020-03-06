@@ -1,6 +1,17 @@
 import Head from 'next/head';
+import React, { useRef, useEffect } from 'react';
+import AppJS from '../components/js/app';
 
-const Layout = (props) => (
+const Layout = (props) => {
+  const instance = useRef(null);
+
+  useEffect(() => {
+
+  })
+
+
+    return (
+
   <div>
     <Head>
       <title>OEA</title>
@@ -9,6 +20,7 @@ const Layout = (props) => (
     <div className="highest-parent">
       {props.children}
     </div>
+    <div ref={instance}/>
     <style jsx>{`
         .highest-parent {
             display: flex;
@@ -19,9 +31,10 @@ const Layout = (props) => (
         }
     `}
     
-    
     </style>
   </div>
-);
+
+    )
+  };
 
 export default Layout;

@@ -6,7 +6,7 @@ import React from 'react'
 
 function MedicalInfoButton() {
     return (
-        <div class="business-medical-info-container">
+        <div className="business-medical-info-container">
         <button className="business-medical-info">Medical Info</button>
         </div>
     );

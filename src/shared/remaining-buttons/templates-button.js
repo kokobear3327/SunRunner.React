@@ -4,7 +4,7 @@ import React from 'react'
 export default function TemplatesButton() {
 
     return (
-        <div class="templates-button-parent">
+        <div className="templates-button-parent">
         <button className="templates-button">Templates</button>
         </div>
     );

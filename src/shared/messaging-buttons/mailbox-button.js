@@ -4,7 +4,7 @@ import React from 'react'
 export default function MailboxButton() {
 
     return (
-        <div class="mailbox-button-parent">
+        <div className="mailbox-button-parent">
         <button className="mailbox-button">Mailbox</button>
         </div>
     );

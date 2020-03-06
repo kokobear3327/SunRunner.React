@@ -5,7 +5,7 @@ import React from 'react'
 export default function NetworkTwoButton() {
 
     return (
-        <div class="business-network-two-button-parent">
+        <div className="business-network-two-button-parent">
         <button className="business-network-two-button">Network 2</button>
         </div>
     );
