@@ -5,16 +5,18 @@
 }
 
 .flows-button {
-    width: 10px;
+    width: 100px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  700px;
-    bottom: 1500px;
-    background-color: black;
+    left:  592px;
+    bottom: 1439px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

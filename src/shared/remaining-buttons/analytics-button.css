@@ -5,16 +5,18 @@
 }
 
 .analytics-button {
-    width: 100px;
+    width: 121px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    right:  584px;
-    bottom: 1260px;
+    right:  757px;
+    bottom: 1220px;
     background-color: black;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

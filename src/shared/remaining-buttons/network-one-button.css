@@ -10,11 +10,17 @@
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
-    right: 10px;
+    right: 140px;
     position: relative;
-    bottom: 2110px;
-    background-color: black;
+    bottom: 2050px;
+    background-color: transparent;
     color: white;
     border:black;
     white-space: nowrap;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

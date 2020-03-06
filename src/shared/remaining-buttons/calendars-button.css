@@ -5,16 +5,18 @@
 }
 
 .calendars-button {
-    width: 100px;
+    width: 150px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  128px;
-    bottom:1080px;
-    background-color: black;
+    right:  90px;
+    bottom: 1028px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

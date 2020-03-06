@@ -161,6 +161,7 @@ export default class Index extends React.Component {
 
     .consumer {
         display: flex;
+        margin-left: 312px;
     }
 
     .business {

@@ -6,13 +6,16 @@
 
 .legal-info {
     position: relative;
-    bottom: 580px;
+    bottom: 530px;
     font-family: Montserrat;
     color: white;
-    left: 320px;
+    left: 150px;
     font-size: 25px;
     padding-left: 10px;
-    background-color: black;
+    background-color: transparent;
     color: white;
     border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

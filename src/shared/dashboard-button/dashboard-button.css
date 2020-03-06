@@ -9,10 +9,13 @@
     font-size: 25px;
     padding-left: 30px;
     position: relative;
-    left: 1px;
-    bottom: 2086px;
-    background-color: black;
+    right: 160px;
+    bottom: 2020px;
+    background-color: transparent;
     color: white;
     border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 

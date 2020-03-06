@@ -88,12 +88,12 @@ export default class Consumer extends React.Component {
     </div>
     </div>
     <style jsx>{` 
-    .parent {
+    parent {
         height:2048px;
         width: 1536px;
     }
     
-    .child {
+    child {
     }
 
 
@@ -103,7 +103,7 @@ export default class Consumer extends React.Component {
 
     .tree-button-container {}
 
-    .image {
+    image {
         width: 1536px;
         height: 2048px;
     }

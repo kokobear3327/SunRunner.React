@@ -54,6 +54,27 @@
         position: absolute;
         left: 523px;
     }
+.medical-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medical-info {
+    width: 187px;
+    height: 45px;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 25px;
+    right: 452px;
+    bottom: 399px;
+    background-color: black;
+    color: white;
+    border: black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .business-remaining-buttons-parent {
     display: flex;
 }
@@ -668,15 +689,18 @@ justify-content: center;
 
 .legal-info {
     position: relative;
-    bottom: 580px;
+    bottom: 530px;
     font-family: Montserrat;
     color: white;
-    left: 320px;
+    left: 150px;
     font-size: 25px;
     padding-left: 10px;
-    background-color: black;
+    background-color: transparent;
     color: white;
     border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .reviews-button-parent {
     display: flex;
@@ -691,12 +715,16 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    right: 276px;
-    bottom: 1382px;
+    right: 432px;
+    bottom: 1317px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .news-button-parent {
     display: flex;
@@ -711,12 +739,16 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left: 283px;
-    bottom: 1450px;
+    left: 116px;
+    bottom: 1370px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .investments-button-parent {
     display: flex;
@@ -726,15 +758,18 @@ justify-content: center;
     
     .investments-button {
         position: relative;
-        bottom: 957px;
+        bottom: 892px;
         font-family: Montserrat;
         color: white;
-        left: 9px;
         font-size: 25px;
-        padding-left: 10px;
+        right: 152px;
         background-color: black;
         color: white;
         border:black;
+        white-space: nowrap;
+        background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 .dashboard-button-container {
     display: flex;
@@ -747,11 +782,14 @@ justify-content: center;
     font-size: 25px;
     padding-left: 30px;
     position: relative;
-    left: 1px;
-    bottom: 2086px;
-    background-color: black;
+    right: 160px;
+    bottom: 2020px;
+    background-color: transparent;
     color: white;
     border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -768,12 +806,16 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    right:  60px;
-    bottom: 1723px;
-    background-color: black;
+    right: 160px;
+    bottom: 1663px;
+    background-color: transparent;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .services-button-parent {
     display: flex;
@@ -782,18 +824,22 @@ justify-content: center;
 }
 
 .services-button {
-    width: 10px;
+    width: 143px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 10px;
     height: 45px;
     position: relative;
-    right: 34px;
-    bottom: 1723px;
+    right: 144px;
+    bottom: 1663px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .messaging-buttons-parent {
     display: flex;
@@ -811,12 +857,16 @@ justify-content: center;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  121px;
-    bottom: 1418px;
+    left:  95px;
+    bottom: 1363px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .compose-button-parent {
     display: flex;
@@ -825,18 +875,22 @@ justify-content: center;
 }
 
 .compose-button {
-    width: 100px;
+    width: 120px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 4px;
     height: 45px;
     position: relative;
-    left:  148px;
-    bottom: 1418px;
+    left:  112px;
+    bottom: 1363px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .consumer-financials-parent {
     display: flex;
@@ -854,12 +908,15 @@ justify-content: center;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  648px;
-    bottom: 1500px;
+    left:  650px;
+    bottom: 1439px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .balance-button-parent {
     display: flex;
@@ -868,18 +925,20 @@ justify-content: center;
 }
 
 .balance-button {
-    width: 10px;
+    width: 100px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
     left:  614px;
-    bottom: 1377px;
-    background-color: black;
+    bottom: 1312px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .tree-button-parent {
     display: flex;
@@ -894,30 +953,16 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left: 5px;
-    bottom: 286px;
+    right: 160px;
+    bottom: 209px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
-}
-.medical-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.medical-info {
-    width: 187px;
-    height: 45px;
-    position: relative;
-    font-family: Montserrat;
-    font-size: 25px;
-    right: 292px;
-    bottom: 470px;
-    background-color: black;
-    color: white;
-    border: black;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .lawyers-button-parent {
 display: flex;
@@ -927,15 +972,18 @@ justify-content: center;
 
 .lawyers-button {
     position: relative;
-    bottom: 693px;
+    bottom: 623px;
     font-family: Montserrat;
     color: white;
-    left:260px;
+    left:100px;
     font-size: 25px;
     padding-left: 10px;
-    background-color: black;
+    background-color: transparent;
     color: white;
     border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .doctors-button-container {
     display: flex;
@@ -948,11 +996,14 @@ justify-content: center;
     font-size: 25px;
     padding-left: 30px;
     position: relative;
-    right: 240px;
-    bottom: 645px;
+    right: 403px;
+    bottom: 582px;
     background-color: black;
     color: white;
     border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -963,18 +1014,20 @@ justify-content: center;
 }
 
 .flows-button {
-    width: 10px;
+    width: 100px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  700px;
-    bottom: 1500px;
-    background-color: black;
+    left:  592px;
+    bottom: 1439px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .remaining-buttons-parent {
     display: flex;
@@ -986,18 +1039,20 @@ justify-content: center;
 }
 
 .applications-button {
-    width: 100px;
+    width: 160px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  170px;
-    bottom: 1078px;
+    left:  130px;
+    bottom: 1028px;
     background-color: black;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .projects-button-parent {
     display: flex;
@@ -1012,12 +1067,14 @@ justify-content: center;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  960px;
-    bottom: 1404px;
-    background-color: black;
+    left:  860px;
+    bottom: 1358px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .templates-button-parent {
     display: flex;
@@ -1026,18 +1083,22 @@ justify-content: center;
 }
 
 .templates-button {
-    width: 120px;
+    width: 160px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left:  210px;
-    bottom: 1414px;
-    background-color: black;
+    left:  128px;
+    bottom: 1364px;
+    background-color: transparent;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .drive-button-parent {
     display: flex;
@@ -1052,12 +1113,14 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    right:  190px;
-    bottom: 1920px;
-    background-color: black;
+    right:  305px;
+    bottom: 1870px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .network-one-button-parent {
     display: flex;
@@ -1071,13 +1134,19 @@ justify-content: center;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
-    right: 10px;
+    right: 140px;
     position: relative;
-    bottom: 2110px;
-    background-color: black;
+    bottom: 2050px;
+    background-color: transparent;
     color: white;
     border:black;
     white-space: nowrap;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .network-two-button-parent {
     display: flex;
@@ -1086,19 +1155,24 @@ justify-content: center;
 }
 
 .network-two-button {
-    width: 120px;
+    width: 129px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    background-color: black;
     color: white;
     border:black;
     text-decoration: none;
-    right: 110px;
-    bottom: 1960px;
+    right: 240px;
+    bottom: 1900px;
     white-space: nowrap;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .wall-one-button-parent {
     display: flex;
@@ -1113,12 +1187,15 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left:  330px;
-    bottom: 2093px;
-    background-color: black;
+    left:  185px;
+    bottom: 2038px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .wall-two-button-parent {
     display: flex;
@@ -1133,12 +1210,16 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left: 147px;
-    bottom: 1950px;
+    left: 7px;
+    bottom: 1900px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .social-media-parent {
     display: flex;
@@ -1147,19 +1228,22 @@ justify-content: center;
 }
 
 .social-media-button {
-    width: 120px;
+    width: 160px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  30px;
-    bottom: 1250px;
-    background-color: black;
+    right:  115px;
+    bottom: 1200px;
+    background-color: transparent;
     color: white;
     border:black;
     text-decoration: none;
     white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .analytics-button-parent {
     display: flex;
@@ -1168,18 +1252,20 @@ justify-content: center;
 }
 
 .analytics-button {
-    width: 100px;
+    width: 121px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    right:  584px;
-    bottom: 1260px;
+    right:  757px;
+    bottom: 1220px;
     background-color: black;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .calendars-button-parent {
     display: flex;
@@ -1188,18 +1274,20 @@ justify-content: center;
 }
 
 .calendars-button {
-    width: 100px;
+    width: 150px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    left:  128px;
-    bottom:1080px;
-    background-color: black;
+    right:  90px;
+    bottom: 1028px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .phone-button-parent {
     display: flex;
@@ -1214,12 +1302,17 @@ justify-content: center;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    right:  40px;
-    bottom: 1504px;
-    background-color: black;
+    right:  300px;
+    bottom: 1450px;
     color: white;
     border:black;
     text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .messages-button-parent {
     display: flex;
@@ -1228,18 +1321,20 @@ justify-content: center;
 }
 
 .messages-button {
-    width: 100px;
+    width: 130px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    right:  5px;
-    bottom: 1504px;
-    background-color: black;
+    right:  278px;
+    bottom: 1450px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .research-button-parent {
     display: flex;
@@ -1254,12 +1349,17 @@ justify-content: center;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    right:  133px;
-    bottom: 1910px;
-    background-color: black;
+    right:  435px;
+    bottom: 1870px;
+    background-color: transparent;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 /*# sourceMappingURL=styles.chunk.css.map*/

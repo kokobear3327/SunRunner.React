@@ -5,17 +5,22 @@
 }
 
 .network-two-button {
-    width: 120px;
+    width: 129px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    background-color: black;
     color: white;
     border:black;
     text-decoration: none;
-    right: 110px;
-    bottom: 1960px;
+    right: 240px;
+    bottom: 1900px;
     white-space: nowrap;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

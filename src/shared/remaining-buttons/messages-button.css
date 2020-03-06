@@ -5,16 +5,18 @@
 }
 
 .messages-button {
-    width: 100px;
+    width: 130px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 2px;
     height: 45px;
     position: relative;
-    right:  5px;
-    bottom: 1504px;
-    background-color: black;
+    right:  278px;
+    bottom: 1450px;
+    background-color: transparent;
     color: white;
     border:black;
-    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

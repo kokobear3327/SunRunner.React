@@ -60,12 +60,10 @@ export default class Business extends React.Component {
 
     render() { 
         return (
-    <div className="parent">
-    <div className="child">
-    <img className="image" src={ business } alt="text" />
+    <div className="business-parent">
+    <div className="business-child">
+    <img className="business-image" src={ business } alt="text" />
     <div className="business-button-container">
-    <TreeButton></TreeButton>
-    <MedicalInfoButton></MedicalInfoButton>
     <BusinessRemainingButtons></BusinessRemainingButtons>
     </div>
     </div>
@@ -80,6 +78,11 @@ export default class Business extends React.Component {
     }
     
     .child {
+    }
+
+    .business-button-container {
+        bottom: 1870px;
+
     }
 
     .image {

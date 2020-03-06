@@ -11,10 +11,14 @@
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left: 147px;
-    bottom: 1950px;
+    left: 7px;
+    bottom: 1900px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

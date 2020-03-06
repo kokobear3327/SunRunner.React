@@ -5,16 +5,20 @@
 }
 
 .services-button {
-    width: 10px;
+    width: 143px;
     font-family: Montserrat;
     font-size: 25px;
     padding-left: 10px;
     height: 45px;
     position: relative;
-    right: 34px;
-    bottom: 1723px;
+    right: 144px;
+    bottom: 1663px;
     background-color: black;
     color: white;
     border:black;
     text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

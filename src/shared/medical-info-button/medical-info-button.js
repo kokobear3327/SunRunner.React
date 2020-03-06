@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './medical-info-button.css'
 
 
 // So you would add an onclick event where the router would take you to the route specified. 
