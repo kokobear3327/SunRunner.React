@@ -99,7 +99,8 @@ export default class Consumer extends React.Component {
 
 
     .consumer-button-container {
-    
+        position:relative;
+        top:50px;
     }
 
     .tree-button-container {}

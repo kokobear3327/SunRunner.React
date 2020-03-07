@@ -6,20 +6,14 @@ export default class BalloonWrench extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            soundBoolean: false,
-            balloonBoolean: false,
-            panelOpen: false,
-            businessBoolean: false,
-            menuBoolean: false
-        }
+
     }
 
     componentDidMount() {
 
     let balloonCursor = document.querySelectorAll(".balloon-cursor");
     window.addEventListener("mousemove", cursor);
-    balloonCursor.item(0).style.display = "inline";
+    balloonCursor.item(0).style.display = "flex";
     
     function cursor(e) {
         balloonCursor.item(0).style.top = e.pageY + 'px';
@@ -50,7 +44,6 @@ export default class BalloonWrench extends React.Component {
         return (
     <div className="balloon-parent">
     <div className="balloon-child">
-    <img className="balloon-image" src={ balloon } alt="text" />
     <div className="balloon-cursor"><img src="/balloon-wrench.svg" alt="-"/></div>
     </div>
     <style jsx>{` 
@@ -66,11 +59,12 @@ export default class BalloonWrench extends React.Component {
     .balloon-image {
         width: 1536px;
         height: 2048px;
+        bottom: 2049px;
+        position: relative;
     }
 
     .balloon-cursor {
         position: absolute;
-        border-radius: 50%;
         transform: translate(-50%, -50%);
     }
 

@@ -9,7 +9,11 @@ import Nav from '../components/Nav';
 import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
 
+// balloonCursor.style.top = e.pageY + 'px';
+// balloonCursor.style.left = e.pageX + 'px';
+
 export default class Index extends React.Component {
+
 
     componentDidUpdate() {
         console.log("index.js componentDidUpdate() called")
@@ -81,15 +85,17 @@ export default class Index extends React.Component {
     balloonFunction = () => {
         this.setState({balloonBoolean: !this.state.balloonBoolean})
         if (this.state.balloonBoolean) { 
-            let balloon = document.querySelector(".balloon")
+            let balloon = document.querySelector(".balloon-cursor")
             balloon.style.display = "flex"
-            let mainContainer = document.querySelector(".main-container")
-            mainContainer.style.display = "none"
+            let balloonImage = document.querySelector(".balloon-image ")
+            balloonImage.style.display = "flex"
+            let indexParent = document.querySelector(".index-parent")
+            indexParent.style.cursor = "none"
         } else if (!this.state.balloonBoolean) {
-            let balloon = document.querySelector(".balloon")
+            let balloon = document.querySelector(".balloon-cursor")
             balloon.style.display = "none"
-            let mainContainer = document.querySelector(".main-container")
-            mainContainer.style.display = "flex"
+            let balloonImage = document.querySelector(".balloon-image ")
+            balloonImage.style.display = "none"
         }
     }
 
@@ -115,6 +121,7 @@ export default class Index extends React.Component {
     <div className="index-parent">
     <div className="index-child">
     <Dock iris={this.irisFunction} balloon={this.balloonFunction} nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
+    <div className="balloon-cursor"><img className="balloon-image" src="/balloon-wrench.svg" alt="-"/></div>
     <div className="main-container">
     <div className="business">
     <Business></Business>
@@ -159,6 +166,23 @@ export default class Index extends React.Component {
     
     .index-child {
         justify-content: center;
+    }
+
+    .balloon-cursor {
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 100;
+        pointer-events: none;
+    }
+
+    .balloon-cursor img {
+        display: none;
+        width: 33px;
+        height: 33px;
+        cursor: none;
+        pointer-events: none;
     }
 
     .main-container {
