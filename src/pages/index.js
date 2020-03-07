@@ -8,6 +8,7 @@ import Menu from '../components/Menu';
 import Nav from '../components/Nav';
 import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
+import MyProvider from '../components/js/MyProvider';
 
 // balloonCursor.style.top = e.pageY + 'px';
 // balloonCursor.style.left = e.pageX + 'px';

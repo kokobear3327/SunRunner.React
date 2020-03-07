@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const MyContext = React.createContext();","map":{"version":3,"sources":["/Users/websites/Documents/OEA-Next/src/components/js/App.js"],"names":["MyContext","React","createContext"],"mappings":"AAAA,OAAO,MAAMA,SAAS,GAAGC,KAAK,CAACC,aAAN,EAAlB","sourcesContent":["export const MyContext = React.createContext();"]},"metadata":{},"sourceType":"module"}

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React, { useRef, useEffect } from 'react';
-import AppJS from '../components/js/app';
+import AppJS from './js/App';
 
 const Layout = (props) => {
   const instance = useRef(null);

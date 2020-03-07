@@ -23,6 +23,14 @@ let consumer = "/Consumer.png"
 let business = "/Business.png"
 
 export default class Consumer extends React.Component {
+
+    componentDidMount() {
+        document.addEventListener("mouseover", function() {
+            let newsButton = document.querySelector(".news-button-container")
+        
+        })
+    }
+
     state = {
         soundBoolean: false,
         balloonBoolean: false,
@@ -72,7 +80,9 @@ export default class Consumer extends React.Component {
     <LawyersButton></LawyersButton>
     <LegalInfoButton></LegalInfoButton>
     <ReviewsButton></ReviewsButton>
+    <div className="news-button-container">
     <NewsButton></NewsButton>
+    </div>
     <InvestmentsButton></InvestmentsButton>
     <DashboardButton></DashboardButton>
     <ProductsButtons></ProductsButtons>
@@ -104,6 +114,12 @@ export default class Consumer extends React.Component {
     }
 
     .tree-button-container {}
+
+    .news-button-container {
+    }
+
+    .news-button-container:hover {
+    }
 
     .consumer-image {
         width: 1536px;
