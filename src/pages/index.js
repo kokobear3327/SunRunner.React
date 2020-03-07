@@ -96,6 +96,8 @@ export default class Index extends React.Component {
             balloon.style.display = "none"
             let balloonImage = document.querySelector(".balloon-image ")
             balloonImage.style.display = "none"
+            let indexParent = document.querySelector(".index-parent")
+            indexParent.style.cursor = "default"
         }
     }
 

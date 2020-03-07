@@ -84,6 +84,11 @@ export default class Business extends React.Component {
         position: relative;
         margin-left: 838px;
     }
+
+    .business-button-container {
+        padding-top: 80px;
+        padding-left: 4px;
+    }
   `}</style>
   </div>
         )
