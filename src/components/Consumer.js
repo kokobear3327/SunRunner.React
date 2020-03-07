@@ -59,9 +59,9 @@ export default class Consumer extends React.Component {
 
     render() { 
         return (
-    <div className="parent">
-    <div className="child">
-    <img className="image" src={ consumer } alt="text" />
+    <div className="consumer-parent">
+    <div className="consumer-child">
+    <img className="consumer-image" src={ consumer } alt="text" />
     <div>
     <div className="consumer-button-container">
     <div className="tree-button-container">
@@ -88,12 +88,13 @@ export default class Consumer extends React.Component {
     </div>
     </div>
     <style jsx>{` 
-    parent {
+    .consumer-parent {
         height:2048px;
         width: 1536px;
+        padding-top: 14px;
     }
     
-    child {
+    .consumer-child {
     }
 
 
@@ -103,9 +104,10 @@ export default class Consumer extends React.Component {
 
     .tree-button-container {}
 
-    image {
+    .consumer-image {
         width: 1536px;
         height: 2048px;
+        position: relative;
     }
   `}</style>
       </div>

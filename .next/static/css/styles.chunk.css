@@ -695,7 +695,7 @@ justify-content: center;
     height: 45px;
     position: relative;
     right: 432px;
-    bottom: 1317px;
+    bottom: 1318px;
     background-color: black;
     color: white;
     border:black;
@@ -718,8 +718,8 @@ justify-content: center;
     padding-left: 20px;
     height: 45px;
     position: relative;
-    left: 116px;
-    bottom: 1370px;
+    left: 125px;
+    bottom: 1358px;
     background-color: black;
     color: white;
     border:black;
@@ -728,6 +728,7 @@ justify-content: center;
     background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: none;
 }
 .investments-button-parent {
     display: flex;

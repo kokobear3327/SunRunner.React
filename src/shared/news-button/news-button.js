@@ -5,7 +5,7 @@ export default function NewsButton() {
 
     return (
         <div className="news-button-parent">
-        <button className="news-button"><p>News</p></button>
+        <h1 className="news-button">News</h1>
         </div>
     );
   }

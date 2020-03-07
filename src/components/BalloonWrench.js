@@ -3,21 +3,30 @@ import React from 'react';
 let balloon = "/balloon-wrench-view.png"
 
 export default class BalloonWrench extends React.Component {
-    state = {
-        soundBoolean: false,
-        balloonBoolean: false,
-        panelOpen: false,
-        businessBoolean: false,
-        menuBoolean: false
-    }
+
     constructor(props) {
         super(props);
-
+        this.state = {
+            soundBoolean: false,
+            balloonBoolean: false,
+            panelOpen: false,
+            businessBoolean: false,
+            menuBoolean: false
+        }
     }
 
-    businessClickedParent(value) {
+    componentDidMount() {
 
+    let balloonCursor = document.querySelectorAll(".balloon-cursor");
+    window.addEventListener("mousemove", cursor);
+    balloonCursor.item(0).style.display = "inline";
+    
+    function cursor(e) {
+        balloonCursor.item(0).style.top = e.pageY + 'px';
+        balloonCursor.item(0).style.left = e.pageX + 'px';
     }
+    }
+
     twirlFunction = () => {
         this.setState({businessBoolean: !this.state.businessBoolean})
         console.log("parent businessBoolean State changed")
@@ -42,6 +51,7 @@ export default class BalloonWrench extends React.Component {
     <div className="balloon-parent">
     <div className="balloon-child">
     <img className="balloon-image" src={ balloon } alt="text" />
+    <div className="balloon-cursor"><img src="/balloon-wrench.svg" alt="-"/></div>
     </div>
     <style jsx>{` 
     .balloon-parent {
@@ -56,6 +66,18 @@ export default class BalloonWrench extends React.Component {
     .balloon-image {
         width: 1536px;
         height: 2048px;
+    }
+
+    .balloon-cursor {
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .balloon-cursor img {
+        width: 33px;
+        height: 33px;
+        cursor: none;
     }
 
 

@@ -68,27 +68,21 @@ export default class Business extends React.Component {
     </div>
     </div>
     <style jsx>{` 
-    .parent {
+    .business-parent {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-bottom:60px;
         overflow-y: none;
-
-    }
-    
-    .child {
-    }
-
-    .business-button-container {
-        bottom: 1870px;
+        position: relative;
 
     }
 
-    .image {
+    .business-image {
         width: 1536px;
         height: 2048px;
-        margin-left: 839px;
+        position: relative;
+        margin-left: 838px;
     }
   `}</style>
   </div>

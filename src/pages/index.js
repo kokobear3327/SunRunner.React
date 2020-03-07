@@ -9,26 +9,7 @@ import Nav from '../components/Nav';
 import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
 
-// balloonCursor.style.top = e.pageY + 'px';
-// balloonCursor.style.left = e.pageX + 'px';
-
 export default class Index extends React.Component {
-
-
-    
-    componentDidMount() {
-
-let balloonCursor = document.querySelectorAll(".balloon-cursor");
-window.addEventListener("mousemove", cursor);
-balloonCursor.item(0).style.display = "inline";
-
-function cursor(e) {
-    balloonCursor.item(0).style.top = e.pageY + 'px';
-    balloonCursor.item(0).style.left = e.pageX + 'px';
-    console.log(balloonCursor.item(0).style)
-    
-}
-    }
 
     componentDidUpdate() {
         console.log("index.js componentDidUpdate() called")
@@ -134,7 +115,6 @@ function cursor(e) {
     <div className="index-parent">
     <div className="index-child">
     <Dock iris={this.irisFunction} balloon={this.balloonFunction} nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
-    <div className="balloon-cursor"></div>
     <div className="main-container">
     <div className="business">
     <Business></Business>
@@ -179,15 +159,6 @@ function cursor(e) {
     
     .index-child {
         justify-content: center;
-    }
-
-    .balloon-cursor {
-        width: 33px;
-        height: 33px;
-        position: absolute;
-        border: 3px solid yellow;
-        border-radius: 50%;
-
     }
 
     .main-container {
