@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Dock from '../components/Dock';
-import React from 'react';
+import React, { useState } from 'react';
 import Business from '../components/Business';
 import Consumer from '../components/Consumer';
 import Menu from '../components/Menu';
@@ -17,11 +17,9 @@ const balloonWrench = "/balloon-wrench.svg";
 const balloonWrenchFilled = "/balloon-wrench-filled.svg"
 let isNews = false; 
 
-export default class Index extends React.Component {
-
+export default function Index() {
     
-
-    state = {
+    let theState = {
         soundBoolean: false,
         balloonBoolean: true,
         panelOpen: false,
@@ -30,15 +28,17 @@ export default class Index extends React.Component {
         navBoolean: true,
         irisBoolean: true
     }
+    const [state, setState] = useState(theState);
 
-    twirlFunction = () => {
-        this.setState({businessBoolean: !this.state.businessBoolean})
-        if (this.state.businessBoolean) {
+
+    const twirlFunction = () => {
+        setState({businessBoolean: !state.businessBoolean})
+        if (state.businessBoolean) {
             let business = document.querySelector(".business")
             business.style.display = "flex"
             let consumer = document.querySelector(".consumer")
             consumer.style.display = "none"
-        } else if (!this.state.businessBoolean) {
+        } else if (!state.businessBoolean) {
             let consumer = document.querySelector(".consumer")
             consumer.style.display = "flex"
             let business = document.querySelector(".business")
@@ -46,18 +46,18 @@ export default class Index extends React.Component {
         }
     }
 
-    soundFunction = () => {
-        this.setState({soundBoolean: !this.state.soundBoolean})
+    const soundFunction = () => {
+         setState({soundBoolean: !state.soundBoolean})
     }
 
-    menuFunction = () => {
-        this.setState({menuBoolean: !this.state.menuBoolean})
-        if (this.state.menuBoolean) { 
+    const menuFunction = () => {
+         setState({menuBoolean: !state.menuBoolean})
+        if ( state.menuBoolean) { 
             let menu = document.querySelector(".menu")
             menu.style.display = "flex"
             let mainContainer = document.querySelector(".main-container")
             mainContainer.style.display = "none"
-        } else if (!this.state.menuBoolean) {
+        } else if (!state.menuBoolean) {
             let menu = document.querySelector(".menu")
             menu.style.display = "none"
             let mainContainer = document.querySelector(".main-container")
@@ -65,14 +65,14 @@ export default class Index extends React.Component {
         }
     }
 
-    navFunction = () => {
-        this.setState({navBoolean: !this.state.navBoolean})
-        if (this.state.navBoolean) { 
+    const navFunction = () => {
+         setState({navBoolean: !state.navBoolean})
+        if ( state.navBoolean) { 
             let nav = document.querySelector(".nav")
             nav.style.display = "flex"
             let mainContainer = document.querySelector(".main-container")
             mainContainer.style.display = "none"
-        } else if (!this.state.navBoolean) {
+        } else if (!state.navBoolean) {
             let nav = document.querySelector(".nav")
             nav.style.display = "none"
             let mainContainer = document.querySelector(".main-container")
@@ -80,16 +80,16 @@ export default class Index extends React.Component {
         }
     }
 
-    balloonFunction = () => {
-        this.setState({balloonBoolean: !this.state.balloonBoolean})
-        if (this.state.balloonBoolean) { 
+    const balloonFunction = () => {
+         setState({balloonBoolean: !state.balloonBoolean})
+        if ( state.balloonBoolean) { 
             let balloon = document.querySelector(".balloon-cursor")
             balloon.style.display = "flex"
             let balloonImage = document.querySelector(".balloon-image ")
             balloonImage.style.display = "flex"
             let indexParent = document.querySelector(".index-parent")
             indexParent.style.cursor = "none"
-        } else if (!this.state.balloonBoolean) {
+        } else if (!state.balloonBoolean) {
             let balloon = document.querySelector(".balloon-cursor")
             balloon.style.display = "none"
             let balloonImage = document.querySelector(".balloon-image ")
@@ -99,14 +99,14 @@ export default class Index extends React.Component {
         }
     }
 
-    irisFunction = () => {
-        this.setState({irisBoolean: !this.state.irisBoolean})
-        if (this.state.irisBoolean) {
+    const irisFunction = () => {
+         setState({irisBoolean: !state.irisBoolean})
+        if ( state.irisBoolean) {
             let iris = document.querySelector(".iris")
             iris.style.display = "flex"
             let mainContainer = document.querySelector(".main-container")
             mainContainer.style.display = "none"
-        } else if (!this.state.irisBoolean) {
+        } else if (!state.irisBoolean) {
             let iris = document.querySelector(".iris")
             iris.style.display = "none"
             let mainContainer = document.querySelector(".main-container")
@@ -115,13 +115,12 @@ export default class Index extends React.Component {
     }
 
 
-    render() { 
         return (
             <Provider store={store}>
     <Layout>
     <div className="index-parent">
     <div className="index-child">
-    <Dock iris={this.irisFunction} balloon={this.balloonFunction} nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
+    <Dock iris={irisFunction} balloon={balloonFunction} nav={navFunction} twirl={twirlFunction} sound={ soundFunction } menu={menuFunction}></Dock>
     <div className="balloon-cursor"><img className="balloon-image" src={isNews ? balloonWrench : balloonWrenchFilled} alt="-"/></div>
     <div className="main-container">
     <div className="business">
@@ -227,25 +226,5 @@ export default class Index extends React.Component {
     </Provider>
         )
     }
-}
-
-Index.getInitialProps = async function() {
-  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-  const data = await res.json();
-
-  return {
-    bpi: data.bpi
-  };
-}
 
 
-// <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
-// <source src="/Tree.mp4" 
-//     type="video/mp4"></source>
-//   </video>
-
-// componentDidMount() {
-//     const vid = document.querySelector(".fullscreen-video")
-//     console.log(vid)
-//     vid.play()
-// }
