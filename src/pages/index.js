@@ -9,16 +9,16 @@ import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import allReducer from '../reducers';
+import allReducers from '../reducers';
 import { useSelector } from 'react-redux';
 
-const store = createStore(allReducer);
-const balloonWrench = "/balloon-wrench.svg";
-const balloonWrenchFilled = "/balloon-wrench-filled.svg"
-let isNews = false; 
+
 
 export default function Index() {
-    
+    const balloonWrench = "/balloon-wrench.svg";
+    const balloonWrenchFilled = "/balloon-wrench-filled.svg"
+    let isNewsBoolean = false; 
+    const store = createStore(allReducers);
     let theState = {
         soundBoolean: false,
         balloonBoolean: true,
@@ -29,6 +29,7 @@ export default function Index() {
         irisBoolean: true
     }
     const [state, setState] = useState(theState);
+
 
 
     const twirlFunction = () => {
@@ -121,7 +122,7 @@ export default function Index() {
     <div className="index-parent">
     <div className="index-child">
     <Dock iris={irisFunction} balloon={balloonFunction} nav={navFunction} twirl={twirlFunction} sound={ soundFunction } menu={menuFunction}></Dock>
-    <div className="balloon-cursor"><img className="balloon-image" src={isNews ? balloonWrench : balloonWrenchFilled} alt="-"/></div>
+    <div className="balloon-cursor"><img className="balloon-image" src={isNewsBoolean ? balloonWrenchFilled : balloonWrench} alt="-"/></div>
     <div className="main-container">
     <div className="business">
     <Business></Business>
