@@ -1,24 +1,21 @@
-import Fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import Dock from '../components/Dock';
-import React, { useRef } from 'react';
+import React from 'react';
 import Business from '../components/Business';
 import Consumer from '../components/Consumer';
 import Menu from '../components/Menu';
 import Nav from '../components/Nav';
 import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
-import MyProvider from '../components/js/MyProvider';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import allReducer from '../reducers';
 
-// balloonCursor.style.top = e.pageY + 'px';
-// balloonCursor.style.left = e.pageX + 'px';
+const store = createStore(allReducer);
+
 
 export default class Index extends React.Component {
 
-
-    componentDidUpdate() {
-        console.log("index.js componentDidUpdate() called")
-    }
 
     state = {
         soundBoolean: false,
@@ -29,18 +26,14 @@ export default class Index extends React.Component {
         navBoolean: true,
         irisBoolean: true
     }
-    constructor(props) {
-        super(props);
-    }
 
     twirlFunction = () => {
         this.setState({businessBoolean: !this.state.businessBoolean})
-        console.log("parent businessBoolean State changed:" + this.state.businessBoolean)
         if (this.state.businessBoolean) {
             let business = document.querySelector(".business")
             business.style.display = "flex"
-        let consumer = document.querySelector(".consumer")
-        consumer.style.display = "none"
+            let consumer = document.querySelector(".consumer")
+            consumer.style.display = "none"
         } else if (!this.state.businessBoolean) {
             let consumer = document.querySelector(".consumer")
             consumer.style.display = "flex"
@@ -120,6 +113,7 @@ export default class Index extends React.Component {
 
     render() { 
         return (
+            <Provider store={store}>
     <Layout>
     <div className="index-parent">
     <div className="index-child">
@@ -226,6 +220,7 @@ export default class Index extends React.Component {
 
   `}</style>
     </Layout>
+    </Provider>
         )
     }
 }

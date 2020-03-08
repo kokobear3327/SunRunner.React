@@ -6643,7 +6643,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../shared/doctors-button/doctors-button.css */ "./src/shared/doctors-button/doctors-button.css");
 /* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_7__);
 
-var _jsxFileName = "/Users/websites/Documents/OEA-Next/src/pages/_app.js";
+var _jsxFileName = "/Users/websites/Documents/OEA-Redux/src/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 // pages/_app.js
@@ -6676,7 +6676,7 @@ function MyApp({
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./");
-module.exports = __webpack_require__(/*! /Users/websites/Documents/OEA-Next/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
+module.exports = __webpack_require__(/*! /Users/websites/Documents/OEA-Redux/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
 
 
 /***/ }),

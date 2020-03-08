@@ -1,20 +1,28 @@
-import React from 'react';
-import MyProvider from '../../components/js/MyProvider';
-import { MyContext } from '../../components/js/App';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux'; 
+import { mousedOver } from '../../actions';
 
-export default class NewsButton extends React.Component {
 
-    componentDidMount() {
-        let newsButton = document.querySelector(".news-button")
-        newsButton.addEventListener("mouseover", () => {
-            console.log("Mouseover called")
+export default function NewsButton() {
 
-            newsButton.classList.add("news-hovered")
+    const worky = useSelector(state => state.isNews)
+    console.log(worky);
+    const dispatch = useDispatch();
+
+
+    useEffect(() => {
+    let newsButton = document.querySelector(".news-button")
+    newsButton.addEventListener("mouseover", () => {
+    newsButton.classList.add("news-hovered")
+    dispatch(mousedOver());
     
-        })
-    }
 
-    render() {
+    })
+
+    
+      });
+    
+
     return (
         <div className="news-button-parent">
                 <h1 className="news-button">News</h1>
@@ -61,4 +69,4 @@ export default class NewsButton extends React.Component {
         </div>
     );
   }
-}
+

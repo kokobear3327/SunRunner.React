@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/doctors-button/doctors-button.css */ "./src/shared/doctors-button/doctors-button.css");
 /* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/websites/Documents/OEA-Next/src/pages/_app.js";
+var _jsxFileName = "/Users/websites/Documents/OEA-Redux/src/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
