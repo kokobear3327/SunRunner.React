@@ -189,6 +189,12 @@ export default function Index() {
         pointer-events: none;
     }
 
+    .balloon-cursor-filled {
+        width: 42px;
+        height: 42px;
+        cursor: none;
+    }
+
     .main-container {
         display: flex;
         justify-content: center;
