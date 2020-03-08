@@ -1,20 +1,15 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux'; 
-import { mousedOver } from '../../actions';
+import { useDispatch } from 'react-redux'; 
+import { mousedOverNews } from '../../actions';
 
 
 export default function NewsButton() {
-
-    const worky = useSelector(state => state.isNews)
-    console.log(worky);
     const dispatch = useDispatch();
-
-
     useEffect(() => {
     let newsButton = document.querySelector(".news-button")
     newsButton.addEventListener("mouseover", () => {
     newsButton.classList.add("news-hovered")
-    dispatch(mousedOver());
+    dispatch(mousedOverNews());
     
 
     })

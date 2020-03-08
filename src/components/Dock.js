@@ -15,14 +15,6 @@ const MenuOverflowDown = "menu-overflow-down.png"
 
 class Dock extends React.Component {
 
-    componentDidMount() {
-        console.log("componentDidMount() called")
-    }
-
-    componentDidUpdate() {
-        console.log("componentDidUpdate() called")
-    }
-
     constructor(props) {
         super(props);
         this.state = {

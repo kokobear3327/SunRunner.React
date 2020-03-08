@@ -128,7 +128,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_shared_lawyers_button_lawyers_button_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/doctors-button/doctors-button.css */ "./src/shared/doctors-button/doctors-button.css");
 /* harmony import */ var _shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_shared_doctors_button_doctors_button_css__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/websites/Documents/OEA-Redux/src/pages/_app.js";
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../reducers */ "./src/reducers/index.js");
+var _jsxFileName = "/Users/websites/Documents/OEA/src/pages/_app.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -141,18 +146,105 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
+
+
+
+const store = Object(redux__WEBPACK_IMPORTED_MODULE_7__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_9__["default"]);
 function MyApp({
   Component,
   pageProps
 }) {
-  return __jsx(Component, _extends({}, pageProps, {
+  return __jsx(react_redux__WEBPACK_IMPORTED_MODULE_8__["Provider"], {
+    store: store,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     },
     __self: this
-  }));
+  }, __jsx(Component, _extends({}, pageProps, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  })));
 }
+
+/***/ }),
+
+/***/ "./src/reducers/index.js":
+/*!*******************************!*\
+  !*** ./src/reducers/index.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _isNews__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isNews */ "./src/reducers/isNews.js");
+/* harmony import */ var _isDashboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isDashboard */ "./src/reducers/isDashboard.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const allReducers = Object(redux__WEBPACK_IMPORTED_MODULE_2__["combineReducers"])({
+  isNews: _isNews__WEBPACK_IMPORTED_MODULE_0__["default"],
+  isDashboard: _isDashboard__WEBPACK_IMPORTED_MODULE_1__["default"]
+});
+/* harmony default export */ __webpack_exports__["default"] = (allReducers);
+
+/***/ }),
+
+/***/ "./src/reducers/isDashboard.js":
+/*!*************************************!*\
+  !*** ./src/reducers/isDashboard.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const isDashboard = (state = false, action) => {
+  switch (action.type) {
+    case 'MOUSED_OVER_DASHBOARD':
+      return state = true;
+
+    case 'MOUSED_OFF':
+      return state = false;
+
+    default:
+      return state = false;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (isDashboard);
+
+/***/ }),
+
+/***/ "./src/reducers/isNews.js":
+/*!********************************!*\
+  !*** ./src/reducers/isNews.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const isNews = (state = false, action) => {
+  switch (action.type) {
+    case 'MOUSED_OVER_NEWS':
+      return state = true;
+
+    case 'MOUSED_OFF':
+      return state = false;
+
+    default:
+      return state = false;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (isNews);
 
 /***/ }),
 
@@ -231,6 +323,28 @@ module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./src/pag
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ "redux":
+/*!************************!*\
+  !*** external "redux" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux");
 
 /***/ })
 

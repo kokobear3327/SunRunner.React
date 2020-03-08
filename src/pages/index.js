@@ -1,24 +1,28 @@
 import Layout from '../components/Layout';
 import Dock from '../components/Dock';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Business from '../components/Business';
 import Consumer from '../components/Consumer';
 import Menu from '../components/Menu';
 import Nav from '../components/Nav';
 import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import allReducers from '../reducers';
 import { useSelector } from 'react-redux';
 
-
+// useEffect(() => {
+//     console.log("useEffect:isNewsBoolean2:" + isNewsBoolean2)
+//     isNewsBoolean = isNewsBoolean2
+//       })
 
 export default function Index() {
     const balloonWrench = "/balloon-wrench.svg";
     const balloonWrenchFilled = "/balloon-wrench-filled.svg"
-    let isNewsBoolean = false; 
-    const store = createStore(allReducers);
+    let isNewsBoolean = useSelector(state => state.isNews)
+    let isDashboardBoolean = useSelector(state => state.isDashboard)
+    console.log("isNewsBoolean:" + isNewsBoolean)
+
+
+
     let theState = {
         soundBoolean: false,
         balloonBoolean: true,
@@ -117,12 +121,11 @@ export default function Index() {
 
 
         return (
-            <Provider store={store}>
     <Layout>
     <div className="index-parent">
     <div className="index-child">
     <Dock iris={irisFunction} balloon={balloonFunction} nav={navFunction} twirl={twirlFunction} sound={ soundFunction } menu={menuFunction}></Dock>
-    <div className="balloon-cursor"><img className="balloon-image" src={isNewsBoolean ? balloonWrenchFilled : balloonWrench} alt="-"/></div>
+    <div className="balloon-cursor"><img className="balloon-image" src={isNewsBoolean || isDashboardBoolean ? balloonWrenchFilled : balloonWrench} alt="-"/></div>
     <div className="main-container">
     <div className="business">
     <Business></Business>
@@ -224,7 +227,6 @@ export default function Index() {
 
   `}</style>
     </Layout>
-    </Provider>
         )
     }
 
