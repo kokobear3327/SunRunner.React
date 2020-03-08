@@ -19,9 +19,7 @@ export default function Index() {
     const balloonWrenchFilled = "/balloon-wrench-filled.svg"
     let isNewsBoolean = useSelector(state => state.isNews)
     let isDashboardBoolean = useSelector(state => state.isDashboard)
-    console.log("isNewsBoolean:" + isNewsBoolean)
-
-
+    const isFilled = isNewsBoolean || isDashboardBoolean
 
     let theState = {
         soundBoolean: false,
@@ -125,7 +123,7 @@ export default function Index() {
     <div className="index-parent">
     <div className="index-child">
     <Dock iris={irisFunction} balloon={balloonFunction} nav={navFunction} twirl={twirlFunction} sound={ soundFunction } menu={menuFunction}></Dock>
-    <div className="balloon-cursor"><img className="balloon-image" src={isNewsBoolean || isDashboardBoolean ? balloonWrenchFilled : balloonWrench} alt="-"/></div>
+    <div className="balloon-cursor"><img className="balloon-image" src={isFilled ? balloonWrenchFilled : balloonWrench} alt="-"/></div>
     <div className="main-container">
     <div className="business">
     <Business></Business>

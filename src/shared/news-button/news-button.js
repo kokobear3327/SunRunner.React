@@ -1,19 +1,20 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'; 
-import { mousedOverNews } from '../../actions';
+import { mousedOver, mousedOff } from '../../actions';
 
 
 export default function NewsButton() {
     const dispatch = useDispatch();
+    const news = "news";
     useEffect(() => {
-    let newsButton = document.querySelector(".news-button")
-    newsButton.addEventListener("mouseover", () => {
-    newsButton.classList.add("news-hovered")
-    dispatch(mousedOverNews());
-    
-
+        let newsButton = document.querySelector(".news-button")
+        newsButton.addEventListener("mouseover", () => {
+        newsButton.classList.add("news-hovered")
+        dispatch(mousedOver(news))})
+        newsButton.addEventListener("mouseleave", () => {
+        newsButton.classList.remove("news-hovered")
+        dispatch(mousedOff())
     })
-
     
       });
     
@@ -49,6 +50,7 @@ export default function NewsButton() {
                     -webkit-text-fill-color: transparent;
                     cursor: none;
                     transition: transform 1s;
+                    transition-timing-function: ease-out;
                 }
 
                 .news-hovered {
