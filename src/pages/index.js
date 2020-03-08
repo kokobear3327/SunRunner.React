@@ -10,12 +10,16 @@ import BalloonWrench from '../components/BalloonWrench';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import allReducer from '../reducers';
+import { useSelector } from 'react-redux';
 
 const store = createStore(allReducer);
-
+const balloonWrench = "/balloon-wrench.svg";
+const balloonWrenchFilled = "/balloon-wrench-filled.svg"
+let isNews = false; 
 
 export default class Index extends React.Component {
 
+    
 
     state = {
         soundBoolean: false,
@@ -118,7 +122,7 @@ export default class Index extends React.Component {
     <div className="index-parent">
     <div className="index-child">
     <Dock iris={this.irisFunction} balloon={this.balloonFunction} nav={this.navFunction} twirl={this.twirlFunction} sound={ this.soundFunction } menu={this.menuFunction} onClick={this.toggleDock}></Dock>
-    <div className="balloon-cursor"><img className="balloon-image" src="/balloon-wrench.svg" alt="-"/></div>
+    <div className="balloon-cursor"><img className="balloon-image" src={isNews ? balloonWrench : balloonWrenchFilled} alt="-"/></div>
     <div className="main-container">
     <div className="business">
     <Business></Business>
