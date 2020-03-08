@@ -19,6 +19,7 @@ export default function DashboardButton() {
                 let dashboardButton = document.querySelector('.dashboard-button');
                 let inputForDashboard = document.querySelector('.input-dashboard');
                 dashboardButton.innerHTML = inputForDashboard.value;
+                inputForDashboard.style.display = "none"
             }
             // do something
           });

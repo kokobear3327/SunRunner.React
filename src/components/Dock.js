@@ -214,11 +214,9 @@ class Dock extends React.Component {
         
         .dock-panel {
                 width: 1536px;
-                height: 76px;
+                height: 84px;
                 font-family: Montserrat;
                 font-size: 23px;
-                background-color: #000000;
-                background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
                 position: relative;
                 display: flex;
                 align-items: center;
@@ -227,7 +225,16 @@ class Dock extends React.Component {
                 color: #2FA4E7;
                 border: black;
                 z-index: 1;
-            } 
+            background: linear-gradient(270deg, #000000, #29292c);
+            background-size: 400% 400%;
+            animation: AnimationName 23s ease-in-out infinite;
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+        }
         
             .search-bar-parent {
                 pointer-events: none;
@@ -262,7 +269,7 @@ class Dock extends React.Component {
                 position: relative;
                 width: 1507px;
                 height: 76px;
-                top:13px;
+                top:8.5px;
                 right: 1513px;
             }
 
