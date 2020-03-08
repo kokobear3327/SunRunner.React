@@ -2,11 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'; 
 import { mousedOver, mousedOff } from '../../actions';
 
-// .dashboard-hovered {
-//     cursor: none;
-//     transform: scale(1.23);
-// }
-
 
 export default function DashboardButton() {
     const dispatch = useDispatch();
@@ -72,6 +67,10 @@ export default function DashboardButton() {
     transition-timing-function: ease-out;
 }
 
+.dashboard-hovered {
+    cursor: none;
+    transform: scale(1.23);
+}
 
 
 .input-dashboard {

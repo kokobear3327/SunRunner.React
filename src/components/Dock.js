@@ -39,6 +39,7 @@ class Dock extends React.Component {
         title.style.display = "none"
         let content = document.querySelector(".oea-content")
         content.style.display = "flex"
+        console.log("Dock not clicked");
         } else {
             let title = document.querySelector(".oea-title")
             title.style = "flex"
@@ -213,33 +214,33 @@ class Dock extends React.Component {
         }
         
         .dock-panel {
-                width: 1536px;
-                height: 84px;
-                font-family: Montserrat;
-                font-size: 23px;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                top: 161px;
-                color: #2FA4E7;
-                border: black;
-                z-index: 1;
+            pointer-events: all;
+            width: 1536px;
+            height: 84px;
+            font-family: Montserrat;
+            font-size: 23px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 161px;
+            color: #2FA4E7;
+            border: black;
+            z-index: 100;
             background: linear-gradient(270deg, #000000, #29292c);
             background-size: 400% 400%;
             animation: AnimationName 23s ease-in-out infinite;
 
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+            }
         }
         
             .search-bar-parent {
                 pointer-events: none;
                 justifty-items: center;
-                position: relat;
             }
         
             .search-bar-png2 {
@@ -255,6 +256,7 @@ class Dock extends React.Component {
             .oea-text {
                 font-family: Montserrat;
                 font-size: 38px;
+                transform: scale(0.9);
                 bottom: 7px;
                 position: absolute;                
                 background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
@@ -269,19 +271,19 @@ class Dock extends React.Component {
                 position: relative;
                 width: 1507px;
                 height: 76px;
-                top:8.5px;
+                top: 10px;
                 right: 1513px;
             }
 
 
             .back-button-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
             }
             .forward-button-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 left: 76px;
             }
@@ -294,80 +296,80 @@ class Dock extends React.Component {
             }
 
             .previous-template-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 left:410px;
             }
             
             .balloon-wrench-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 left:492px;
             }        
 
             .nav-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                  
                 left: 574px;
             }
             
             .menu-overflow-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 left:656px;
             }
 
             .twirl-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 left: 738px;
             }
 
             .history-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 left:820px;
             }
         
             .iris-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 left:902px;
             }
 
             .sound-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                  
                 left: 984px;
             }
 
             .next-template-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
-                left:1066px;
+                left:1062px;
             }
 
             .right-hexagons {
-                height: 66px;
+                height: 62px;
                 width: 260px;
                 position: absolute;
                 left: 1148px;
             }
 
             .snake-svg {
-                height: 66px;
-                width: 66px;
+                height: 62px;
+                width: 62px;
                 position: absolute;
                 
                 left: 1420px;

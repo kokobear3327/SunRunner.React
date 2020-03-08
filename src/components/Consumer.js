@@ -69,7 +69,10 @@ export default class Consumer extends React.Component {
         return (
     <div className="consumer-parent">
     <div className="consumer-child">
+    <div className="consumer-image-container">
     <img className="consumer-image" src={ consumer } alt="text" />
+    <div className="consumer-image-background"></div>
+    </div>
     <div>
     <div className="consumer-button-container">
     <div className="tree-button-container">
@@ -107,6 +110,12 @@ export default class Consumer extends React.Component {
     .consumer-child {
     }
 
+    .consumer-image {
+        top: 60px;
+        position: relative;
+        z-index: 1;
+    }
+
 
     .consumer-button-container {
         position:relative;
@@ -121,11 +130,31 @@ export default class Consumer extends React.Component {
     .news-button-container:hover {
     }
 
-    .consumer-image {
+
+    .consumer-image-container {
+
+    }
+
+    .consumer-image-background {
         width: 1536px;
         height: 2048px;
-        position: relative;
+        position: absolute;
+        background: linear-gradient(270deg, #000000, #020313);
+        background-size: 400% 400%;
+        animation: AnimationName 2s ease-in-out infinite;
+        bottom: 510px;
+        z-index:0;
+        left: 985px;
+        bottom: 477px;
+
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+}
     }
+
+
   `}</style>
       </div>
         )
@@ -140,7 +169,7 @@ Consumer.getInitialProps = async function() {
     bpi: data.bpi
   };
 }
-
+// #020313
 // <LegalInfoButton></LegalInfoButton>
 // <ReviewsButton></ReviewsButton>
 // <NewsButton></NewsButton>
