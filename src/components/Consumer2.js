@@ -72,8 +72,14 @@ export default class Consumer2 extends React.Component {
     </div>
     <div>
     <div className="consumer-button-container">
-    <div className="tree-button-container2">
+
+    <div className="tree-parent">
+    <div className="tree-icon">
+    </div>
+    <div className="tree-button">
     <TreeButton></TreeButton>
+    </div>
+
     </div>
     <MedicalInfoButton></MedicalInfoButton>
     <DoctorsButton></DoctorsButton>
@@ -117,9 +123,27 @@ export default class Consumer2 extends React.Component {
     
     }
 
-    .tree-button-container2 {
+    .tree-parent {
+        display: flex
+        justify-content: center;
+        width: 45px
+        height:45px
+        border: 7px pink solid;
+    }
+
+    .tree-icon {
+
+    }
+
+    .tree-button {
         position: relative;
     }
+
+
+
+
+
+
 
     .news-button-container {
     }

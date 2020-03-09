@@ -75,6 +75,8 @@ export default class Business extends React.Component {
         padding-bottom:60px;
         overflow-y: none;
         position: relative;
+        margin-left: 319px;
+        bottom: 6px;
 
     }
 
