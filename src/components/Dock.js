@@ -11,6 +11,9 @@ const SoundPicOn = "/sound-on.svg"
 const SoundPic = "/sound.svg"
 const MenuOverflowUp = "menu-overflow-up.png"
 const MenuOverflowDown = "menu-overflow-down.png"
+const SoundClick = "/sound-click.mp3"
+const SoundOpening = "/sound-opening.mp3"
+const SoundFailure = "/sound-failure2.mp3"
 
 
 class Dock extends React.Component {
@@ -34,21 +37,27 @@ class Dock extends React.Component {
 
     DockClicked = () => {
         this.setState({ dockBoolean: !this.state.dockBoolean } )
+        let audioOpening = new Audio(SoundClick)
+        let audioClosing = new Audio(SoundClick)
         if (this.state.dockBoolean) {
         let title = document.querySelector(".oea-title")
         title.style.display = "none"
         let content = document.querySelector(".oea-content")
         content.style.display = "flex"
         console.log("Dock not clicked");
+        audioOpening.play()
         } else {
             let title = document.querySelector(".oea-title")
             title.style = "flex"
             let content = document.querySelector(".oea-content")
             content.style = "none"
+            audioClosing.play()
         }
     }
 
     SoundClicked = (event) => {
+        let audio = new Audio(this.soundClick)
+        audio.play()
         event.stopPropagation()
         console.log("SoundClicked called")
         this.setState({
@@ -66,29 +75,19 @@ class Dock extends React.Component {
         )
         console.log(this.state.businessBoolean)
         if (this.state.businessBoolean) {
+            let audioOpening = new Audio(SoundOpening)
+            audioOpening.play()
             let jam = document.querySelector(".twirl-svg")
             jam.src = "/twirl-filled.svg" 
         } 
         else {
+            let audioOpening = new Audio(SoundOpening)
+            audioOpening.play()
             let jam = document.querySelector(".twirl-svg")
             jam.src = "/twirl.svg"
         }
     }
 
-    twirlContainerClicked = (event) => {
-        event.stopPropagation()
-        this.setState(
-            {businessBoolean: !this.state.businessBoolean}
-        )
-        if (this.state.businessBoolean) {
-            let jam = document.querySelector(".twirl-svg")
-            jam.src = "/twirl-filled.svg" 
-        } 
-        else {
-            let jam = document.querySelector(".twirl-svg")
-            jam.src = "/twirl.svg"
-        }
-    }
 
     soundContainerClicked = (event) => {
         event.stopPropagation()

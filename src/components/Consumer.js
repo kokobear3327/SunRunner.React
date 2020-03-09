@@ -146,6 +146,7 @@ export default class Consumer extends React.Component {
         z-index:0;
         left: 827px;
         bottom: 477px;
+        top: 109px;
 
     @keyframes AnimationName {
         0%{background-position:0% 50%}
