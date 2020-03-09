@@ -15,6 +15,11 @@ export const mousedOff = () => {
     }
 }
 
+export const nextTemplateClicked = () => {
+    return {
+        type: 'CLICKED_NEXT_TEMPLATE'
+    }
+}
 // export const mousedOff = (button) => {
 //     switch (button) {
 //     case "dashboard": 
@@ -29,16 +34,3 @@ export const mousedOff = () => {
 
 
 
-
-// export const mousedOffNews = () => {
-//     return {
-//         type: 'MOUSED_OFF'
-//     }
-// }
-
-
-// export const mousedOffDashboard = () => {
-//     return {
-//         type: 'MOUSED_OFF'
-//     }
-// }

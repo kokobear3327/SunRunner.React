@@ -168,6 +168,8 @@ export default function Index() {
     
     .index-child {
         justify-content: center;
+        position: relative;
+        top:5px;
     }
 
     .balloon-cursor {

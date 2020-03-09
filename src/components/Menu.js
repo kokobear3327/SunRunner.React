@@ -66,6 +66,7 @@ export default class Menu extends React.Component {
     .menu-overflow-image {
         width: 1536px;
         height: 2048px;
+        margin-left: 14px;
     }
   `}</style>
     </Layout>

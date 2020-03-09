@@ -8,14 +8,7 @@ export default class Nav extends React.Component {
         businessBoolean: false,
         menuBoolean: false
     }
-    constructor(props) {
-        super(props);
 
-    }
-
-    businessClickedParent(value) {
-
-    }
     twirlFunction = () => {
         this.setState({businessBoolean: !this.state.businessBoolean})
         console.log("parent businessBoolean State changed")
@@ -52,6 +45,11 @@ export default class Nav extends React.Component {
 
     .nav-child {
         margin-left: 13px;
+    }
+
+    .nav-video {
+        position: relative;
+        left: 2px;
     }
   `}</style>
       </div>

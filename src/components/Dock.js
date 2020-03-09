@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Sound from 'react-sound';
+import { useDispatch } from 'react-redux'; 
+import isNextTemplate from '../reducers'
 // So you now we make an onClick event with first goal registering a console.log() 
 
 const BalloonWrenchPicFilled = "/balloon-wrench-filled.svg"
@@ -17,6 +19,8 @@ const SoundFailure = "/sound-failure2.mp3"
 
 
 class Dock extends React.Component {
+
+    
 
     constructor(props) {
         super(props);
@@ -44,7 +48,6 @@ class Dock extends React.Component {
         title.style.display = "none"
         let content = document.querySelector(".oea-content")
         content.style.display = "flex"
-        console.log("Dock not clicked");
         audioOpening.play()
         } else {
             let title = document.querySelector(".oea-title")
@@ -160,6 +163,12 @@ class Dock extends React.Component {
                 let content = document.querySelector(".oea-content")
                 content.style = "none"
             }
+    }
+
+
+    NextTemplateClicked = (event) => {
+        console.log("nextTemplateClicked")
+
     }
 
 
