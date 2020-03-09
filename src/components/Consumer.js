@@ -139,12 +139,12 @@ export default class Consumer extends React.Component {
         width: 1536px;
         height: 2048px;
         position: absolute;
-        background: linear-gradient(270deg, #000000, #020313);
+        background: linear-gradient(270deg, #000000, #02020a);
         background-size: 400% 400%;
         animation: AnimationName 2s ease-in-out infinite;
         bottom: 510px;
         z-index:0;
-        left: 985px;
+        left: 827px;
         bottom: 477px;
 
     @keyframes AnimationName {
