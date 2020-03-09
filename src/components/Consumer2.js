@@ -64,19 +64,19 @@ export default class Consumer2 extends React.Component {
 
     render() { 
         return (
-    <div className="consumer-parent">
-    <div className="consumer-child">
-    <div className="consumer-image-container">
-    <img className="consumer-image" src={ blank } alt="text" />
-    <div className="consumer-image-background"></div>
+    <div className="consumer-parent2">
+    <div className="consumer-child2">
+    <div className="consumer-image-container2">
+    <img className="consumer-image2" src={ blank } alt="text" />
+    <div className="consumer-image-background2"></div>
     </div>
     <div>
-    <div className="consumer-button-container">
+    <div className="consumer-button-container2">
 
-    <div className="tree-parent">
-    <div className="tree-icon">
+    <div className="tree-parent2">
+    <div className="tree-icon2">
     </div>
-    <div className="tree-button">
+    <div className="tree-button2">
     <TreeButton></TreeButton>
     </div>
 
@@ -86,7 +86,7 @@ export default class Consumer2 extends React.Component {
     <LawyersButton></LawyersButton>
     <LegalInfoButton></LegalInfoButton>
     <ReviewsButton></ReviewsButton>
-    <div className="news-button-container">
+    <div className="news-button-container2">
     <NewsButton></NewsButton>
     </div>
     <InvestmentsButton></InvestmentsButton>
@@ -94,7 +94,7 @@ export default class Consumer2 extends React.Component {
     <ProductsButtons></ProductsButtons>
     <MessagingButtons></MessagingButtons>
     <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-    <div className="remaining-buttons-container">
+    <div className="remaining-buttons-container2">
     <RemainingButtons></RemainingButtons>
     </div>
     
@@ -104,38 +104,51 @@ export default class Consumer2 extends React.Component {
     </div>
     </div>
     <style jsx>{` 
-    .consumer-parent {
+    .consumer-parent2 {
         height:2048px;
         width: 1536px;
-        padding-top: 14px;
+        display:flex;
+        position: relative;
+        right: 157px;
+        bottom: 3px
+                justify-content: center;
     }
     
-    .consumer-child {
+    .consumer-child2 {
         display: flex;
+        height:2048px;
+        width: 1536px;
+        position: relative;
+
+
     }
 
 
 
-    .consumer-button-container {
+    .consumer-button-container2 {
+        display: flex;
         position:relative;
         top: 2838px;
         right: 769px;
+        z-index: 2;
+        border: 4px orange solid;
     
     }
 
-    .tree-parent {
+    .tree-parent2 {
         display: flex
         justify-content: center;
         width: 45px
         height:45px
+        color: yellow;
         border: 7px pink solid;
     }
 
-    .tree-icon {
+    .tree-icon2 {
 
     }
 
-    .tree-button {
+    .tree-button2 {
         position: relative;
     }
 
@@ -145,35 +158,37 @@ export default class Consumer2 extends React.Component {
 
 
 
-    .news-button-container {
+    .news-button-container2 {
     }
 
-    .news-button-container:hover {
-    }
-
-
-    .consumer-image-container {
-        transform: translate(50%, 0%);
+    .news-button-container2:hover {
     }
 
 
-    .consumer-image {
-        top: 799px;
+    .consumer-image-container2 {
+        display: flex;
+    }
+
+
+    .consumer-image2 {
         position: relative;
         z-index: 1;
+        height: 2000px;
+        width: 1536px;
+        left: 1px;
     }
 
-    .consumer-image-background {
+    .consumer-image-background2 {
         width: 1536px;
-        height: 2048px;
-        background: linear-gradient(270deg, #000000, #02090a);
+        height: 1940px;
+        background: linear-gradient(270deg, #000000, #02490a);
         background-size: 400% 400%;
-        animation: AnimationName 1s ease-in-out infinite;
+        animation: AnimationName 10s ease-in-out infinite;
         z-index:0;
         display: flex;
         transform: translate(0%, -50%);
-        bottom: 227px;
-        left: 1px;
+        top: 1020px;
+        right: 1534px;
         position: relative;
 
 

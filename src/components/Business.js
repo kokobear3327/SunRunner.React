@@ -107,14 +107,3 @@ Business.getInitialProps = async function() {
 }
 
 
-// <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
-// <source src="/Tree.mp4" 
-//     type="video/mp4"></source>
-//   </video>
-
-// componentDidMount() {
-//     const vid = document.querySelector(".fullscreen-video")
-//     console.log(vid)
-//     vid.play()
-// }
-

@@ -228,6 +228,7 @@ export default function Index() {
     .main-container {
         display: flex;
         justify-content: center;
+        position: flex;
     }
 
     .consumer-container {
