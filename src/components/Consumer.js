@@ -108,18 +108,16 @@ export default class Consumer extends React.Component {
     }
     
     .consumer-child {
+        display: flex;
     }
 
-    .consumer-image {
-        top: 60px;
-        position: relative;
-        z-index: 1;
-    }
 
 
     .consumer-button-container {
         position:relative;
-        top:50px;
+        top: 2838px;
+        right: 769px;
+    
     }
 
     .tree-button-container {}
@@ -132,21 +130,29 @@ export default class Consumer extends React.Component {
 
 
     .consumer-image-container {
+        transform: translate(50%, 0%);
+    }
 
+
+    .consumer-image {
+        top: 799px;
+        position: relative;
+        z-index: 1;
     }
 
     .consumer-image-background {
         width: 1536px;
         height: 2048px;
-        position: absolute;
-        background: linear-gradient(270deg, #000000, #02020a);
+        background: linear-gradient(270deg, #000000, #02090a);
         background-size: 400% 400%;
-        animation: AnimationName 2s ease-in-out infinite;
-        bottom: 510px;
+        animation: AnimationName 1s ease-in-out infinite;
         z-index:0;
-        left: 827px;
-        bottom: 477px;
-        top: 109px;
+        display: flex;
+        transform: translate(0%, -50%);
+        bottom: 227px;
+        left: 1px;
+        position: relative;
+
 
     @keyframes AnimationName {
         0%{background-position:0% 50%}
