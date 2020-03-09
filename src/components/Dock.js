@@ -1,9 +1,10 @@
-import React, {useState } from 'react';
+import React, {useState, useEffect } from 'react';
 import Link from 'next/link';
 import Sound from 'react-sound';
 import { useDispatch, useSelector } from 'react-redux'; 
-import isNextTemplate from '../reducers';
 import { nextTemplateClicked } from '../actions';
+import { previousTemplateClicked } from '../actions';
+
 // So you now we make an onClick event with first goal registering a console.log() 
 
 const BalloonWrenchPicFilled = "/balloon-wrench-filled.svg"
@@ -31,6 +32,10 @@ export default function Dock(props) {
         navBoolean: true
     }
     const [state, setState] = useState(theState);
+    let previousBoolean = useSelector(state => state.isPreviousTemplate)
+    useEffect(() => {
+        
+    })
 
     const DockClicked = () => {
         setState({ dockBoolean: !state.dockBoolean } )
@@ -161,9 +166,12 @@ export default function Dock(props) {
 
     const NextTemplateClicked = (event) => {
         dispatch(nextTemplateClicked())
-
-
     }
+
+    const PreviousTemplateClicked = (event) => {
+        dispatch(previousTemplateClicked())
+    }
+
     return (
         <div className="dock-panel-parent">
         <div className="dock-panel" onClick={DockClicked}>
@@ -184,7 +192,7 @@ export default function Dock(props) {
             <img onClick={props.balloon} className="balloon-wrench-svg" src={ state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
             </div>
             <img onClick={NextTemplateClicked} className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
-            <img className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
+            <img onClick={PreviousTemplateClicked} className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
             <div onClick={menuOverflowClicked}>
             <img onClick={props.menu} className="menu-overflow-svg" src={MenuOverflowUp} alt="some" />
             </div>

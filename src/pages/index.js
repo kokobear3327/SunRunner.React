@@ -34,13 +34,20 @@ export default function Index() {
     const [state, setState] = useState(theState);
 
     let isNextTemplate = useSelector(state => state.isNextTemplate)
+    let isPreviousTemplate = useSelector(state => state.isPreviousTemplate)
+
     useEffect(() => {
         if (isNextTemplate) {
             let consumer = document.querySelector(".consumer")
             consumer.style.display = "none";
             let consumer2 = document.querySelector(".consumer2")
             consumer2.style.display = "flex";
-
+        }
+        if (isPreviousTemplate) {
+            let consumer = document.querySelector(".consumer")
+            consumer.style.display = "flex";
+            let consumer2 = document.querySelector(".consumer2")
+            consumer2.style.display = "none";
         }
     
     })

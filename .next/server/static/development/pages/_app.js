@@ -184,16 +184,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _isNews__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isNews */ "./src/reducers/isNews.js");
 /* harmony import */ var _isDashboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./isDashboard */ "./src/reducers/isDashboard.js");
 /* harmony import */ var _isNextTemplate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./isNextTemplate */ "./src/reducers/isNextTemplate.js");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux */ "redux");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _isPreviousTemplate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./isPreviousTemplate */ "./src/reducers/isPreviousTemplate.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
-const allReducers = Object(redux__WEBPACK_IMPORTED_MODULE_3__["combineReducers"])({
+
+const allReducers = Object(redux__WEBPACK_IMPORTED_MODULE_4__["combineReducers"])({
   isNews: _isNews__WEBPACK_IMPORTED_MODULE_0__["default"],
   isDashboard: _isDashboard__WEBPACK_IMPORTED_MODULE_1__["default"],
-  isNextTemplate: _isNextTemplate__WEBPACK_IMPORTED_MODULE_2__["default"]
+  isNextTemplate: _isNextTemplate__WEBPACK_IMPORTED_MODULE_2__["default"],
+  isPreviousTemplate: _isPreviousTemplate__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (allReducers);
 
@@ -274,6 +277,32 @@ const isNextTemplate = (state = false, action) => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (isNextTemplate);
+
+/***/ }),
+
+/***/ "./src/reducers/isPreviousTemplate.js":
+/*!********************************************!*\
+  !*** ./src/reducers/isPreviousTemplate.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const isPreviousTemplate = (state = false, action) => {
+  switch (action.type) {
+    case 'CLICKED_PREVIOUS_TEMPLATE':
+      return state = true;
+
+    case 'CLICKED_PREVIOUS_TEMPLATE2':
+      return state = false;
+
+    default:
+      return state = false;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (isPreviousTemplate);
 
 /***/ }),
 

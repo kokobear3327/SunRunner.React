@@ -20,6 +20,14 @@ export const nextTemplateClicked = () => {
         type: 'CLICKED_NEXT_TEMPLATE'
     }
 }
+
+export const previousTemplateClicked = () => {
+    return {
+        type: 'CLICKED_PREVIOUS_TEMPLATE'
+    }
+}
+
+
 // export const mousedOff = (button) => {
 //     switch (button) {
 //     case "dashboard": 

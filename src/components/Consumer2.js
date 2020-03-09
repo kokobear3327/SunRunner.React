@@ -21,6 +21,7 @@ import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
 
 let consumer = "/Consumer.png"
 let business = "/Business.png"
+let blank = "/blank.png"
 
 export default class Consumer2 extends React.Component {
 
@@ -66,12 +67,12 @@ export default class Consumer2 extends React.Component {
     <div className="consumer-parent">
     <div className="consumer-child">
     <div className="consumer-image-container">
-    <img className="consumer-image" src={ business } alt="text" />
+    <img className="consumer-image" src={ blank } alt="text" />
     <div className="consumer-image-background"></div>
     </div>
     <div>
     <div className="consumer-button-container">
-    <div className="tree-button-container">
+    <div className="tree-button-container2">
     <TreeButton></TreeButton>
     </div>
     <MedicalInfoButton></MedicalInfoButton>
@@ -116,7 +117,9 @@ export default class Consumer2 extends React.Component {
     
     }
 
-    .tree-button-container {}
+    .tree-button-container2 {
+        position: relative;
+    }
 
     .news-button-container {
     }
@@ -163,45 +166,6 @@ export default class Consumer2 extends React.Component {
         )
     }
 }
-
-
-// #020313
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>
-
-
-// <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
-// <source src="/Tree.mp4" 
-//     type="video/mp4"></source>
-//   </video>
-
-// componentDidMount() {
-//     const vid = document.querySelector(".fullscreen-video")
-//     console.log(vid)
-//     vid.play()
-// }
-
-// <TreeButton></TreeButton>
-// <MedicalInfoButton></MedicalInfoButton>
-// <DoctorsButton></DoctorsButton>
-// <LawyersButton></LawyersButton>
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>
-
 
 
 
