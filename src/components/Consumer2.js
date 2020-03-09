@@ -22,7 +22,7 @@ import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
 let consumer = "/Consumer.png"
 let business = "/Business.png"
 
-export default class Consumer extends React.Component {
+export default class Consumer2 extends React.Component {
 
     componentDidMount() {
         document.addEventListener("mouseover", function() {
@@ -66,6 +66,7 @@ export default class Consumer extends React.Component {
     <div className="consumer-parent">
     <div className="consumer-child">
     <div className="consumer-image-container">
+    <img className="consumer-image" src={ business } alt="text" />
     <div className="consumer-image-background"></div>
     </div>
     <div>
@@ -163,14 +164,7 @@ export default class Consumer extends React.Component {
     }
 }
 
-Consumer.getInitialProps = async function() {
-  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-  const data = await res.json();
 
-  return {
-    bpi: data.bpi
-  };
-}
 // #020313
 // <LegalInfoButton></LegalInfoButton>
 // <ReviewsButton></ReviewsButton>

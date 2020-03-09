@@ -1,7 +1,7 @@
 import isNews from './isNews';
 import isDashboard from './isDashboard';
-import { combineReducers } from 'redux';
 import isNextTemplate from './isNextTemplate';
+import { combineReducers } from 'redux';
 
 const allReducers = combineReducers({
     isNews: isNews,

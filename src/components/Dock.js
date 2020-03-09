@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState } from 'react';
 import Link from 'next/link';
 import Sound from 'react-sound';
-import { useDispatch } from 'react-redux'; 
-import isNextTemplate from '../reducers'
+import { useDispatch, useSelector } from 'react-redux'; 
+import isNextTemplate from '../reducers';
+import { nextTemplateClicked } from '../actions';
 // So you now we make an onClick event with first goal registering a console.log() 
 
 const BalloonWrenchPicFilled = "/balloon-wrench-filled.svg"
@@ -18,32 +19,24 @@ const SoundOpening = "/sound-opening.mp3"
 const SoundFailure = "/sound-failure2.mp3"
 
 
-class Dock extends React.Component {
-
+export default function Dock(props) {
     
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            dockBoolean: true,
-            balloonBoolean: false,
-            soundBoolean: true,
-            businessBoolean:true,
-            menuOverflowBoolean: true,
-            navBoolean: true
-        }
+    let dispatch = useDispatch();
+    let theState = {
+        dockBoolean: true,
+        balloonBoolean: false,
+        soundBoolean: true,
+        businessBoolean:true,
+        menuOverflowBoolean: true,
+        navBoolean: true
     }
+    const [state, setState] = useState(theState);
 
-
-    buttonClicked() {
-        
-    }
-
-    DockClicked = () => {
-        this.setState({ dockBoolean: !this.state.dockBoolean } )
+    const DockClicked = () => {
+        setState({ dockBoolean: !state.dockBoolean } )
         let audioOpening = new Audio(SoundClick)
         let audioClosing = new Audio(SoundClick)
-        if (this.state.dockBoolean) {
+        if (state.dockBoolean) {
         let title = document.querySelector(".oea-title")
         title.style.display = "none"
         let content = document.querySelector(".oea-content")
@@ -58,26 +51,26 @@ class Dock extends React.Component {
         }
     }
 
-    SoundClicked = (event) => {
-        let audio = new Audio(this.soundClick)
+    const SoundClicked = (event) => {
+        let audio = new Audio(SoundClick)
         audio.play()
         event.stopPropagation()
         console.log("SoundClicked called")
-        this.setState({
-            soundBoolean: !this.state.soundBoolean
+        setState({
+            soundBoolean: !state.soundBoolean
         })
 
     }
 
-    twirlContainerClicked = (event) => {
+    const twirlContainerClicked = (event) => {
         event.stopPropagation()
         console.log("twirlContainerClicked")
-        console.log(this.state.businessBoolean)
-        this.setState(
-            {businessBoolean: !this.state.businessBoolean}
+        console.log(state.businessBoolean)
+        setState(
+            {businessBoolean: !state.businessBoolean}
         )
-        console.log(this.state.businessBoolean)
-        if (this.state.businessBoolean) {
+        console.log(state.businessBoolean)
+        if (state.businessBoolean) {
             let audioOpening = new Audio(SoundOpening)
             audioOpening.play()
             let jam = document.querySelector(".twirl-svg")
@@ -92,14 +85,14 @@ class Dock extends React.Component {
     }
 
 
-    soundContainerClicked = (event) => {
+    const soundContainerClicked = (event) => {
         event.stopPropagation()
         console.log("soundContainerClicked")
-        console.log(this.state.soundBoolean)
-        this.setState(
-            {soundBoolean: !this.state.soundBoolean}
+        console.log(state.soundBoolean)
+        setState(
+            {soundBoolean: !state.soundBoolean}
         )
-        if (this.state.soundBoolean) {
+        if (state.soundBoolean) {
             let jam = document.querySelector(".sound-svg")
             jam.src = "/sound-filled.svg" 
         } 
@@ -109,14 +102,14 @@ class Dock extends React.Component {
         }
     }
 
-    balloonContainerClicked = (event) => {
+    const balloonContainerClicked = (event) => {
         event.stopPropagation()
         console.log("balloonContainerClicked")
-        console.log(this.state.soundBoolean)
-        this.setState(
-            {balloonBoolean: !this.state.balloonBoolean}
+        console.log(state.soundBoolean)
+        setState(
+            {balloonBoolean: !state.balloonBoolean}
         )
-        if (this.state.balloonBoolean) {
+        if (state.balloonBoolean) {
             let jam = document.querySelector(".balloon-wrench-svg")
             jam.src = "/balloon-wrench-filled.svg" 
         } 
@@ -126,14 +119,14 @@ class Dock extends React.Component {
         }
     }
 
-    menuOverflowClicked = (event) => {
+    const menuOverflowClicked = (event) => {
         event.stopPropagation()
         console.log("menuOverflowClicked")
-        console.log(this.state.menuOverflowBoolean)
-        this.setState(
-            {menuOverflowBoolean: !this.state.menuOverflowBoolean}
+        console.log(state.menuOverflowBoolean)
+        setState(
+            {menuOverflowBoolean: !state.menuOverflowBoolean}
         )
-        if (this.state.menuOverflowBoolean) {
+        if (state.menuOverflowBoolean) {
             let jam = document.querySelector(".menu-overflow-svg")
             jam.src = "/menu-overflow-down.png" 
         } 
@@ -143,16 +136,16 @@ class Dock extends React.Component {
         }
     }
 
-    navContainerClicked = (event) => {
+    const navContainerClicked = (event) => {
         event.stopPropagation()
         let title = document.querySelector(".oea-title")
         title.style.display = "none"
         let content = document.querySelector(".oea-content")
         content.style.display = "flex"
-        this.setState(
-            {navBoolean: !this.state.navBoolean}
+        setState(
+            {navBoolean: !state.navBoolean}
         )
-        if (this.state.navBoolean) {
+        if (state.navBoolean) {
             let title = document.querySelector(".oea-title")
             title.style.display = "none"
             let content = document.querySelector(".oea-content")
@@ -166,18 +159,14 @@ class Dock extends React.Component {
     }
 
 
-    NextTemplateClicked = (event) => {
-        console.log("nextTemplateClicked")
+    const NextTemplateClicked = (event) => {
+        dispatch(nextTemplateClicked())
+
 
     }
-
-
-
-
-    render() {
     return (
         <div className="dock-panel-parent">
-        <div className="dock-panel" onClick={this.DockClicked}>
+        <div className="dock-panel" onClick={DockClicked}>
             <div className="search-bar-parent">
                 <img className="search-bar-png2" src="/Omnibar.png" alt="-" />
             </div>
@@ -187,25 +176,25 @@ class Dock extends React.Component {
             <div className="oea-content">
             <img className="back-button-svg" src="/back.svg"  alt="some" />
             <img className="forward-button-svg" src="/forward.svg" alt="some" />
-            <img onClick={this.props.iris} className="iris-svg" src="/iris.svg" alt="some" />
-            <div id="twirl-container" onClick={this.twirlContainerClicked}>
-            <img onClick={this.props.twirl} className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" />
+            <img onClick={props.iris} className="iris-svg" src="/iris.svg" alt="some" />
+            <div id="twirl-container" onClick={twirlContainerClicked}>
+            <img onClick={props.twirl} className="twirl-svg" src={ props.business ? TwirlPicFilled : TwirlPic} alt="some" />
             </div>
-            <div onClick={ this.balloonContainerClicked } className="balloon-container">
-            <img onClick={this.props.balloon} className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
+            <div onClick={ balloonContainerClicked } className="balloon-container">
+            <img onClick={props.balloon} className="balloon-wrench-svg" src={ state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
             </div>
-            <img onClick={this.NextTemplateClicked} className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
+            <img onClick={NextTemplateClicked} className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
             <img className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
-            <div onClick={this.menuOverflowClicked}>
-            <img onClick={this.props.menu} className="menu-overflow-svg" src={MenuOverflowUp} alt="some" />
+            <div onClick={menuOverflowClicked}>
+            <img onClick={props.menu} className="menu-overflow-svg" src={MenuOverflowUp} alt="some" />
             </div>
             
-            <div className="nav-container" onClick={this.navContainerClicked}>
-            <img onClick={this.props.nav} className="nav-svg" src="/earth2.png" alt="some" />
+            <div className="nav-container" onClick={navContainerClicked}>
+            <img onClick={props.nav} className="nav-svg" src="/earth2.png" alt="some" />
             </div>
             <img className="history-svg" src="/history.svg" alt="some" />
             <img className="snake-svg" src="/snake.svg" alt="some" />
-            <div onClick={ this.soundContainerClicked } className="sound-container">
+            <div onClick={ soundContainerClicked } className="sound-container">
             <img className="sound-svg" src="/sound.svg" alt="some" />
             </div>
             </div>
@@ -382,45 +371,9 @@ class Dock extends React.Component {
                 
                 left: 1420px;
             }
-
-            
-            
-            
-
-
             `}</style>
-
-
-
-
-
-
-
         </div>
     );
-  }
 }
 
-  export default Dock;
 
-
-
-//   <img className="iris-svg" src="/IrisPic" alt="some" />
-//   <Link to={ this.props.business ? this.Business : this.Consumer}><img className="left-blank" src="./BalloonWrenchPic" } alt="some" /></Link>
-//       <img onClick={ this.BalloonOn } className="balloon-wrench-svg" src={ this.state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
-//       <img className="previous-template-svg" src="./PreviousTemplatePic.png" alt="some" />
-//       <Link to="/"><img className="twirl-svg" src={ this.props.business ? TwirlPicFilled : TwirlPic} alt="some" /></Link>
-//       <img className="next-template-svg" src="./NextTemplatePic"  alt="some" />
-//       <img className="nav-svg" src="./nav.svg" alt="some" />
-//       <img className="history-svg" src="./NextTemplatePic" alt="some" />
-//       <Link to="/MenuOverflowOpen"><img className="menu-overflow-svg" src="./NextTemplatePic" alt="some" /></Link>
-//       <img className="snake-svg" src="./NextTemplatePic" alt="some" />
-//       <img onClick={ this.SoundOn } className="sound-svg" src={ this.state.soundBoolean ? SoundPicOn : SoundPic } alt="some" />
-//       <Sound playStatus={this.state.soundBoolean ? this.Playing : this.Paused} className="sound-svg2" id="s" url={BackgroundMusic}></Sound>
-//       <Link to={ this.props.business ? this.Business : this.Consumer}><img className="right-blank" src="./NextTemplatePic" alt="some" /></Link>
-
-//        <img onClick={this.DockClicked} className="right-hexagons" src="/hexagons.png" alt="some" />
-// <img onClick={this.DockClicked} className="left-hexagons" src="/hexagons.png" alt="some" />
-
-
-// margin-left: 29px;

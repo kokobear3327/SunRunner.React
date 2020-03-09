@@ -3,6 +3,7 @@ import Dock from '../components/Dock';
 import React, { useEffect, useState } from 'react';
 import Business from '../components/Business';
 import Consumer from '../components/Consumer';
+import Consumer2 from '../components/Consumer2';
 import Menu from '../components/Menu';
 import Nav from '../components/Nav';
 import Iris from '../components/Iris';
@@ -32,6 +33,17 @@ export default function Index() {
     }
     const [state, setState] = useState(theState);
 
+    let isNextTemplate = useSelector(state => state.isNextTemplate)
+    useEffect(() => {
+        if (isNextTemplate) {
+            let consumer = document.querySelector(".consumer")
+            consumer.style.display = "none";
+            let consumer2 = document.querySelector(".consumer2")
+            consumer2.style.display = "flex";
+
+        }
+    
+    })
 
 
     const twirlFunction = () => {
@@ -124,13 +136,24 @@ export default function Index() {
     <div className="index-child">
     <Dock iris={irisFunction} balloon={balloonFunction} nav={navFunction} twirl={twirlFunction} sound={ soundFunction } menu={menuFunction}></Dock>
     <div className="balloon-cursor"><img className="balloon-image" src={isFilled ? balloonWrenchFilled : balloonWrench} alt="-"/></div>
+    
+    
     <div className="main-container">
     <div className="business">
     <Business></Business>
     </div>
 
+    <div className="consumer-container">
+    
     <div className="consumer">
     <Consumer></Consumer>
+    </div>
+    
+    <div className="consumer2">
+    <Consumer2></Consumer2>
+    </div>
+    
+    
     </div>
     </div>
     <div className="menu-container">
@@ -200,9 +223,13 @@ export default function Index() {
         justify-content: center;
     }
 
-    .consumer {
+    .consumer-container {
         display: flex;
         margin-left: 312px;
+    }
+
+    .consumer2 {
+        display: none;
     }
 
     .business {
