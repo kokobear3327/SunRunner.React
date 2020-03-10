@@ -7,8 +7,7 @@ export default function MessagingButtons() {
 
     return (
         <div className="messaging-buttons-parent">
-            <MailboxButton></MailboxButton>
-            <ComposeButton></ComposeButton>
+        <button className="compose-button">Compose</button>
         </div>
     );
   }

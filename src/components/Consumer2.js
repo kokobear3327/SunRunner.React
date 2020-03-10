@@ -17,6 +17,25 @@ import ConsumerFinancialsButtons from '../shared/consumer-financials-buttons/con
 import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
 import GoodsButton from '../shared/products-buttons/goods-button';
 import ServicesButton from '../shared/products-buttons/services-button';
+import MailboxButton from '../shared/messaging-buttons/mailbox-button';
+import ComposeButton from '../shared/messaging-buttons/compose-button';
+import IncomeButton from '../shared/consumer-financials-buttons/income-button';
+import BalanceButton from '../shared/consumer-financials-buttons/balance-button';
+import FlowsButton from '../shared/consumer-financials-buttons/flows-button';
+import ApplicationsButton from '../shared/remaining-buttons/applications-button'
+import ProjectsButton from '../shared/remaining-buttons/projects-button'
+import TemplatesButton from '../shared/remaining-buttons/templates-button';
+import DriveButton from '../shared/remaining-buttons/drive-button';
+import NetworkOneButton from '../shared/remaining-buttons/network-one-button';
+import NetworkTwoButton from '../shared/remaining-buttons/network-two-button';
+import WallOneButton from '../shared/remaining-buttons/wall-one-button';
+import WallTwoButton from '../shared/remaining-buttons/wall-two-button';
+import SocialMediaButton from '../shared/remaining-buttons/social-media-button';
+import AnalyticsButton from '../shared/remaining-buttons/analytics-button';
+import CalendarsButton from '../shared/remaining-buttons/calendars-button';
+import PhoneButton from '../shared/remaining-buttons/phone-button';
+import MessagesButton from '../shared/remaining-buttons/messages-button';
+import ResearchButton from '../shared/remaining-buttons/research-button';
 
 // So you want it to conditionally render the consumer or business component contingent on whether business is true
 // Same with the dock
@@ -77,57 +96,72 @@ export default class Consumer2 extends React.Component {
     
 
     <div className="tree-parent2">
-    <div className="tree-icon2"></div>
+    <div className="tree-icon2">
+    <img src="./logo-tree.png" alt="-"/>
+    </div>
     <div className="tree-button2">
     <TreeButton></TreeButton>
     </div>
     </div>
 
     <div className="medical-info-parent2">
-    <div className="medical-info-icon2"></div>
+    <div className="medical-info-icon2">
+    <img src="./logo-medical-info.png" alt="-"/>
+    </div>
     <div className="medical-info-button2">
     <MedicalInfoButton></MedicalInfoButton>
     </div>
     </div>
 
     <div className="doctors-info-parent2">
-    <div className="doctors-info-icon2"></div>
+    <div className="doctors-info-icon2">
+    <img src="./logo-doctors.png" alt="-"/>
+    </div>
     <div className="doctors-info-button2">
     <DoctorsButton></DoctorsButton>
     </div>
     </div>
 
     <div className="lawyers-info-parent2">
-    <div className="lawyers-info-icon2"></div>
+    <div className="lawyers-info-icon2">
+    <img src="./logo-lawyers.png" alt="-"/></div>
     <div className="lawyers-info-button2">
     <LawyersButton></LawyersButton>
     </div>
     </div>
 
     <div className="legal-info-parent2">
-    <div className="legal-info-icon2"></div>
+    <div className="legal-info-icon2">
+    <img src="./logo-legal-info.png" alt="-"/></div>
     <div className="legal-info-button2">
     <LegalInfoButton></LegalInfoButton>
     </div>
     </div>
 
     <div className="reviews-parent2">
-    <div className="reviews-icon2"></div>
+    <div className="reviews-icon2">
+    <img src="./logo-reviews.png" alt="-"/></div>
     <div className="reviews-button2">
     <ReviewsButton></ReviewsButton>
     </div>
     </div>
 
 
+    
     <div className="news-parent2">
-    <div className="news-icon2"></div>
+    <div className="news-icon2">
+    <img src="./logo-news.png" alt="-"/>
+    </div>
     <div className="news-button2">
     <NewsButton></NewsButton>
     </div>
     </div>
 
     <div className="dashboard-parent2">
-    <div className="dashboard-icon2"></div>
+    <div className="dashboard-icon2">
+    <img src="./logo-dashboard.png" alt="-"/>
+    
+    </div>
     <div className="dashboard-button2">
     <DashboardButton></DashboardButton>
     </div>
@@ -135,7 +169,9 @@ export default class Consumer2 extends React.Component {
 
 
     <div className="goods-parent2">
-    <div className="goods-icon2"></div>
+    <div className="goods-icon2">
+    <img src="./logo-goods.png" alt="-"/>
+    </div>
     <div className="goods-button2">
     <GoodsButton></GoodsButton>
     </div>
@@ -143,22 +179,204 @@ export default class Consumer2 extends React.Component {
 
 
     <div className="services-parent2">
-    <div className="services-icon2"></div>
+    <div className="services-icon2">
+    <img src="./logo-services.png" alt="-"/>
+    </div>
     <div className="services-button2">
     <ServicesButton></ServicesButton>
     </div>
     </div>
 
-
-    <ProductsButtons></ProductsButtons>
-
-    <InvestmentsButton></InvestmentsButton>
-
-    <MessagingButtons></MessagingButtons>
-    <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-    <div className="remaining-buttons-container2">
-    <RemainingButtons></RemainingButtons>
+    <div className="investments-parent2">
+    <div className="investments-icon2">
+    <img src="./logo-investments.png" alt="-"/>
     </div>
+    <div className="investments-button2">
+    <InvestmentsButton></InvestmentsButton>
+    </div>
+    </div>
+
+
+    <div className="income-parent2">
+    <div className="income-icon2">
+    <img src="./logo-income.png" alt="-"/>
+    </div>
+    <div className="income-button2">
+    <IncomeButton></IncomeButton>
+    </div>
+    </div>
+
+    <div className="balance-parent2">
+    <div className="balance-icon2">
+    <img src="./logo-balance.png" alt="-"/>
+    </div>
+    <div className="balance-button2">
+    <BalanceButton></BalanceButton>
+    </div>
+    </div>
+
+    <div className="flows-parent2">
+    <div className="flows-icon2">
+    <img src="./logo-flows.png" alt="-"/>
+    </div>
+    <div className="flows-button2">
+    <FlowsButton></FlowsButton>
+    </div>
+    </div>
+
+    <div className="compose-parent2">
+    <div className="compose-icon2">
+    <img src="./logo-compose.png" alt="-"/>
+    </div>
+    <div className="compose-button2">
+    <ComposeButton></ComposeButton>
+    </div>
+    </div>
+
+    <div className="mailbox-parent2">
+    <div className="mailbox-icon2">
+    <img src="./logo-mailbox.png" alt="-"/>
+    </div>
+    <div className="mailbox-button2">
+    <MailboxButton></MailboxButton>
+    </div>
+    </div>
+
+    <div className="applications-parent2">
+    <div className="applications-icon2">
+    <img src="./logo-applications.png" alt="-"/>
+    </div>
+    <div className="applications-button2">
+    <ApplicationsButton></ApplicationsButton>
+    </div>
+    </div>
+
+    <div className="projects-parent2">
+    <div className="projects-icon2">
+    <img src="./logo-projects.png" alt="-"/>
+    </div>
+    <div className="projects-button2">
+    <ProjectsButton></ProjectsButton>
+    </div>
+    </div>
+
+    <div className="templates-parent2">
+    <div className="ptemplatesicon2">
+    <img src="./logo-templates.png" alt="-"/>
+    </div>
+    <div className="templates-button2">
+    <TemplatesButton></TemplatesButton>
+    </div>
+    </div>
+
+    <div className="social-media-parent2">
+    <div className="social-media-icon2">
+    <img src="./logo-social-media.png" alt="-"/>
+    </div>
+    <div className="social-media-button2">
+    <SocialMediaButton></SocialMediaButton>
+    </div>
+    </div>
+
+    <div className="network1-parent2">
+    <div className="network1-icon2">
+    <img src="./logo-network1.png" alt="-"/>
+    </div>
+    <div className="network1-button2">
+    <NetworkOneButton></NetworkOneButton>
+    </div>
+    </div>
+
+    <div className="network2-parent2">
+    <div className="network2-icon2">
+    <img src="./logo-network2.png" alt="-"/>
+    </div>
+    <div className="network2-button2">
+    <NetworkTwoButton></NetworkTwoButton>
+    </div>
+    </div>
+
+    <div className="wall1-parent2">
+    <div className="wall1-icon2">
+    <img src="./logo-wall1.png" alt="-"/>
+    </div>
+    <div className="wall1-button2">
+    <WallOneButton></WallOneButton>
+    </div>
+    </div>
+
+    <div className="wall2-parent2">
+    <div className="wall2-icon2">
+    <img src="./logo-wall2.png" alt="-"/>
+    </div>
+    <div className="wall2-button2">
+    <WallTwoButton></WallTwoButton>
+    </div>
+    </div>
+
+
+
+    <div className="analytics-parent2">
+    <div className="analytics-icon2">
+    <img src="./logo-analytics.png" alt="-"/>
+    </div>
+    <div className="analytics-button2">
+    <AnalyticsButton></AnalyticsButton>
+    </div>
+    </div>
+
+    <div className="calendars-parent2">
+    <div className="calendars-icon2">
+    <img src="./logo-calendar.png" alt="-"/>
+    </div>
+    <div className="calendars-button2">
+    <CalendarsButton></CalendarsButton>
+    </div>
+    </div>
+
+    <div className="phone-parent2">
+    <div className="phone-icon2">
+    <img src="./logo-phone.png" alt="-"/>
+    </div>
+    <div className="phone-button2">
+    <PhoneButton></PhoneButton>
+    </div>
+    </div>
+
+
+    <div className="research-parent2">
+    <div className="research-icon2">
+    <img src="./logo-research.png" alt="-"/>
+    </div>
+    <div className="research-button2">
+    <ResearchButton></ResearchButton>
+    </div>
+    </div>
+
+    <div className="drive-parent2">
+    <div className="drive-icon2">
+    <img src="./logo-drive.png" alt="-"/>
+    </div>
+    <div className="drive-button2">
+    <DriveButton></DriveButton>
+    </div>
+    </div>
+
+    <div className="messages-parent2">
+    <div className="messages-icon2">
+    <img src="./logo-messages.png" alt="-"/>
+    </div>
+    <div className="messages-button2">
+    <MessagesButton></MessagesButton>
+    </div>
+    </div>
+
+
+
+
+
+
+
 
     </div>
     </div>
@@ -195,7 +413,6 @@ export default class Consumer2 extends React.Component {
         height:130px;
         color: yellow;
         top: 260px;
-        border: 7px green solid;
         display: flex;
         z-index:32;
     }
@@ -203,14 +420,13 @@ export default class Consumer2 extends React.Component {
     .tree-icon2 {
         width: 130px;
         height:130px;
-        color: yellow;
-        background-color: yellow;
+        position: relative;
     }
 
     .tree-button2 {
         position: relative;
-        top: 338px;
-        left: 73px;
+        top: 345px;
+        right: 42px;
     }
 
 
@@ -221,9 +437,7 @@ export default class Consumer2 extends React.Component {
         right: 2636px;
         width: 130px;
         height: 130px;
-        color: yellow;
         top: 131px;
-        border: 7px green solid;
         display: flex;
         z-index:32;
     }
@@ -232,13 +446,12 @@ export default class Consumer2 extends React.Component {
         width: 130px!important;
         height:130px;
         color: yellow;
-        background-color: yellow;
     }
 
     .medical-info-button2 {
         position: relative;
-        top: 528px;
-        left: 414px;
+        top: 536px;
+        left: 293px;
     }
 
 
@@ -248,27 +461,22 @@ export default class Consumer2 extends React.Component {
         right: 2334px;
         width: 130px;
         height: 130px;
-        color: yellow;
-        border: 7px green solid;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         z-index: 32;
-        bottom: 0px;
     }
 
     .doctors-info-icon2 {
         width: 130px!important;
         height:130px;
-        color: yellow;
-        background-color: yellow;
     }
 
     .doctors-info-button2 {
         position: relative;
-        top: 714px;
-        left: 381px;
+        top: 719px;
+        left: 259px;
     }
 
 
@@ -278,8 +486,6 @@ export default class Consumer2 extends React.Component {
         right: 2032px;
         width: 130px;
         height:130px;
-        color: yellow;
-        border: 7px green solid;
         display: flex;
         z-index:32;
         bottom: 130px;
@@ -288,14 +494,13 @@ export default class Consumer2 extends React.Component {
     .lawyers-info-icon2 {
         width: 130px!important;
         height:130px;
-        color: yellow;
-        background-color: yellow;
+
     }
 
     .lawyers-info-button2 {
         position: relative;
-        top: 758px;
-        right: 102px;
+        top: 764px;
+        right: 224px;
     }
 
 
@@ -304,8 +509,6 @@ export default class Consumer2 extends React.Component {
         right: 1768px;
         width: 130px;
         height:130px;
-        color: yellow;
-        border: 7px green solid;
         display: flex;
         z-index:32;
         bottom: 260px;
@@ -314,14 +517,12 @@ export default class Consumer2 extends React.Component {
     .legal-info-icon2 {
         width: 130px!important;
         height:130px;
-        color: yellow;
-        background-color: yellow;
     }
 
     .legal-info-button2 {
         position: relative;
-        top: 666px;
-        right: 162px;
+        top: 671px;
+        right: 286px;
         white-space: nowrap;
     }
 
@@ -333,8 +534,6 @@ export default class Consumer2 extends React.Component {
         right: 2971px;
         width: 130px;
         height:130px;
-        color: yellow;
-        border: 7px green solid;
         display: flex;
         z-index:32;
         bottom: 230px;
@@ -343,16 +542,116 @@ export default class Consumer2 extends React.Component {
     .news-icon2 {
         width: 130px!important;
         height:130px;
-        color: yellow;
-        background-color: yellow;
     }
 
     .news-button2 {
         position: relative;
         top: 1496px;
-        right: 124px;
+        right: 240px;
         white-space: nowrap;
     }
+
+
+    .investments-parent2 {
+        position: relative;
+        right: 2636px;
+        width: 130px;
+        height:130px;
+        display: flex;
+        z-index:32;
+        bottom: 750px;
+    }
+
+    .investments-icon2 {
+        width: 130px!important;
+        height:130px;
+
+        position:relative;
+    }
+
+    .investments-button2 {
+        position: relative;
+        top: 1035px;
+        right: 5px;
+        white-space: nowrap;
+    }
+
+    .income-parent2 {
+        position: relative;
+        right: 2334px;
+        width: 130px;
+        height:130px;
+        display: flex;
+        z-index:32;
+        bottom: 880px;
+    }
+
+    .income-icon2 {
+        width: 130px!important;
+        height:130px;
+
+        position:relative;
+    }
+
+    .income-button2 {
+        position: relative;
+        top: 1582px;
+        right: 761px;
+        white-space: nowrap;
+    }
+
+
+    .balance-parent2 {
+        position: relative;
+        right: 2032px;
+        width: 130px;
+        height:130px;
+        display: flex;
+        z-index:32;
+        bottom: 1010px;
+    }
+
+    .balance-icon2 {
+        width: 130px!important;
+        height:130px;
+
+        position:relative;
+    }
+
+    .balance-button2 {
+        position: relative;
+        top: 1456px;
+        right: 733px;
+        white-space: nowrap;
+    }
+
+
+    .flows-parent2 {
+        position: relative;
+        right: 1768px;
+        width: 130px;
+        height:130px;
+        display: flex;
+        z-index:32;
+        bottom: 1139px;
+    }
+
+    .flows-icon2 {
+        width: 130px!important;
+        height:130px;
+
+        position:relative;
+    }
+
+    .flows-button2 {
+        position: relative;
+        top: 1580px;
+        right: 705px;
+        white-space: nowrap;
+    }
+
+
+
 
 
 // Row Three:
@@ -364,25 +663,126 @@ export default class Consumer2 extends React.Component {
     width: 130px;
     height:130px;
     color: yellow;
-    border: 7px green solid;
     display: flex;
     z-index:32;
+    border: 7px solid green;
     bottom: 73px;
 }
 
 .dashboard-icon2 {
     width: 130px!important;
     height:130px;
-    codashboard yellow;
-    background-color: yellow;
+    position:relative;
 }
 
 .dashboard-button2 {
     position: relative;
     top: 2160px;
-    left: 130px;
+    left: 6px;
     white-space: nowrap;
 }
+
+.social-media-parent2 {
+    position: relative;
+    right: 2636px;
+    width: 130px;
+    height:130px;
+    color: yellow;
+    display: flex;
+    z-index:32;
+    bottom: 1634px;
+}
+
+.social-media-icon2 {
+    width: 130px!important;
+    height:130px;
+    position:relative;
+}
+
+.social-media-button2 {
+    position: relative;
+    top: 2160px;
+    left: 6px;
+    white-space: nowrap;
+}
+
+
+.applications-parent2 {
+    position: relative;
+    right: 2334px;
+    width: 130px;
+    border: 7px green solid;
+    height:130px;
+    display: flex;
+    z-index:32;
+    bottom: 1244px;
+}
+
+.applications-icon2 {
+    width: 130px!important;
+    height:130px;
+
+    position:relative;
+}
+
+.applications-button2 {
+    position: relative;
+    top: 1500px;
+    right: 244px;
+    white-space: nowrap;
+}
+
+.projects-parent2 {
+    position: relative;
+    right: 1768px;
+    width: 130px;
+    border: 7px green solid;
+    height:130px;
+    display: flex;
+    z-index:32;
+    bottom: 1373px;
+}
+
+.projects-icon2 {
+    width: 130px!important;
+    height:130px;
+
+    position:relative;
+}
+
+.projects-button2 {
+    position: relative;
+    top: 1500px;
+    right: 244px;
+    white-space: nowrap;
+}
+
+.templates-parent2 {
+    position: relative;
+    right: 2032px;
+    width: 130px;
+    border: 7px green solid;
+    height:130px;
+    display: flex;
+    z-index:32;
+    bottom: 1503px;
+}
+
+.templates-icon2 {
+    width: 130px!important;
+    height:130px;
+
+    position:relative;
+}
+
+.templates-button2 {
+    position: relative;
+    top: 1500px;
+    right: 244px;
+    white-space: nowrap;
+}
+
+
 
 
 // Row Four:
@@ -394,7 +794,6 @@ export default class Consumer2 extends React.Component {
     width: 130px;
     height:130px;
     color: yellow;
-    border: 7px green solid;
     display: flex;
     z-index:32;
     top: 84px;
@@ -403,17 +802,123 @@ export default class Consumer2 extends React.Component {
 .goods-icon2 {
     width: 130px!important;
     height:130px;
-    codashboard yellow;
-    background-color: yellow;
+    left:
+
 }
 
 .goods-button2 {
     position: relative;
-    top: 1790px;
-    left: 155px;
+    top: 1800px;
+    left: 23px;
     white-space: nowrap;
 }
 
+.mailbox-parent2 {
+    position: relative;
+    right: 2636px;
+    width: 130px;
+    height:130px;
+    display: flex;
+    z-index:32;
+    bottom: 827px;
+}
+
+.mailbox-icon2 {
+    width: 130px!important;
+    height:130px;
+
+    position:relative;
+}
+
+.mailbox-button2 {
+    position: relative;
+    top: 1500px;
+    right: 215px;
+    white-space: nowrap;
+}
+
+.compose-parent2 {
+    position: relative;
+    right: 2334px;
+    border: 7px green solid;
+    width: 130px;
+    height:130px;
+    display: flex;
+    z-index:32;
+    bottom: 696px;
+}
+
+.compose-icon2 {
+    width: 130px!important;
+    height:130px;
+
+    position:relative;
+}
+
+.compose-button2 {
+    position: relative;
+    top: 1500px;
+    right: 244px;
+    white-space: nowrap;
+}
+
+.calendars-parent2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 1222px;
+    right: 2032px;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    z-index: 3;
+    bottom: 2114px;
+}
+
+.calendars-icon2 {
+    width: 130px!important;
+    height:130px;
+    left: 72px;
+    bottom: 3px;
+    position:relative;
+}
+
+.calendars-button2 {
+    position: relative;
+    top: 1125px;
+    left: 27px;
+    white-space: nowrap;
+}
+
+.phone-parent2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 1768px;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    z-index: 3;
+    bottom: 2242px;
+}
+
+.phone-icon2 {
+    width: 130px!important;
+    height:130px;
+    left: 52px;
+    position:relative;
+}
+
+.phone-button2 {
+    position: relative;
+    top: 1547px;
+    left: 237px;
+    white-space: nowrap;
+}
+
+
+
+// Row Five :
 
 .services-parent2 {
     position: relative;
@@ -439,17 +944,125 @@ export default class Consumer2 extends React.Component {
     top: 1793px;
     left: 129px;
     white-space: nowrap;
+    }
 
 
+.messages-parent2 {
+    position: relative;
+    right: 2636px;
+    width: 130px;
+    height:130px;
+    color: yellow;
+    border: 7px green solid;
+    display: flex;
+    z-index:32;
+    bottom: 2357px;
+}
+
+.messages-icon2 {
+    width: 130px!important;
+    height:130px;
+    codashboard yellow;
+    background-color: yellow;
+}
+
+.messages-button2 {
+    position: relative;
+    top: 1588px;
+    left: 150px;
+    white-space: nowrap;
+    }
+    
+
+
+
+.research-parent2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 2334px;
+    justify-content: center;
+    border: 7px solid green;
+    width: 130px;
+    height: 130px;
+    z-index: 3;
+    bottom: 2097px;
+}
+
+.research-icon2 {
+    width: 130px!important;
+    height:130px;
+    left:61px;
+    position: relative;
+}
+
+.research-button2 {
+    position: relative;
+    top: 1793px;
+    left: 129px;
+    white-space: nowrap;
+    }
+
+
+    .wall1-parent2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 2032px;
+        justify-content: center;
+        border: 7px solid green;
+        width: 130px;
+        height: 130px;
+        z-index: 3;
+        bottom: 1447px;
+    }
+    
+    .wall1-icon2 {
+        width: 130px!important;
+        height:130px;
+        left: 52px;
+        position:relative;
+    }
+    
+    .wall1-button2 {
+        position: relative;
+        top: 1547px;
+        left: 237px;
+        white-space: nowrap;
+    }
+
+
+    .wall2-parent2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 1768px;
+        justify-content: center;
+        border: 7px solid green;
+        width: 130px;
+        height: 130px;
+        z-index: 3;
+        bottom: 1577px;
+    }
+    
+    .wall2-icon2 {
+        width: 130px!important;
+        height:130px;
+        left: 52px;
+        position:relative;
+    }
+    
+    .wall2-button2 {
+        position: relative;
+        top: 1547px;
+        left: 237px;
+        white-space: nowrap;
     }
 
 
 
+    // Row Six :
 
-
-
-
-    
     .reviews-parent2 {
         position: relative;
         right: 2971px;
@@ -477,6 +1090,144 @@ export default class Consumer2 extends React.Component {
         white-space: nowrap;
     }
 
+    .analytics-parent2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 1419px;
+        border: 7px green solid;
+        right: 2636px;
+        justify-content: center;
+        width: 130px;
+        height: 130px;
+        z-index: 3;
+    }
+    
+    .analytics-icon2 {
+        width: 130px!important;
+        height:130px;
+        position: relative;
+        left: 65px;
+    }
+    
+    .analytics-button2 {
+        position: relative;
+        right: 1227px;
+        bottom: 323px;
+    }
+
+    .drive-parent2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 2334px;
+        justify-content: center;
+        border: 7px solid green;
+        width: 130px;
+        height: 130px;
+        z-index: 3;
+        bottom: 1830px;
+    }
+    
+    .drive-icon2 {
+        width: 130px!important;
+        height:130px;
+        left:61px;
+        position: relative;
+    }
+    
+    .drive-button2 {
+        position: relative;
+        top: 1793px;
+        left: 129px;
+        white-space: nowrap;
+        }
+
+
+    .drive-parent2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 2334px;
+        justify-content: center;
+        border: 7px solid green;
+        width: 130px;
+        height: 130px;
+        z-index: 3;
+        bottom: 1932px;
+    }
+    
+    .drive-icon2 {
+        width: 130px!important;
+        height:130px;
+        left:61px;
+        position: relative;
+    }
+    
+    .drive-button2 {
+        position: relative;
+        top: 1793px;
+        left: 129px;
+        white-space: nowrap;
+        }
+
+
+    .network1-parent2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 2032px;
+        justify-content: center;
+        border: 7px solid green;
+        width: 130px;
+        height: 130px;
+        z-index: 3;
+        bottom: 893px;
+    }
+    
+    .network1-icon2 {
+        width: 130px!important;
+        height:130px;
+        left:61px;
+        position: relative;
+    }
+    
+    .network1-button2 {
+        position: relative;
+        top: 1793px;
+        left: 129px;
+        white-space: nowrap;
+        }
+
+
+    .network2-parent2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 1768px;
+        justify-content: center;
+        border: 7px solid green;
+        width: 130px;
+        height: 130px;
+        z-index: 3;
+        bottom: 1021px;
+    }
+    
+    .network2-icon2 {
+        width: 130px!important;
+        height:130px;
+        left:61px;
+        position: relative;
+    }
+    
+    .network2-button2 {
+        position: relative;
+        top: 1793px;
+        left: 129px;
+        white-space: nowrap;
+        }
+        
+
 
 
 
@@ -499,7 +1250,7 @@ export default class Consumer2 extends React.Component {
 
     .consumer-image2 {
         position: relative;
-        z-index: 1;
+        z-index: 0;
         height: 2000px;
         width: 1536px;
         left: 1px;
@@ -508,10 +1259,10 @@ export default class Consumer2 extends React.Component {
     .consumer-image-background2 {
         width: 1536px;
         height: 1940px;
-        background: linear-gradient(270deg, #000000, #02490a);
+        background: linear-gradient(270deg, #000000, #02020a);
         background-size: 400% 400%;
         animation: AnimationName 10s ease-in-out infinite;
-        z-index:0;
+        z-index:1;
         display: flex;
         transform: translate(0%, -50%);
         top: 1020px;

@@ -1,8 +1,7 @@
 import './income-button.css';
 import React from 'react'
-import { Link } from "react-router-dom";
 
-export default function ComposeButton() {
+export default function IncomeButton() {
 
     return (
         <div className="income-button-parent">

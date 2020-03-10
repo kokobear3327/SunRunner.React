@@ -1,7 +1,7 @@
 import './flows-button.css';
 import React from 'react'
 
-export default function ComposeButton() {
+export default function FlowsButton() {
 
     return (
         <div className="flows-button-parent">

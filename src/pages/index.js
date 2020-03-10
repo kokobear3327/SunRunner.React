@@ -193,7 +193,7 @@ export default function Index() {
         justify-content: center;
         width: 1623px;
         height: 2149px;
-
+        background-image: url('./iPadRim.png');
         margin-top: 30px;
           }
     
