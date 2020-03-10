@@ -71,36 +71,93 @@ export default class Consumer2 extends React.Component {
     <div className="consumer-image-background2"></div>
     </div>
     <div>
-    <div className="consumer-button-container2">
+
+    
 
     <div className="tree-parent2">
-    <div className="tree-icon2">
-    </div>
+    <div className="tree-icon2"></div>
     <div className="tree-button2">
     <TreeButton></TreeButton>
     </div>
-
     </div>
+
+    <div className="medical-info-parent2">
+    <div className="medical-info-icon2"></div>
+    <div className="medical-info-button2">
     <MedicalInfoButton></MedicalInfoButton>
+    </div>
+    </div>
+
+    <div className="doctors-info-parent2">
+    <div className="doctors-info-icon2"></div>
+    <div className="doctors-info-button2">
     <DoctorsButton></DoctorsButton>
+    </div>
+    </div>
+
+    <div className="lawyers-info-parent2">
+    <div className="lawyers-info-icon2"></div>
+    <div className="lawyers-info-button2">
     <LawyersButton></LawyersButton>
+    </div>
+    </div>
+
+    <div className="legal-info-parent2">
+    <div className="legal-info-icon2"></div>
+    <div className="legal-info-button2">
     <LegalInfoButton></LegalInfoButton>
+    </div>
+    </div>
+
+    <div className="reviews-parent2">
+    <div className="reviews-icon2"></div>
+    <div className="reviews-button2">
     <ReviewsButton></ReviewsButton>
-    <div className="news-button-container2">
+    </div>
+    </div>
+
+
+    <div className="news-parent2">
+    <div className="news-icon2"></div>
+    <div className="news-button2">
     <NewsButton></NewsButton>
     </div>
-    <InvestmentsButton></InvestmentsButton>
+    </div>
+
+    <div className="dashboard-parent2">
+    <div className="dashboard-icon2"></div>
+    <div className="dashboard-button2">
     <DashboardButton></DashboardButton>
+    </div>
+    </div>
+
+
+    <div className="goods-parent2">
+    <div className="goods-icon2"></div>
+    <div className="goods-button2">
+    <DashboardButton></DashboardButton>
+    </div>
+    </div>
+
+
+    <div className="services-parent2">
+    <div className="services-icon2"></div>
+    <div className="services-button2">
+    <DashboardButton></DashboardButton>
+    </div>
+    </div>
+
+
+
+    <InvestmentsButton></InvestmentsButton>
+
     <ProductsButtons></ProductsButtons>
     <MessagingButtons></MessagingButtons>
     <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
     <div className="remaining-buttons-container2">
     <RemainingButtons></RemainingButtons>
     </div>
-    
-    
 
-    </div>
     </div>
     </div>
     <style jsx>{` 
@@ -111,7 +168,7 @@ export default class Consumer2 extends React.Component {
         position: relative;
         right: 157px;
         bottom: 3px
-                justify-content: center;
+        justify-content: center;
     }
     
     .consumer-child2 {
@@ -119,38 +176,306 @@ export default class Consumer2 extends React.Component {
         height:2048px;
         width: 1536px;
         position: relative;
-
-
     }
 
 
 
-    .consumer-button-container2 {
-        display: flex;
-        position:relative;
-        top: 2838px;
-        right: 769px;
-        z-index: 2;
-        border: 4px orange solid;
-    
-    }
+
+
+
+
+
 
     .tree-parent2 {
-        display: flex
-        justify-content: center;
-        width: 45px
-        height:45px
+        position: relative;
+        right: 2971px;
+        width: 130px;
+        height:130px;
         color: yellow;
-        border: 7px pink solid;
+        top: 260px;
+        border: 7px green solid;
+        display: flex;
+        z-index:32;
     }
 
     .tree-icon2 {
-
+        width: 130px;
+        height:130px;
+        color: yellow;
+        background-color: yellow;
     }
 
     .tree-button2 {
         position: relative;
+        top: 338px;
+        left: 73px;
     }
+
+
+
+
+    .medical-info-parent2 {
+        position: relative;
+        right: 2636px;
+        width: 130px;
+        height: 130px;
+        color: yellow;
+        top: 131px;
+        border: 7px green solid;
+        display: flex;
+        z-index:32;
+    }
+
+    .medical-info-icon2 {
+        width: 130px!important;
+        height:130px;
+        color: yellow;
+        background-color: yellow;
+    }
+
+    .medical-info-button2 {
+        position: relative;
+        top: 528px;
+        left: 414px;
+    }
+
+
+
+    .doctors-info-parent2 {
+        position: relative;
+        right: 2334px;
+        width: 130px;
+        height: 130px;
+        color: yellow;
+        border: 7px green solid;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 32;
+        bottom: 0px;
+    }
+
+    .doctors-info-icon2 {
+        width: 130px!important;
+        height:130px;
+        color: yellow;
+        background-color: yellow;
+    }
+
+    .doctors-info-button2 {
+        position: relative;
+        top: 714px;
+        left: 381px;
+    }
+
+
+
+    .lawyers-info-parent2 {
+        position: relative;
+        right: 2032px;
+        width: 130px;
+        height:130px;
+        color: yellow;
+        border: 7px green solid;
+        display: flex;
+        z-index:32;
+        bottom: 130px;
+    }
+
+    .lawyers-info-icon2 {
+        width: 130px!important;
+        height:130px;
+        color: yellow;
+        background-color: yellow;
+    }
+
+    .lawyers-info-button2 {
+        position: relative;
+        top: 758px;
+        right: 102px;
+    }
+
+
+    .legal-info-parent2 {
+        position: relative;
+        right: 1768px;
+        width: 130px;
+        height:130px;
+        color: yellow;
+        border: 7px green solid;
+        display: flex;
+        z-index:32;
+        bottom: 260px;
+    }
+
+    .legal-info-icon2 {
+        width: 130px!important;
+        height:130px;
+        color: yellow;
+        background-color: yellow;
+    }
+
+    .legal-info-button2 {
+        position: relative;
+        top: 666px;
+        right: 162px;
+        white-space: nowrap;
+    }
+
+// Row two:
+
+
+    .news-parent2 {
+        position: relative;
+        right: 2971px;
+        width: 130px;
+        height:130px;
+        color: yellow;
+        border: 7px green solid;
+        display: flex;
+        z-index:32;
+        bottom: 230px;
+    }
+
+    .news-icon2 {
+        width: 130px!important;
+        height:130px;
+        color: yellow;
+        background-color: yellow;
+    }
+
+    .news-button2 {
+        position: relative;
+        top: 666px;
+        right: 162px;
+        white-space: nowrap;
+    }
+
+
+// Row Four:
+
+
+.dashboard-parent2 {
+    position: relative;
+    right: 2971px;
+    width: 130px;
+    height:130px;
+    color: yellow;
+    border: 7px green solid;
+    display: flex;
+    z-index:32;
+    bottom: 73px;
+}
+
+.dashboard-icon2 {
+    width: 130px!important;
+    height:130px;
+    codashboard yellow;
+    background-color: yellow;
+}
+
+.dashboard-button2 {
+    position: relative;
+    top: 666px;
+    right: 162px;
+    white-space: nowrap;
+}
+
+
+// Row Four:
+
+
+.goods-parent2 {
+    position: relative;
+    right: 2971px;
+    width: 130px;
+    height:130px;
+    color: yellow;
+    border: 7px green solid;
+    display: flex;
+    z-index:32;
+    top: 84px;
+}
+
+.goods-icon2 {
+    width: 130px!important;
+    height:130px;
+    codashboard yellow;
+    background-color: yellow;
+}
+
+.goods-button2 {
+    position: relative;
+    top: 666px;
+    right: 162px;
+    white-space: nowrap;
+}
+
+
+.services-parent2 {
+    position: relative;
+    right: 2971px;
+    width: 130px;
+    height:130px;
+    color: yellow;
+    border: 7px green solid;
+    display: flex;
+    z-index:32;
+    top: 241px;
+}
+
+.services-icon2 {
+    width: 130px!important;
+    height:130px;
+    codashboard yellow;
+    background-color: yellow;
+}
+
+.services-button2 {
+    position: relative;
+    top: 666px;
+    right: 162px;
+    white-space: nowrap;
+
+
+    }
+
+
+
+
+
+
+
+    
+    .reviews-parent2 {
+        position: relative;
+        right: 2971px;
+        width: 130px;
+        height:130px;
+        color: yellow;
+        border: 7px green solid;
+        display: flex;
+        z-index:32;
+        top: 1048px;
+    }
+
+    .reviews-icon2 {
+        width: 130px!important;
+        height:130px;
+        color: yellow;
+        background-color: yellow;
+   
+    }
+
+    .reviews-button2 {
+        position: relative;
+        top: 1458px;
+        left: 417px;
+        white-space: nowrap;
+    }
+
+
 
 
 
@@ -188,7 +513,7 @@ export default class Consumer2 extends React.Component {
         display: flex;
         transform: translate(0%, -50%);
         top: 1020px;
-        right: 1534px;
+        right: 1535px;
         position: relative;
 
 

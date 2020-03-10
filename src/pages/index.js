@@ -15,6 +15,8 @@ import { useSelector } from 'react-redux';
 //     isNewsBoolean = isNewsBoolean2
 //       })
 
+//        background-image: url('./iPadRim.png');
+
 export default function Index() {
     const balloonWrench = "/balloon-wrench.svg";
     const balloonWrenchFilled = "/balloon-wrench-filled.svg"
@@ -191,7 +193,7 @@ export default function Index() {
         justify-content: center;
         width: 1623px;
         height: 2149px;
-        background-image: url('./iPadRim.png');
+
         margin-top: 30px;
           }
     
