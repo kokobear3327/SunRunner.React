@@ -115,7 +115,7 @@ export default class Consumer extends React.Component {
 
     .consumer-button-container {
         position:relative;
-        top: 2838px;
+        top: 2738px;
         right: 769px;
     
     }
@@ -131,21 +131,24 @@ export default class Consumer extends React.Component {
 
     .consumer-image-container {
         transform: translate(50%, 0%);
+        height: 2000px!important;
+        margin-bottom: 2000px;
+
     }
 
 
     .consumer-image {
-        top: 799px;
+        top: 699px;
         position: relative;
         z-index: 1;
     }
 
     .consumer-image-background {
         width: 1536px;
-        height: 2048px;
-        background: linear-gradient(270deg, #000000, #02090a);
+        height: 1868px;
+        background: linear-gradient(270deg, #000000, #02091b);
         background-size: 400% 400%;
-        animation: AnimationName 1s ease-in-out infinite;
+        animation: AnimationName 10s ease-in-out infinite;
         z-index:0;
         display: flex;
         transform: translate(0%, -50%);

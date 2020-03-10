@@ -280,7 +280,7 @@ export default class Consumer2 extends React.Component {
 
     <div className="network1-parent2">
     <div className="network1-icon2">
-    <img src="./logo-network1.png" alt="-"/>
+    <img src="/logo-network1.png" alt="-"/>
     </div>
     <div className="network1-button2">
     <NetworkOneButton></NetworkOneButton>
@@ -289,7 +289,7 @@ export default class Consumer2 extends React.Component {
 
     <div className="network2-parent2">
     <div className="network2-icon2">
-    <img src="./logo-network2.png" alt="-"/>
+    <img src="/logo-network2.png" alt="-"/>
     </div>
     <div className="network2-button2">
     <NetworkTwoButton></NetworkTwoButton>
@@ -298,7 +298,7 @@ export default class Consumer2 extends React.Component {
 
     <div className="wall1-parent2">
     <div className="wall1-icon2">
-    <img src="./logo-wall1.png" alt="-"/>
+    <img src="/logo-wall1.png" alt="-"/>
     </div>
     <div className="wall1-button2">
     <WallOneButton></WallOneButton>
@@ -307,7 +307,7 @@ export default class Consumer2 extends React.Component {
 
     <div className="wall2-parent2">
     <div className="wall2-icon2">
-    <img src="./logo-wall2.png" alt="-"/>
+    <img src="/logo-wall2.png" alt="-"/>
     </div>
     <div className="wall2-button2">
     <WallTwoButton></WallTwoButton>
@@ -355,7 +355,7 @@ export default class Consumer2 extends React.Component {
 
     <div className="drive-parent2">
     <div className="drive-icon2">
-    <img src="./logo-drive.png" alt="-"/>
+    <img src="/logo-drive.png" alt="-"/>
     </div>
     <div className="drive-button2">
     <DriveButton></DriveButton>
@@ -475,7 +475,7 @@ export default class Consumer2 extends React.Component {
 
     .doctors-info-button2 {
         position: relative;
-        top: 719px;
+        top: 723px;
         left: 259px;
     }
 
@@ -665,7 +665,6 @@ export default class Consumer2 extends React.Component {
     color: yellow;
     display: flex;
     z-index:32;
-    border: 7px solid green;
     bottom: 73px;
 }
 
@@ -677,7 +676,7 @@ export default class Consumer2 extends React.Component {
 
 .dashboard-button2 {
     position: relative;
-    top: 2160px;
+    top: 2178px;
     left: 6px;
     white-space: nowrap;
 }
@@ -701,8 +700,8 @@ export default class Consumer2 extends React.Component {
 
 .social-media-button2 {
     position: relative;
-    top: 2160px;
-    left: 6px;
+    top: 1361px;
+    right: 29px;
     white-space: nowrap;
 }
 
@@ -711,7 +710,6 @@ export default class Consumer2 extends React.Component {
     position: relative;
     right: 2334px;
     width: 130px;
-    border: 7px green solid;
     height:130px;
     display: flex;
     z-index:32;
@@ -727,8 +725,8 @@ export default class Consumer2 extends React.Component {
 
 .applications-button2 {
     position: relative;
-    top: 1500px;
-    right: 244px;
+    top: 1186px;
+    right: 264px;
     white-space: nowrap;
 }
 
@@ -736,7 +734,7 @@ export default class Consumer2 extends React.Component {
     position: relative;
     right: 1768px;
     width: 130px;
-    border: 7px green solid;
+
     height:130px;
     display: flex;
     z-index:32;
@@ -752,8 +750,8 @@ export default class Consumer2 extends React.Component {
 
 .projects-button2 {
     position: relative;
-    top: 1500px;
-    right: 244px;
+    top: 1516px;
+    right: 986px;
     white-space: nowrap;
 }
 
@@ -761,7 +759,6 @@ export default class Consumer2 extends React.Component {
     position: relative;
     right: 2032px;
     width: 130px;
-    border: 7px green solid;
     height:130px;
     display: flex;
     z-index:32;
@@ -777,8 +774,8 @@ export default class Consumer2 extends React.Component {
 
 .templates-button2 {
     position: relative;
-    top: 1500px;
-    right: 244px;
+    top: 1522px;
+    right: 284px;
     white-space: nowrap;
 }
 
@@ -840,7 +837,6 @@ export default class Consumer2 extends React.Component {
 .compose-parent2 {
     position: relative;
     right: 2334px;
-    border: 7px green solid;
     width: 130px;
     height:130px;
     display: flex;
@@ -926,7 +922,6 @@ export default class Consumer2 extends React.Component {
     width: 130px;
     height:130px;
     color: yellow;
-    border: 7px green solid;
     display: flex;
     z-index:32;
     top: 241px;
@@ -935,14 +930,12 @@ export default class Consumer2 extends React.Component {
 .services-icon2 {
     width: 130px!important;
     height:130px;
-    codashboard yellow;
-    background-color: yellow;
 }
 
 .services-button2 {
     position: relative;
-    top: 1793px;
-    left: 129px;
+    top: 1800px;
+    left: 8px;
     white-space: nowrap;
     }
 
@@ -953,7 +946,6 @@ export default class Consumer2 extends React.Component {
     width: 130px;
     height:130px;
     color: yellow;
-    border: 7px green solid;
     display: flex;
     z-index:32;
     bottom: 2357px;
@@ -962,14 +954,12 @@ export default class Consumer2 extends React.Component {
 .messages-icon2 {
     width: 130px!important;
     height:130px;
-    codashboard yellow;
-    background-color: yellow;
 }
 
 .messages-button2 {
     position: relative;
     top: 1588px;
-    left: 150px;
+    left: 147px;
     white-space: nowrap;
     }
     
@@ -982,7 +972,6 @@ export default class Consumer2 extends React.Component {
     position: relative;
     right: 2334px;
     justify-content: center;
-    border: 7px solid green;
     width: 130px;
     height: 130px;
     z-index: 3;
@@ -998,8 +987,8 @@ export default class Consumer2 extends React.Component {
 
 .research-button2 {
     position: relative;
-    top: 1793px;
-    left: 129px;
+    top: 1964px;
+    left: 372px;
     white-space: nowrap;
     }
 
@@ -1010,7 +999,6 @@ export default class Consumer2 extends React.Component {
         position: relative;
         right: 2032px;
         justify-content: center;
-        border: 7px solid green;
         width: 130px;
         height: 130px;
         z-index: 3;
@@ -1020,14 +1008,14 @@ export default class Consumer2 extends React.Component {
     .wall1-icon2 {
         width: 130px!important;
         height:130px;
-        left: 52px;
+        left: 65px;
         position:relative;
     }
     
     .wall1-button2 {
         position: relative;
-        top: 1547px;
-        left: 237px;
+        top: 2132px;
+        right: 254px;
         white-space: nowrap;
     }
 
@@ -1038,7 +1026,6 @@ export default class Consumer2 extends React.Component {
         position: relative;
         right: 1768px;
         justify-content: center;
-        border: 7px solid green;
         width: 130px;
         height: 130px;
         z-index: 3;
@@ -1048,14 +1035,14 @@ export default class Consumer2 extends React.Component {
     .wall2-icon2 {
         width: 130px!important;
         height:130px;
-        left: 52px;
+        left: 65px;
         position:relative;
     }
     
     .wall2-button2 {
         position: relative;
-        top: 1547px;
-        left: 237px;
+        top: 1992px;
+        right: 76px;
         white-space: nowrap;
     }
 
@@ -1069,7 +1056,6 @@ export default class Consumer2 extends React.Component {
         width: 130px;
         height:130px;
         color: yellow;
-        border: 7px green solid;
         display: flex;
         z-index:32;
         top: 1048px;
@@ -1078,15 +1064,13 @@ export default class Consumer2 extends React.Component {
     .reviews-icon2 {
         width: 130px!important;
         height:130px;
-        color: yellow;
-        background-color: yellow;
    
     }
 
     .reviews-button2 {
         position: relative;
         top: 1458px;
-        left: 417px;
+        left: 296px;
         white-space: nowrap;
     }
 
@@ -1095,7 +1079,6 @@ export default class Consumer2 extends React.Component {
         align-items: center;
         position: relative;
         bottom: 1419px;
-        border: 7px green solid;
         right: 2636px;
         justify-content: center;
         width: 130px;
@@ -1112,8 +1095,8 @@ export default class Consumer2 extends React.Component {
     
     .analytics-button2 {
         position: relative;
-        right: 1227px;
-        bottom: 323px;
+        left: 691px;
+        top: 1315px;
     }
 
     .drive-parent2 {
@@ -1122,35 +1105,6 @@ export default class Consumer2 extends React.Component {
         position: relative;
         right: 2334px;
         justify-content: center;
-        border: 7px solid green;
-        width: 130px;
-        height: 130px;
-        z-index: 3;
-        bottom: 1830px;
-    }
-    
-    .drive-icon2 {
-        width: 130px!important;
-        height:130px;
-        left:61px;
-        position: relative;
-    }
-    
-    .drive-button2 {
-        position: relative;
-        top: 1793px;
-        left: 129px;
-        white-space: nowrap;
-        }
-
-
-    .drive-parent2 {
-        display: flex;
-        align-items: center;
-        position: relative;
-        right: 2334px;
-        justify-content: center;
-        border: 7px solid green;
         width: 130px;
         height: 130px;
         z-index: 3;
@@ -1166,8 +1120,8 @@ export default class Consumer2 extends React.Component {
     
     .drive-button2 {
         position: relative;
-        top: 1793px;
-        left: 129px;
+        top: 1963px;
+        left: 232px;
         white-space: nowrap;
         }
 
@@ -1178,7 +1132,6 @@ export default class Consumer2 extends React.Component {
         position: relative;
         right: 2032px;
         justify-content: center;
-        border: 7px solid green;
         width: 130px;
         height: 130px;
         z-index: 3;
@@ -1188,14 +1141,14 @@ export default class Consumer2 extends React.Component {
     .network1-icon2 {
         width: 130px!important;
         height:130px;
-        left:61px;
+        left:69px;
         position: relative;
     }
     
     .network1-button2 {
         position: relative;
-        top: 1793px;
-        left: 129px;
+        top: 2147px;
+        left: 78px;
         white-space: nowrap;
         }
 
@@ -1206,7 +1159,6 @@ export default class Consumer2 extends React.Component {
         position: relative;
         right: 1768px;
         justify-content: center;
-        border: 7px solid green;
         width: 130px;
         height: 130px;
         z-index: 3;
@@ -1216,14 +1168,14 @@ export default class Consumer2 extends React.Component {
     .network2-icon2 {
         width: 130px!important;
         height:130px;
-        left:61px;
+        left:64px;
         position: relative;
     }
     
     .network2-button2 {
         position: relative;
-        top: 1793px;
-        left: 129px;
+        top: 1993px;
+        left: 173px;
         white-space: nowrap;
         }
         
@@ -1259,7 +1211,7 @@ export default class Consumer2 extends React.Component {
     .consumer-image-background2 {
         width: 1536px;
         height: 1940px;
-        background: linear-gradient(270deg, #000000, #02020a);
+        background: linear-gradient(270deg, #000000, #02091b);
         background-size: 400% 400%;
         animation: AnimationName 10s ease-in-out infinite;
         z-index:1;

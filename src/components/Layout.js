@@ -26,10 +26,22 @@ const Layout = (props) => {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: grey;
             overflow-y:hidden;
             overflow-x:hidden;
+            height: 2800px;
+            padding-bottom: 600px;
+            background: linear-gradient(270deg, #000000, #02091b);
+            background-size: 400% 400%;
+            animation: AnimationName 10s ease-in-out infinite;
         }
+
+
+    @keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+}
+  }
     `}
     
     </style>
