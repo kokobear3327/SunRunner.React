@@ -15,6 +15,8 @@ import ProductsButtons from '../shared/products-buttons/products-buttons';
 import MessagingButtons from '../shared/messaging-buttons/messaging-buttons';
 import ConsumerFinancialsButtons from '../shared/consumer-financials-buttons/consumer-financials-buttons';
 import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
+import GoodsButton from '../shared/products-buttons/goods-button';
+import ServicesButton from '../shared/products-buttons/services-button';
 
 // So you want it to conditionally render the consumer or business component contingent on whether business is true
 // Same with the dock
@@ -135,7 +137,7 @@ export default class Consumer2 extends React.Component {
     <div className="goods-parent2">
     <div className="goods-icon2"></div>
     <div className="goods-button2">
-    <DashboardButton></DashboardButton>
+    <GoodsButton></GoodsButton>
     </div>
     </div>
 
@@ -143,15 +145,15 @@ export default class Consumer2 extends React.Component {
     <div className="services-parent2">
     <div className="services-icon2"></div>
     <div className="services-button2">
-    <DashboardButton></DashboardButton>
+    <ServicesButton></ServicesButton>
     </div>
     </div>
 
 
+    <ProductsButtons></ProductsButtons>
 
     <InvestmentsButton></InvestmentsButton>
 
-    <ProductsButtons></ProductsButtons>
     <MessagingButtons></MessagingButtons>
     <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
     <div className="remaining-buttons-container2">
@@ -347,13 +349,13 @@ export default class Consumer2 extends React.Component {
 
     .news-button2 {
         position: relative;
-        top: 666px;
-        right: 162px;
+        top: 1496px;
+        right: 124px;
         white-space: nowrap;
     }
 
 
-// Row Four:
+// Row Three:
 
 
 .dashboard-parent2 {
@@ -377,8 +379,8 @@ export default class Consumer2 extends React.Component {
 
 .dashboard-button2 {
     position: relative;
-    top: 666px;
-    right: 162px;
+    top: 2160px;
+    left: 130px;
     white-space: nowrap;
 }
 
@@ -407,8 +409,8 @@ export default class Consumer2 extends React.Component {
 
 .goods-button2 {
     position: relative;
-    top: 666px;
-    right: 162px;
+    top: 1790px;
+    left: 155px;
     white-space: nowrap;
 }
 
@@ -434,8 +436,8 @@ export default class Consumer2 extends React.Component {
 
 .services-button2 {
     position: relative;
-    top: 666px;
-    right: 162px;
+    top: 1793px;
+    left: 129px;
     white-space: nowrap;
 
 
