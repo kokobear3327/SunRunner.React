@@ -165,11 +165,17 @@ export default function Dock(props) {
 
 
     const NextTemplateClicked = (event) => {
+        event.stopPropagation();
         dispatch(nextTemplateClicked())
+        let audioOpening = new Audio(SoundOpening)
+        audioOpening.play()
     }
 
     const PreviousTemplateClicked = (event) => {
+        event.stopPropagation();
         dispatch(previousTemplateClicked())
+        let audioOpening = new Audio(SoundOpening)
+        audioOpening.play()
     }
 
     return (

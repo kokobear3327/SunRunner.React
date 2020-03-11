@@ -854,7 +854,7 @@ export default class Consumer2 extends React.Component {
 .compose-button2 {
     position: relative;
     top: 1500px;
-    right: 244px;
+    right: 224px;
     white-space: nowrap;
 }
 

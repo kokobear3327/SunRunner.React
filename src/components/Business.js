@@ -17,11 +17,44 @@ import BusinessRemainingButtons from '../shared/business/business-remaining-butt
 // import ConsumerFinancialsButtons from '../shared/consumer-financials-buttons/consumer-financials-buttons';
 // import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
 
-// So you want it to conditionally render the consumer or business component contingent on whether business is true
-// Same with the dock
+
+// .consumer-image-container {
+//     transform: translate(50%, 0%);
+//     height: 2000px!important;
+//     margin-bottom: 2000px;
+
+// }
+
+
+// .consumer-image {
+//     top: 699px;
+//     position: relative;
+//     z-index: 1;
+// }
+
+// .consumer-image-background {
+//     width: 1536px;
+//     height: 1868px;
+//     background: linear-gradient(270deg, #000000, #02091b);
+//     background-size: 400% 400%;
+//     animation: AnimationName 10s ease-in-out infinite;
+//     z-index:0;
+//     display: flex;
+//     transform: translate(0%, -50%);
+//     bottom: 227px;
+//     left: 1px;
+//     position: relative;
+
+
+// @keyframes AnimationName {
+//     0%{background-position:0% 50%}
+//     50%{background-position:100% 50%}
+//     100%{background-position:0% 50%}
+// }
+// }
 
 let consumer = "/Consumer.png"
-let business = "/Business.png"
+let business = "/view-business.png"
 
 export default class Business extends React.Component {
     state = {
@@ -62,7 +95,10 @@ export default class Business extends React.Component {
         return (
     <div className="business-parent">
     <div className="business-child">
+    <div className="business-image-container">
     <img className="business-image" src={ business } alt="text" />
+    <div className="business-image-background"></div>
+    </div>
     <div className="business-button-container">
     <BusinessRemainingButtons></BusinessRemainingButtons>
     </div>
@@ -85,6 +121,34 @@ export default class Business extends React.Component {
         height: 2007px;
         position: relative;
         margin-left: 838px;
+        bottom: 43px;
+        z-index: 1;
+    }
+
+    .business-button-container {
+        position: relative;
+        bottom: 2039px;
+    }
+
+    .business-image-background {
+        width: 1536px;
+        height: 2001px;
+        background: linear-gradient(270deg, #000000, #02091b);
+        background-size: 400% 400%;
+        animation: AnimationName 10s ease-in-out infinite;
+        z-index:0;
+        display: flex;
+        transform: translate(0%, -50%);
+        bottom: 1001px;
+        left: 837px;
+        position: relative;
+
+
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+        }
     }
 
     .business-button-container {
