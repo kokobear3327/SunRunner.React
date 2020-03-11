@@ -64,9 +64,9 @@ export default function Consumer() {
 
         
         
-        const [props2, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
-        const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-        const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+        const [props2, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 35, friction: 4 } }))
+        const calc = (x, y) => [-(y - window.innerHeight / 2) / 220, (x - window.innerWidth / 2) / 220, 1.01]
+        const trans = (x, y, s) => `perspective(1990px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
         
         
@@ -74,11 +74,14 @@ export default function Consumer() {
         return (
     <div className="consumer-parent">
     <div className="consumer-child">
+    <div className="consumer-image-and-background-container">
     <div className="consumer-image-container">
     <animated.img onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
     onMouseLeave={() => set({ xys: [0, 0, 1] })} style={{ transform: props2.xys.interpolate(trans) }} className="consumer-image" src={ consumer } alt="text"/>
+    </div>
     <div className="consumer-image-background"></div>
     </div>
+
     <div>
     <div className="consumer-button-container">
     <div className="tree-button-container">
@@ -136,19 +139,17 @@ export default function Consumer() {
 
 
     .consumer-image-container {
-        transform: translate(50%, 0%);
-        height: 2000px!important;
-        margin-bottom: 2000px;
-
+        position: relative;
+        left: 765px;
+        top: 634px;
+        z-index: 1;
     }
 
 
     .consumer-image {
-        top: 689px;
         position: relative;
-        z-index: 2;
-        left: 768px!important;
-        margin-top: 200px;
+        z-index: 4;
+
     }
 
     .consumer-image-background {
@@ -157,11 +158,10 @@ export default function Consumer() {
         background: linear-gradient(270deg, #000000, #02091b);
         background-size: 400% 400%;
         animation: AnimationName 10s ease-in-out infinite;
-        z-index:-2;
+        z-index:0;
         display: flex;
-        transform: translate(0%, -50%);
-        bottom: 270px;
-    
+        bottom: 1270px;
+        left: 769px;
         position: relative;
 
 
