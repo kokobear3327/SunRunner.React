@@ -65,7 +65,7 @@ export default function Consumer() {
         
         
         const [props2, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 35, friction: 4 } }))
-        const calc = (x, y) => [-(y - window.innerHeight / 2) / 220, (x - window.innerWidth / 2) / 220, 1.01]
+        const calc = (x, y) => [-(y - window.innerHeight / 2) / 320, (x - window.innerWidth / 2) / 320, 1.007]
         const trans = (x, y, s) => `perspective(1990px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
         
@@ -75,9 +75,11 @@ export default function Consumer() {
     <div className="consumer-parent">
     <div className="consumer-child">
     <div className="consumer-image-and-background-container">
-    <div className="consumer-image-container">
+    <div className="consumer-image-grandfather">
+    <animated.div style={fade} className="consumer-image-container">
     <animated.img onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
     onMouseLeave={() => set({ xys: [0, 0, 1] })} style={{ transform: props2.xys.interpolate(trans) }} className="consumer-image" src={ consumer } alt="text"/>
+    </animated.div>
     </div>
     <div className="consumer-image-background"></div>
     </div>
@@ -137,10 +139,16 @@ export default function Consumer() {
     .news-button-container:hover {
     }
 
+    .consumer-image-grandfather {
+        position: relative;
+        left: 773px;
+        top: 641px;
+        z-index:2;
+    }
 
     .consumer-image-container {
         position: relative;
-        left: 765px;
+        left: 1265px;
         top: 634px;
         z-index: 1;
     }
