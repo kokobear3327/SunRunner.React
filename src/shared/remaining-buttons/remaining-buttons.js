@@ -9,7 +9,7 @@ import NetworkTwoButton from './network-two-button';
 import WallOneButton from './wall-one-button';
 import WallTwoButton from './wall-two-button';
 import SocialMediaButton from './social-media-button';
-import AnalyticsButton from './analytics-button';
+import AnalyticsButton from './health-button';
 import CalendarsButton from './calendars-button';
 import PhoneButton from './phone-button';
 import MessagesButton from './messages-button';

@@ -31,7 +31,7 @@ import NetworkTwoButton from '../shared/remaining-buttons/network-two-button';
 import WallOneButton from '../shared/remaining-buttons/wall-one-button';
 import WallTwoButton from '../shared/remaining-buttons/wall-two-button';
 import SocialMediaButton from '../shared/remaining-buttons/social-media-button';
-import AnalyticsButton from '../shared/remaining-buttons/analytics-button';
+import AnalyticsButton from '../shared/remaining-buttons/health-button';
 import CalendarsButton from '../shared/remaining-buttons/calendars-button';
 import PhoneButton from '../shared/remaining-buttons/phone-button';
 import MessagesButton from '../shared/remaining-buttons/messages-button';
@@ -318,7 +318,7 @@ export default class Consumer2 extends React.Component {
 
     <div className="analytics-parent2">
     <div className="analytics-icon2">
-    <img src="./logo-analytics.png" alt="-"/>
+    <img src="/logo-health.png" alt="-"/>
     </div>
     <div className="analytics-button2">
     <AnalyticsButton></AnalyticsButton>

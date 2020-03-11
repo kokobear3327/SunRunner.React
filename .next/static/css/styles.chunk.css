@@ -1178,13 +1178,13 @@ justify-content: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.analytics-button-parent {
+.health-button-parent {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.analytics-button {
+.health-button {
     width: 121px;
     font-family: Montserrat;
     font-size: 25px;

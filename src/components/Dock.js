@@ -20,6 +20,7 @@ const SoundOpening = "/sound-opening.mp3"
 const SoundFailure = "/sound-failure2.mp3"
 
 
+
 export default function Dock(props) {
     
     let dispatch = useDispatch();
@@ -31,10 +32,27 @@ export default function Dock(props) {
         menuOverflowBoolean: true,
         navBoolean: true
     }
+ 
     const [state, setState] = useState(theState);
     let previousBoolean = useSelector(state => state.isPreviousTemplate)
+
     useEffect(() => {
-        
+        console.log(";")
+        let inptSearch = document.querySelector("#inpt_search");
+        inptSearch.addEventListener('focus', (event) => {
+            console.log("inputSearch called");
+            let active = document.querySelector(".search")
+            active.classList.add('active');
+        })
+        inptSearch.addEventListener('blur', (event) => {
+            console.log("blur");
+            let inactive = document.querySelector('.search')
+            inactive.classList.remove('active');
+        })
+        // document.querySelector.on('blur', function () {
+        //     if(this.val().length == 0)
+        //         this.parent('label').removeClass('active');
+        // });
     })
 
     const DockClicked = () => {
@@ -178,11 +196,22 @@ export default function Dock(props) {
         audioOpening.play()
     }
 
+    const stopPropagation = (event) => {
+        event.stopPropagation();
+    }
+
+
+
     return (
         <div className="dock-panel-parent">
         <div className="dock-panel" onClick={DockClicked}>
-            <div className="search-bar-parent">
-                <img className="search-bar-png2" src="/Omnibar.png" alt="-" />
+            <div  onCLick={stopPropagation} className="search-bar-parent">
+            <div  onCLick={stopPropagation} className="cntr-innr">
+            <label onCLick={stopPropagation} className="search" for="inpt_search">
+                  <input onCLick={stopPropagation} id="inpt_search" type="text" />
+              </label>
+          </div>
+                <img onCLick={stopPropagation} className="search-bar-png2" src="/SearchBarEmpty.png" alt="-" />
             </div>
             <div className="oea-title">
             <h4 className="oea-text">Omnibox Extension App</h4>
@@ -215,6 +244,59 @@ export default function Dock(props) {
             </div>
 
         <style jsx>{`
+
+        
+       .cntr-innr {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        top:72px;
+        left: 25px;
+        z-index: 10;
+   }
+        .cntr {
+            display: table;
+            z-index:10;
+       }
+
+       /*** STYLES ***/
+        .search {
+            top: 14px;
+            position:relative;
+            right: 19px;
+            height: 65px;
+            width: 65px;
+            box-sizing: border-box;
+            margin: 0px 8px 7px 0px;
+            padding: 7px 9px 0px 9px;
+            border: 3px solid black;
+            border-radius: 33px;
+            transition: all 200ms ease;
+            cursor: text;
+            z-index:10;
+       }
+        .search:after {
+
+       }
+        .search.active, .search:hover {
+            width: 1520px;
+            position: relative;
+            margin-right: 0px;
+       }
+        .search.active:after, .search:hover:after {
+            height: 0px;
+       }
+        .search input {
+            width: 100%;
+            border: none;
+            box-sizing: border-box;
+            font-family: Helvetica;
+            font-size: 15px;
+            color: inherit;
+            background: transparent;
+            outline-width: 0px;
+       }
         
 
         .dock-panel-parent {
@@ -250,13 +332,14 @@ export default function Dock(props) {
         }
         
             .search-bar-parent {
-                pointer-events: none;
+                pointer-events: all;
                 justifty-items: center;
             }
         
             .search-bar-png2 {
                 width:1536px;
-
+                position: relative;
+                padding-bottom: 227px;
             }
 
             .oea-title {
@@ -280,9 +363,9 @@ export default function Dock(props) {
                 font-family: Montserrat;
                 font-size: 38px;
                 position: relative;
+                top: 12px;
                 width: 1507px;
                 height: 76px;
-                top: 10px;
                 right: 1513px;
             }
 

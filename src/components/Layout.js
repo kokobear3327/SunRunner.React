@@ -30,7 +30,7 @@ const Layout = (props) => {
             overflow-x:hidden;
             height: 2800px;
             padding-bottom: 600px;
-            background: linear-gradient(270deg, #000000, #02091b);
+            background: linear-gradient(270deg, #000000, #010923);
             background-size: 400% 400%;
             animation: AnimationName 10s ease-in-out infinite;
         }
