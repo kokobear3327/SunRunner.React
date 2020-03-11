@@ -1,7 +1,7 @@
 import Fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import Dock from '../components/Dock';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import TreeButton from '../shared/tree-button/tree-button';
 import MedicalInfoButton from '../shared/medical-info-button/medical-info-button';
 import DoctorsButton from '../shared/doctors-button/doctors-button';
@@ -15,6 +15,7 @@ import ProductsButtons from '../shared/products-buttons/products-buttons';
 import MessagingButtons from '../shared/messaging-buttons/messaging-buttons';
 import ConsumerFinancialsButtons from '../shared/consumer-financials-buttons/consumer-financials-buttons';
 import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
+import { useSpring, animated, config } from 'react-spring';
 
 // So you want it to conditionally render the consumer or business component contingent on whether business is true
 // Same with the dock
@@ -22,55 +23,60 @@ import RemainingButtons from '../shared/remaining-buttons/remaining-buttons';
 let consumer = "/Consumer.png"
 let business = "/Business.png"
 
-export default class Consumer extends React.Component {
+export default function Consumer() {
 
-    componentDidMount() {
-        document.addEventListener("mouseover", function() {
-            let newsButton = document.querySelector(".news-button-container")
-        
-        })
-    }
 
-    state = {
+    let localState = {
         soundBoolean: false,
         balloonBoolean: false,
         panelOpen: false,
         businessBoolean: false,
         menuBoolean: false
     }
-    constructor(props) {
-        super(props);
 
-    }
+    let [state, setState] = useState(localState);
 
-    businessClickedParent(value) {
-
-    }
-    twirlFunction = () => {
-        this.setState({businessBoolean: !this.state.businessBoolean})
+    const twirlFunction = () => {
+        setState({businessBoolean: !state.businessBoolean})
         console.log("parent businessBoolean State changed")
     }
 
-    soundFunction = () => {
-        this.setState({soundBoolean: !this.state.soundBoolean})
+    const soundFunction = () => {
+        setState({soundBoolean: !state.soundBoolean})
     }
 
-    menuFunction = () => {
-        this.setState({menuBoolean: !this.state.menuBoolean})
+    const menuFunction = () => {
+        setState({menuBoolean: !state.menuBoolean})
         console.log("parent menuBoolean State changed")
-        if (this.state.menuBoolean) { 
-            console.log("This menu" + this.state.menuBoolean)
+        if (state.menuBoolean) { 
+            console.log("This menu" + state.menuBoolean)
             let child = document.querySelector(".image")
             child.style.display = "none";
         }
     }
 
-    render() { 
+    const fade = useSpring({
+        config: { duration: 4250, mass: 1, tension: 280, velocity: 200, friction: 120 },
+        opacity: 1, from: {opacity: 0},
+        display: 'block'
+        })
+
+
+        
+        
+        const [props2, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+        const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
+        const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+
+        
+        
+        
         return (
     <div className="consumer-parent">
     <div className="consumer-child">
     <div className="consumer-image-container">
-    <img className="consumer-image" src={ consumer } alt="text" />
+    <animated.img onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+    onMouseLeave={() => set({ xys: [0, 0, 1] })} style={{ transform: props2.xys.interpolate(trans) }} className="consumer-image" src={ consumer } alt="text"/>
     <div className="consumer-image-background"></div>
     </div>
     <div>
@@ -138,22 +144,24 @@ export default class Consumer extends React.Component {
 
 
     .consumer-image {
-        top: 699px;
+        top: 689px;
         position: relative;
-        z-index: 1;
+        z-index: 2;
+        left: 768px!important;
+        margin-top: 200px;
     }
 
     .consumer-image-background {
         width: 1536px;
-        height: 1868px;
+        height: 2005px;
         background: linear-gradient(270deg, #000000, #02091b);
         background-size: 400% 400%;
         animation: AnimationName 10s ease-in-out infinite;
-        z-index:0;
+        z-index:-2;
         display: flex;
         transform: translate(0%, -50%);
-        bottom: 227px;
-        left: 1px;
+        bottom: 270px;
+    
         position: relative;
 
 
@@ -169,52 +177,7 @@ export default class Consumer extends React.Component {
       </div>
         )
     }
-}
 
-Consumer.getInitialProps = async function() {
-  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-  const data = await res.json();
-
-  return {
-    bpi: data.bpi
-  };
-}
-// #020313
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>
-
-
-// <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
-// <source src="/Tree.mp4" 
-//     type="video/mp4"></source>
-//   </video>
-
-// componentDidMount() {
-//     const vid = document.querySelector(".fullscreen-video")
-//     console.log(vid)
-//     vid.play()
-// }
-
-// <TreeButton></TreeButton>
-// <MedicalInfoButton></MedicalInfoButton>
-// <DoctorsButton></DoctorsButton>
-// <LawyersButton></LawyersButton>
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>
 
 
 
