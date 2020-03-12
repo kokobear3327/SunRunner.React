@@ -16,8 +16,11 @@ export default class BalloonWrench extends React.Component {
     balloonCursor.item(0).style.display = "flex";
     
     function cursor(e) {
-        balloonCursor.item(0).style.top = e.pageY + 'px';
-        balloonCursor.item(0).style.left = e.pageX + 'px';
+        let pageX = e.pageX;
+        let forty = 40;
+        let val = pageX - forty;
+        balloonCursor.item(0).style.top = (e.pageY - 50) + 'px';
+        balloonCursor.item(0).style.left = (e.pageX - 580) + 'px';
     }
     }
 
@@ -53,7 +56,7 @@ export default class BalloonWrench extends React.Component {
     }
 
     .balloon-child {
-        margin-left: 13px;
+
     }
 
     .balloon-image {
@@ -64,8 +67,8 @@ export default class BalloonWrench extends React.Component {
     }
 
     .balloon-cursor {
-        position: absolute;
-        transform: translate(-50%, -50%);
+        // position: absolute;
+
     }
 
     .balloon-cursor img {

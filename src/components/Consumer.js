@@ -20,6 +20,11 @@ import { useSpring, animated, config } from 'react-spring';
 // So you want it to conditionally render the consumer or business component contingent on whether business is true
 // Same with the dock
 
+// So...first, lets fix the bugs with the balloon wrench, such that we can see it and it highlights upon mouseover
+
+// From there, lets add to global state booleans if a view is activated and then write code such that the the menu bar opens 
+//  if a certain condition is met, i.e., the wrench-dashboard, or wrench-news.  
+
 let consumer = "/Consumer.png"
 let business = "/Business.png"
 
