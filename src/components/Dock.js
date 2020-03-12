@@ -197,7 +197,7 @@ export default function Dock(props) {
     }
 
     const stopPropagation = (event) => {
-        event.stopPropagation();
+        console.log(";");
     }
 
 
@@ -205,13 +205,13 @@ export default function Dock(props) {
     return (
         <div className="dock-panel-parent">
         <div className="dock-panel" onClick={DockClicked}>
-            <div  onCLick={stopPropagation} className="search-bar-parent">
-            <div  onCLick={stopPropagation} className="cntr-innr">
-            <label onCLick={stopPropagation} className="search" for="inpt_search">
-                  <input onCLick={stopPropagation} id="inpt_search" type="text" />
+            <div className="search-bar-parent">
+            <div className="cntr-innr">
+            <label className="search" for="inpt_search">
+                  <input className="inpt" id="inpt_search" type="text" />
               </label>
           </div>
-                <img onCLick={stopPropagation} className="search-bar-png2" src="/SearchBarEmpty.png" alt="-" />
+                <img className="search-bar-png2" src="/SearchBarEmpty.png" alt="-" />
             </div>
             <div className="oea-title">
             <h4 className="oea-text">Omnibox Extension App</h4>
@@ -290,12 +290,20 @@ export default function Dock(props) {
         .search input {
             width: 100%;
             border: none;
+            left: 14x;
+            bottom: 3px;
+            position: relative;
             box-sizing: border-box;
-            font-family: Helvetica;
-            font-size: 15px;
+            font-family: Montserrat;
+            font-size: 34px;
             color: inherit;
             background: transparent;
             outline-width: 0px;
+       }
+
+       .inpt {
+        position: relative;
+        left: 15px;
        }
         
 
