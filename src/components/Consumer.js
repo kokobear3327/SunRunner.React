@@ -20,10 +20,7 @@ import { useSpring, animated, config } from 'react-spring';
 // So you want it to conditionally render the consumer or business component contingent on whether business is true
 // Same with the dock
 
-// So...first, lets fix the bugs with the balloon wrench, such that we can see it and it highlights upon mouseover
-
-// From there, lets add to global state booleans if a view is activated and then write code such that the the menu bar opens 
-//  if a certain condition is met, i.e., the wrench-dashboard, or wrench-news.  
+// So...first, lets fix the bugs with the balloon wrench, such that we can see it and it highlights upoon 
 
 let consumer = "/Consumer.png"
 let business = "/Business.png"
@@ -43,7 +40,6 @@ export default function Consumer() {
 
     const twirlFunction = () => {
         setState({businessBoolean: !state.businessBoolean})
-        console.log("parent businessBoolean State changed")
     }
 
     const soundFunction = () => {
@@ -52,9 +48,8 @@ export default function Consumer() {
 
     const menuFunction = () => {
         setState({menuBoolean: !state.menuBoolean})
-        console.log("parent menuBoolean State changed")
         if (state.menuBoolean) { 
-            console.log("This menu" + state.menuBoolean)
+
             let child = document.querySelector(".image")
             child.style.display = "none";
         }
@@ -70,10 +65,10 @@ export default function Consumer() {
         
         
         const [props2, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 35, friction: 4 } }))
-        const calc = (x, y) => [-(y - window.innerHeight / 2) / 320, (x - window.innerWidth / 2) / 320, 1.002]
+        const calc = (x, y) => [-(y - window.innerHeight / 2) / 330, (x - window.innerWidth / 2) / 240, 1.002]
         const trans = (x, y, s) => `perspective(1990px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
-        
+        // 120 / 320 is a good setting
         
         
         return (

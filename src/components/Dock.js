@@ -4,6 +4,7 @@ import Sound from 'react-sound';
 import { useDispatch, useSelector } from 'react-redux'; 
 import { nextTemplateClicked } from '../actions';
 import { previousTemplateClicked } from '../actions';
+import { balloonClicked } from '../actions';
 
 // So you now we make an onClick event with first goal registering a console.log() 
 
@@ -21,6 +22,7 @@ const SoundFailure = "/sound-failure2.mp3"
 
 
 
+
 export default function Dock(props) {
     
     let dispatch = useDispatch();
@@ -35,24 +37,26 @@ export default function Dock(props) {
  
     const [state, setState] = useState(theState);
     let previousBoolean = useSelector(state => state.isPreviousTemplate)
+    let isNewsBalloon = useSelector(state => state.isNewsBalloon)
 
     useEffect(() => {
-        console.log(";")
+        if (isNewsBalloon) {
+            let active = document.querySelector(".search")
+            active.classList.add('active');
+            let active2 = document.querySelector(".inpt")
+            active2.onClick = true;
+  
+            } 
+        
         let inptSearch = document.querySelector("#inpt_search");
         inptSearch.addEventListener('focus', (event) => {
-            console.log("inputSearch called");
             let active = document.querySelector(".search")
             active.classList.add('active');
         })
         inptSearch.addEventListener('blur', (event) => {
-            console.log("blur");
             let inactive = document.querySelector('.search')
             inactive.classList.remove('active');
         })
-        // document.querySelector.on('blur', function () {
-        //     if(this.val().length == 0)
-        //         this.parent('label').removeClass('active');
-        // });
     })
 
     const DockClicked = () => {
@@ -78,7 +82,6 @@ export default function Dock(props) {
         let audio = new Audio(SoundClick)
         audio.play()
         event.stopPropagation()
-        console.log("SoundClicked called")
         setState({
             soundBoolean: !state.soundBoolean
         })
@@ -87,12 +90,9 @@ export default function Dock(props) {
 
     const twirlContainerClicked = (event) => {
         event.stopPropagation()
-        console.log("twirlContainerClicked")
-        console.log(state.businessBoolean)
         setState(
             {businessBoolean: !state.businessBoolean}
         )
-        console.log(state.businessBoolean)
         if (state.businessBoolean) {
             let audioOpening = new Audio(SoundOpening)
             audioOpening.play()
@@ -110,8 +110,6 @@ export default function Dock(props) {
 
     const soundContainerClicked = (event) => {
         event.stopPropagation()
-        console.log("soundContainerClicked")
-        console.log(state.soundBoolean)
         setState(
             {soundBoolean: !state.soundBoolean}
         )
@@ -127,8 +125,8 @@ export default function Dock(props) {
 
     const balloonContainerClicked = (event) => {
         event.stopPropagation()
-        console.log("balloonContainerClicked")
-        console.log(state.soundBoolean)
+        dispatch(balloonClicked());
+
         setState(
             {balloonBoolean: !state.balloonBoolean}
         )
@@ -144,8 +142,6 @@ export default function Dock(props) {
 
     const menuOverflowClicked = (event) => {
         event.stopPropagation()
-        console.log("menuOverflowClicked")
-        console.log(state.menuOverflowBoolean)
         setState(
             {menuOverflowBoolean: !state.menuOverflowBoolean}
         )
@@ -196,10 +192,6 @@ export default function Dock(props) {
         audioOpening.play()
     }
 
-    const stopPropagation = (event) => {
-        console.log(";");
-    }
-
 
 
     return (
@@ -207,7 +199,7 @@ export default function Dock(props) {
         <div className="dock-panel" onClick={DockClicked}>
             <div className="search-bar-parent">
             <div className="cntr-innr">
-            <label className="search" for="inpt_search">
+            <label className="search">
                   <input className="inpt" id="inpt_search" type="text" />
               </label>
           </div>

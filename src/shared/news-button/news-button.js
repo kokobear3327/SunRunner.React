@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux'; 
-import { mousedOver, mousedOff } from '../../actions';
+import { useDispatch, useSelector } from 'react-redux'; 
+import { mousedOver, mousedOff, newsBalloonClicked } from '../../actions';
 
 
 export default function NewsButton() {
     const dispatch = useDispatch();
     const news = "news";
+    let dashboard = "dashboard";
+    let isNewsBalloon = useSelector(state => state.isNewsBalloon);
+
+    
     useEffect(() => {
         let newsButton = document.querySelector(".news-button")
         newsButton.addEventListener("mouseover", () => {
@@ -13,15 +17,20 @@ export default function NewsButton() {
         dispatch(mousedOver(news))})
         newsButton.addEventListener("mouseleave", () => {
         newsButton.classList.remove("news-hovered")
-        dispatch(mousedOff())
+        dispatch(mousedOff(news))
     })
     
       });
-    
+      let isBalloon = useSelector(state => state.isBalloon)
+       const clickNews = () => {
+         if (isBalloon === true) { 
+             dispatch(newsBalloonClicked())
+         }
+      }
 
     return (
         <div className="news-button-parent">
-                <h1 className="news-button">News</h1>
+                <h1 onClick={clickNews} className="news-button">News</h1>
         
         <style jsx>{
                 `
@@ -32,6 +41,7 @@ export default function NewsButton() {
                 }
                 
                 .news-button {
+                    z-index:5;
                     width: 120px;
                     font-family: Montserrat;
                     font-size: 25px;

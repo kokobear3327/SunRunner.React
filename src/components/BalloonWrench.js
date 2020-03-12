@@ -1,53 +1,48 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux'; 
+import { balloonClicked } from '../actions';
 
-let balloon = "/balloon-wrench-view.png"
+// So if it loads, it dispatches an action, that is dispatched to a reducer setting isBalloon to true.
 
-export default class BalloonWrench extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-    }
-
-    componentDidMount() {
-
-    let balloonCursor = document.querySelectorAll(".balloon-cursor");
-    window.addEventListener("mousemove", cursor);
-    balloonCursor.item(0).style.display = "flex";
-    
-    function cursor(e) {
-        let pageX = e.pageX;
-        let forty = 40;
-        let val = pageX - forty;
-        balloonCursor.item(0).style.top = (e.pageY - 50) + 'px';
-        balloonCursor.item(0).style.left = (e.pageX - 580) + 'px';
-    }
-    }
-
-    twirlFunction = () => {
-        this.setState({businessBoolean: !this.state.businessBoolean})
-        console.log("parent businessBoolean State changed")
-    }
-
-    soundFunction = () => {
-        this.setState({soundBoolean: !this.state.soundBoolean})
-    }
-
-    menuFunction = () => {
-        this.setState({menuBoolean: !this.state.menuBoolean})
-        console.log("parent menuBoolean State changed")
-        if (this.state.menuBoolean) { 
-            console.log("This menu" + this.state.menuBoolean)
-            let child = document.querySelector(".image")
-            child.style.display = "none";
+export default function BalloonWrench() {
+    let balloon = "/balloon-wrench-view.png"
+    let blank = "/cursor-blank.png";
+    let dispatch = useDispatch();
+    let selector = useSelector(state => state.isBalloon);
+    console.log(selector)
+    useEffect(() => {
+        let balloonCursor = document.querySelectorAll(".balloon-cursor");
+        window.addEventListener("mousemove", cursor);
+        balloonCursor.item(0).style.display = "flex";
+        balloonCursor.item(0).cursor = "none";
+        
+        function cursor(e) {
+            balloonCursor.item(0).style.top = (e.pageY - 50) + 'px';
+            balloonCursor.item(0).style.left = (e.pageX - 580) + 'px';
+            }
+        document.body.onkeyup = function(event) {
+            if (event.keyCode == 32) {
+                window.removeEventListener("mousemove", cursor);
+                // Goal here is to make dock change and also make div dissapear
+                // let balloonCursor = document.querySelectorAll(".balloon-cursor");
+                // balloonCursor.item(0).style.display = "none";
+                // also if you press spacebar, it switches the balloon wrench icon to default..
+                let balloonImage = document.querySelectorAll(".balloon-image");
+                balloonImage.item(0).src = "/cursor-blank.png";
+                balloonImage.item(0).cursor = "default";
+                let balloonCursor = document.querySelectorAll(".balloon-cursor");
+                balloonCursor.item(0).cursor = "none";
+            }
+            
         }
-    }
+        
 
-    render() { 
+        })
+
         return (
     <div className="balloon-parent">
     <div className="balloon-child">
-    <div className="balloon-cursor"><img src="/balloon-wrench.svg" alt="-"/></div>
+    <div className="balloon-cursor"><img className="balloon-image" src={balloon} alt="-"/></div>
     </div>
     <style jsx>{` 
     .balloon-parent {
@@ -60,21 +55,19 @@ export default class BalloonWrench extends React.Component {
     }
 
     .balloon-image {
-        width: 1536px;
-        height: 2048px;
-        bottom: 2049px;
-        position: relative;
+
     }
 
     .balloon-cursor {
-        // position: absolute;
-
+        
     }
 
     .balloon-cursor img {
         width: 33px;
         height: 33px;
+        pointer-events: all;
         cursor: none;
+        z-index:5;
     }
 
 
@@ -89,59 +82,3 @@ export default class BalloonWrench extends React.Component {
       </div>
         )
     }
-}
-
-BalloonWrench.getInitialProps = async function() {
-  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-  const data = await res.json();
-
-  return {
-    bpi: data.bpi
-  };
-}
-
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>
-
-
-// <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
-// <source src="/Tree.mp4" 
-//     type="video/mp4"></source>
-//   </video>
-
-// componentDidMount() {
-//     const vid = document.querySelector(".fullscreen-video")
-//     console.log(vid)
-//     vid.play()
-// }
-
-// <TreeButton></TreeButton>
-// <MedicalInfoButton></MedicalInfoButton>
-// <DoctorsButton></DoctorsButton>
-// <LawyersButton></LawyersButton>
-// <LegalInfoButton></LegalInfoButton>
-// <ReviewsButton></ReviewsButton>
-// <NewsButton></NewsButton>
-// <InvestmentsButton></InvestmentsButton>
-// <DashboardButton></DashboardButton>
-// <ProductsButtons></ProductsButtons>
-// <MessagingButtons></MessagingButtons>
-// <ConsumerFinancialsButtons></ConsumerFinancialsButtons>
-// <RemainingButtons></RemainingButtons>
-
-
-
-
-
-
-
-
-
-

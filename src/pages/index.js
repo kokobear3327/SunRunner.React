@@ -10,12 +10,6 @@ import Iris from '../components/Iris';
 import BalloonWrench from '../components/BalloonWrench';
 import { useSelector } from 'react-redux';
 
-// useEffect(() => {
-//     console.log("useEffect:isNewsBoolean2:" + isNewsBoolean2)
-//     isNewsBoolean = isNewsBoolean2
-//       })
-
-//        background-image: url('./iPadRim.png');
 
 export default function Index() {
     const balloonWrench = "/balloon-wrench.svg";

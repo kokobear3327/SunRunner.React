@@ -5,13 +5,19 @@ export const mousedOver = (button) => {
     case "news":
         return { type: 'MOUSED_OVER_NEWS' }
     default: 
-        return button
+        return true
 }
 }
 
-export const mousedOff = () => {
-    return {
-        type: 'MOUSED_OFF'
+export const mousedOff = (button) => {
+    switch (button) {
+    case "news": 
+        return { type: "MOUSED_OFF" }
+    case "dashboard": 
+        return { type: "MOUSED_OFF" }
+    default: 
+        return true
+
     }
 }
 
@@ -27,6 +33,18 @@ export const previousTemplateClicked = () => {
     }
 }
 
+export const balloonClicked = () => {
+    return {
+        type: 'CLICKED_BALLOON'
+    }
+}
+
+
+export const newsBalloonClicked = () => {
+    return {
+        type: 'CLICKED_NEWS_BALLOON'
+    }
+}
 
 // export const mousedOff = (button) => {
 //     switch (button) {

@@ -5,7 +5,7 @@ const isNews = (state = false, action) => {
         case 'MOUSED_OFF':
             return state = false;
         default: 
-            return state = false;
+            return 1;
     }
 };
 

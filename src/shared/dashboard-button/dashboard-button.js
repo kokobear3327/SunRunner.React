@@ -29,7 +29,9 @@ export default function DashboardButton() {
         dispatch(mousedOff())
     })
       });
-    const changeDashboard = () => {
+    const clickDashboard = () => {
+        // We want conditional logic where if its a normall call, its to news, if other it can be balllon wrench:
+        // First check if the global balloon wrench variable has change
         let dashboardButton = document.querySelector('.dashboard-button');
         dashboardButton.classList.remove("dashboard-hovered")
         let inputForDashboard = document.querySelector('.input-dashboard');
@@ -39,7 +41,7 @@ export default function DashboardButton() {
     return (
         <div className="dashboard-button-container">
         <input type="text" value={inputValue} onChange={setValue} autoFocus minLength="4" maxLength="8" className="input-dashboard"></input>
-        <h1 onClick={ changeDashboard } className="dashboard-button">Dashboard</h1>
+        <h1 onClick={ clickDashboard } className="dashboard-button">Dashboard</h1>
         <style jsx>
         {
 
@@ -48,10 +50,12 @@ export default function DashboardButton() {
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: all;
 }
 
 .dashboard-button {
     font-family: Montserrat;
+    z-index:62;
     font-size: 25px;
     padding-left: 22px;
     position: relative;
@@ -59,17 +63,20 @@ export default function DashboardButton() {
     bottom: 2020px;
     background-color: transparent;
     color: white;
+    cursor: none;
     border:black;
     background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform 1s;
+    pointer-events: all;
     transition-timing-function: ease-out;
 }
 
 .dashboard-hovered {
     cursor: none;
     transform: scale(1.23);
+    pointer-events: all;
 }
 
 
