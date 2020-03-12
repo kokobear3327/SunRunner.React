@@ -700,8 +700,8 @@ export default class Consumer2 extends React.Component {
 
 .social-media-button2 {
     position: relative;
-    top: 1361px;
-    right: 29px;
+    top: 1363px;
+    left: 466px;
     white-space: nowrap;
 }
 
@@ -774,8 +774,8 @@ export default class Consumer2 extends React.Component {
 
 .templates-button2 {
     position: relative;
-    top: 1522px;
-    right: 284px;
+    top: 1356px;
+    right: 814px;
     white-space: nowrap;
 }
 

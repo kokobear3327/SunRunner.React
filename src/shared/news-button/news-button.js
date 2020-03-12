@@ -21,7 +21,9 @@ export default function NewsButton() {
     })
     
       });
+
       let isBalloon = useSelector(state => state.isBalloon)
+      
        const clickNews = () => {
          if (isBalloon === true) { 
              dispatch(newsBalloonClicked())

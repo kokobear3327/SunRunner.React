@@ -44,8 +44,9 @@ export default function Dock(props) {
             let active = document.querySelector(".search")
             active.classList.add('active');
             let active2 = document.querySelector(".inpt")
-            active2.onClick = true;
-  
+            active2.focus();
+            let stately = state.balloonBoolean;
+            stately = setState(isNewsBalloon); 
             } 
         
         let inptSearch = document.querySelector("#inpt_search");
@@ -283,7 +284,7 @@ export default function Dock(props) {
             width: 100%;
             border: none;
             left: 14x;
-            bottom: 3px;
+            bottom: 4px;
             position: relative;
             box-sizing: border-box;
             font-family: Montserrat;

@@ -9,9 +9,13 @@ function TreeButton() {
     console.log('handleClick Called');
         // Routing logic to take you to the treeView
     }
+    const clickTree = () => {
+        
+    }
+
     return (
         <div className="tree-button-parent">
-        <button onClick={handleClick} className="tree-button">Tree of Knowledge</button>
+        <button onClick={clickTree} className="tree-button">Tree of Knowledge</button>
         </div>
     );
   }

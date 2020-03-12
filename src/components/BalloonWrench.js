@@ -9,9 +9,17 @@ export default function BalloonWrench() {
     let blank = "/cursor-blank.png";
     let dispatch = useDispatch();
     let selector = useSelector(state => state.isBalloon);
-    console.log(selector)
+    let selector2 = useSelector(state => state.isNewsBalloon);
+
     useEffect(() => {
         let balloonCursor = document.querySelectorAll(".balloon-cursor");
+        let balloonImage = document.querySelectorAll(".balloon-image");
+        if (selector2) {
+            console.log("1" + selector2);
+            balloonCursor.item(0).style.display = "none";
+            balloonImage.item(0).style.display = "none";
+
+        }
         window.addEventListener("mousemove", cursor);
         balloonCursor.item(0).style.display = "flex";
         balloonCursor.item(0).cursor = "none";
