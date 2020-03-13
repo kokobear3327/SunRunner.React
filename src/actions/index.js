@@ -46,16 +46,30 @@ export const newsBalloonClicked = () => {
     }
 }
 
-// export const mousedOff = (button) => {
-//     switch (button) {
-//     case "dashboard": 
-//         return { type: 'MOUSED_OVER_DASHBOARD' }
-//     case "news":
-//         return { type: 'MOUSED_OVER_NEWS' }
-//     default: 
-//         return button
-// }
-// }
+export const isNewsEditing = () => {
+    return {
+        type: "IS_NEWS_EDITING"
+    }
+}
+
+export const isEditing = (button) => {
+    switch (button) {
+        case "news":
+        return "IS_NEWS_EDITING"
+        default:
+            return button;
+    }
+}
+
+export const isNewsContent = (inputText) => {
+    return {
+        type: 'IS_NEWS_CONTENT',
+        inputText: inputText
+    }
+}
+
+
+
 
 
 

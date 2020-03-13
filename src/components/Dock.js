@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { nextTemplateClicked } from '../actions';
 import { previousTemplateClicked } from '../actions';
 import { balloonClicked } from '../actions';
+import { isNewsContent } from '../actions';
 
 // So you now we make an onClick event with first goal registering a console.log() 
 
@@ -24,8 +25,23 @@ const SoundFailure = "/sound-failure2.mp3"
 
 
 export default function Dock(props) {
-    
     let dispatch = useDispatch();
+    let isNewsInputContent = useSelector(state => state.isNewsContent);
+    let inputValue;
+    const setValue = () => {
+        let input = document.querySelector('.inpt');
+        input.addEventListener("keydown", event => {
+            if (event.keyCode === 13) {
+                let newsInputContent = input.value;
+                dispatch(isNewsContent(newsInputContent))
+                console.log("lp" + isNewsInputContent);
+            }
+            // do something
+          });
+    }
+
+
+
     let theState = {
         dockBoolean: true,
         balloonBoolean: false,
@@ -38,6 +54,7 @@ export default function Dock(props) {
     const [state, setState] = useState(theState);
     let previousBoolean = useSelector(state => state.isPreviousTemplate)
     let isNewsBalloon = useSelector(state => state.isNewsBalloon)
+   
 
     useEffect(() => {
         if (isNewsBalloon) {
@@ -45,6 +62,8 @@ export default function Dock(props) {
             active.classList.add('active');
             let active2 = document.querySelector(".inpt")
             active2.focus();
+
+            //This changes the ballon wrench button
             let stately = state.balloonBoolean;
             stately = setState(isNewsBalloon); 
             } 
@@ -201,7 +220,7 @@ export default function Dock(props) {
             <div className="search-bar-parent">
             <div className="cntr-innr">
             <label className="search">
-                  <input className="inpt" id="inpt_search" type="text" />
+                <input type="text" value={inputValue} id="inpt_search" onChange={setValue} autoFocus minLength="4" maxLength="8" className="inpt"></input>
               </label>
           </div>
                 <img className="search-bar-png2" src="/SearchBarEmpty.png" alt="-" />

@@ -4,7 +4,9 @@ import isNextTemplate from './isNextTemplate';
 import isPreviousTemplate from './isPreviousTemplate';
 import isBalloon from './isBalloon.js';
 import isNewsBallon from './isNewsBalloon';
+import isNewsContent from './isNewsContent';
 import { combineReducers } from 'redux';
+
 
 const allReducers = combineReducers({
     isNews: isNews,
@@ -12,7 +14,8 @@ const allReducers = combineReducers({
     isNextTemplate: isNextTemplate,
     isPreviousTemplate: isPreviousTemplate,
     isBalloon: isBalloon,
-    isNewsBalloon: isNewsBallon
+    isNewsBalloon: isNewsBallon,
+    isNewsContent: isNewsContent
 })
 
 export default allReducers;
