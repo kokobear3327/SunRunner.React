@@ -8,10 +8,19 @@ export default function NewsButton() {
     const news = "news";
     let dashboard = "dashboard";
     let isNewsBalloon = useSelector(state => state.isNewsBalloon);
+    let isNewsContent = useSelector(state => state.isNewsContent);
 
-    
+
     useEffect(() => {
+        console.log("from news button " + isNewsContent);
         let newsButton = document.querySelector(".news-button")
+        if (isNewsContent === 2) {
+            return
+        }
+        newsButton.innerHTML = isNewsContent;
+        if (newsButton.innerHTML === "") {
+            newsButton.innerHTML = "News"
+        } 
         newsButton.addEventListener("mouseover", () => {
         newsButton.classList.add("news-hovered")
         dispatch(mousedOver(news))})
@@ -40,6 +49,7 @@ export default function NewsButton() {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    z-index:5;
                 }
                 
                 .news-button {

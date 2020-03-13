@@ -22,7 +22,7 @@ const SoundOpening = "/sound-opening.mp3"
 const SoundFailure = "/sound-failure2.mp3"
 
 
-
+//input.value() is how you got the inputs value
 
 export default function Dock(props) {
     let dispatch = useDispatch();
@@ -32,8 +32,8 @@ export default function Dock(props) {
         let input = document.querySelector('.inpt');
         input.addEventListener("keydown", event => {
             if (event.keyCode === 13) {
-                let newsInputContent = input.value;
-                dispatch(isNewsContent(newsInputContent))
+                let inputForNews = input.value;
+                dispatch(isNewsContent(inputForNews))
                 console.log("lp" + isNewsInputContent);
             }
             // do something

@@ -62,12 +62,15 @@ export const isEditing = (button) => {
 }
 
 export const isNewsContent = (inputText) => {
-    return {
-        type: 'IS_NEWS_CONTENT',
-        inputText: inputText
-    }
+    return { type: "IS_NEWS_CONTENT", inputText: inputText};
 }
 
+// export const isNewsContent = (inputText) => {
+//     return 
+//         type: 'IS_NEWS_CONTENT',
+//         inputText: inputText
+//     }
+// }
 
 
 
