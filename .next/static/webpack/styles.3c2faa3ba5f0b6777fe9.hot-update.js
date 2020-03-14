@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
+webpackHotUpdate("styles",{
 
 /***/ "./src/consumer/consumer.css":
 /*!***********************************!*\
@@ -222,5 +222,5 @@
 
 /***/ })
 
-}]);
-//# sourceMappingURL=styles.js.map
+})
+//# sourceMappingURL=styles.3c2faa3ba5f0b6777fe9.hot-update.js.map
