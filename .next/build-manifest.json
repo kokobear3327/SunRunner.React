@@ -30,6 +30,10 @@
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/runtime/main.js"
+    ],
+    "/tree": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

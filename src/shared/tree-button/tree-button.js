@@ -10,12 +10,12 @@ function TreeButton() {
         // Routing logic to take you to the treeView
     }
     const clickTree = () => {
-        
+
     }
 
     return (
         <div className="tree-button-parent">
-        <button onClick={clickTree} className="tree-button">Tree of Knowledge</button>
+        <Link href="/tree"><button onClick={clickTree} className="tree-button">Tree of Knowledge</button></Link>
         </div>
     );
   }

@@ -1095,8 +1095,8 @@ export default class Consumer2 extends React.Component {
     
     .analytics-button2 {
         position: relative;
-        left: 691px;
-        top: 1315px;
+        left: 730px;
+        top: 1443px;
     }
 
     .drive-parent2 {
