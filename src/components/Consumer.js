@@ -63,23 +63,21 @@ export default function Consumer() {
 
 
         
-        
-        const [props2, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 35, friction: 4 } }))
-        const calc = (x, y) => [-(y - window.innerHeight / 2) / 330, (x - window.innerWidth / 2) / 240, 1.002]
-        const trans = (x, y, s) => `perspective(1990px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-
-        // 120 / 320 is a good setting
-        
+        // This is the rotate the geometric UI seen in the other template, a feature now shown.
+        // const [props2, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 35, friction: 4 } }))
+        // const calc = (x, y) => [-(y - window.innerHeight / 2) / 330, (x - window.innerWidth / 2) / 240, 1.002]
+        // const trans = (x, y, s) => `perspective(1990px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+        // <animated.div style={fade} className="consumer-image-container">
+        // <animated.img onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+        // onMouseLeave={() => set({ xys: [0, 0, 1] })} style={{ transform: props2.xys.interpolate(trans) }} className="consumer-image" src={ consumer } alt="text"/>
+        // </animated.div>
         
         return (
     <div className="consumer-parent">
     <div className="consumer-child">
     <div className="consumer-image-and-background-container">
     <div className="consumer-image-grandfather">
-    <animated.div style={fade} className="consumer-image-container">
-    <animated.img onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-    onMouseLeave={() => set({ xys: [0, 0, 1] })} style={{ transform: props2.xys.interpolate(trans) }} className="consumer-image" src={ consumer } alt="text"/>
-    </animated.div>
+
     </div>
     <div className="consumer-image-background"></div>
     </div>

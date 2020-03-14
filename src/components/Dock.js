@@ -16,7 +16,6 @@ const TwirlPic = "/twirl.svg"
 const SoundPicOn = "/sound-on.svg"
 const SoundPic = "/sound.svg"
 const MenuOverflowUp = "menu-overflow-up.png"
-const MenuOverflowDown = "menu-overflow-down.png"
 const SoundClick = "/sound-click.mp3"
 const SoundOpening = "/sound-opening.mp3"
 const SoundFailure = "/sound-failure2.mp3"
@@ -52,7 +51,6 @@ export default function Dock(props) {
     }
  
     const [state, setState] = useState(theState);
-    let previousBoolean = useSelector(state => state.isPreviousTemplate)
     let isNewsBalloon = useSelector(state => state.isNewsBalloon)
    
 
@@ -198,19 +196,6 @@ export default function Dock(props) {
     }
 
 
-    const NextTemplateClicked = (event) => {
-        event.stopPropagation();
-        dispatch(nextTemplateClicked())
-        let audioOpening = new Audio(SoundOpening)
-        audioOpening.play()
-    }
-
-    const PreviousTemplateClicked = (event) => {
-        event.stopPropagation();
-        dispatch(previousTemplateClicked())
-        let audioOpening = new Audio(SoundOpening)
-        audioOpening.play()
-    }
 
 
 
@@ -226,7 +211,7 @@ export default function Dock(props) {
                 <img className="search-bar-png2" src="/SearchBarEmpty.png" alt="-" />
             </div>
             <div className="oea-title">
-            <h4 className="oea-text">Omnibox Extension App</h4>
+            <h4 className="oea-text">Sun Runner</h4>
             </div>
             <div className="oea-content">
             <img className="back-button-svg" src="/back.svg"  alt="some" />
@@ -238,8 +223,6 @@ export default function Dock(props) {
             <div onClick={ balloonContainerClicked } className="balloon-container">
             <img onClick={props.balloon} className="balloon-wrench-svg" src={ state.balloonBoolean ? BalloonWrenchPicFilled : BalloonWrenchPic } alt="some" />
             </div>
-            <img onClick={NextTemplateClicked} className="next-template-svg" src="/down-arrow-empty.png"  alt="some" />
-            <img onClick={PreviousTemplateClicked} className="previous-template-svg" src="/up-arrow-empty.png" alt="some" />
             <div onClick={menuOverflowClicked}>
             <img onClick={props.menu} className="menu-overflow-svg" src={MenuOverflowUp} alt="some" />
             </div>
@@ -369,9 +352,12 @@ export default function Dock(props) {
         
             .oea-text {
                 font-family: Montserrat;
+                display:flex;
                 font-size: 38px;
                 transform: scale(0.9);
                 bottom: 7px;
+                right: 10px;
+                padding-left: 145px;
                 position: absolute;                
                 background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
                 -webkit-background-clip: text;
@@ -409,12 +395,6 @@ export default function Dock(props) {
                 left: 152px;
             }
 
-            .previous-template-svg {
-                height: 62px;
-                width: 62px;
-                position: absolute;
-                left:410px;
-            }
             
             .balloon-wrench-svg {
                 height: 62px;

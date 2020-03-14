@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { useRef, useEffect } from 'react';
-import AppJS from './js/App';
 
 const Layout = (props) => {
   const instance = useRef(null);
@@ -14,7 +13,7 @@ const Layout = (props) => {
 
   <div>
     <Head>
-      <title>OEA</title>
+      <title className="title-parent">Sun Runner</title>
       <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"/>
     </Head>
     <div className="highest-parent">
@@ -22,6 +21,21 @@ const Layout = (props) => {
     </div>
     <div ref={instance}/>
     <style jsx>{`
+
+        .title-parent { 
+          display: flex;
+          justify-content: center;
+          align-items:center;
+          position:relative;
+          left: 200px;
+        }
+
+        .title {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          left: 200px;
+        }
         .highest-parent {
             display: flex;
             align-items: center;

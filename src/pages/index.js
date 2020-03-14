@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Dock from '../components/Dock';
 import React, { useEffect, useState } from 'react';
 import Business from '../components/Business';
+import Business2 from '../components/Business2';
 import Consumer from '../components/Consumer';
 import Consumer2 from '../components/Consumer2';
 import Menu from '../components/Menu';
@@ -29,22 +30,22 @@ export default function Index() {
     }
     const [state, setState] = useState(theState);
 
-    let isNextTemplate = useSelector(state => state.isNextTemplate)
-    let isPreviousTemplate = useSelector(state => state.isPreviousTemplate)
+    // let isNextTemplate = useSelector(state => state.isNextTemplate)
+    // let isPreviousTemplate = useSelector(state => state.isPreviousTemplate)
 
     useEffect(() => {
-        if (isNextTemplate) {
-            let consumer = document.querySelector(".consumer")
-            consumer.style.display = "none";
-            let consumer2 = document.querySelector(".consumer2")
-            consumer2.style.display = "flex";
-        }
-        if (isPreviousTemplate) {
-            let consumer = document.querySelector(".consumer")
-            consumer.style.display = "flex";
-            let consumer2 = document.querySelector(".consumer2")
-            consumer2.style.display = "none";
-        }
+        // if (isNextTemplate) {
+        //     let consumer = document.querySelector(".consumer")
+        //     consumer.style.display = "none";
+        //     let consumer2 = document.querySelector(".consumer2")
+        //     consumer2.style.display = "flex";
+        // }
+        // if (isPreviousTemplate) {
+        //     let consumer = document.querySelector(".consumer")
+        //     consumer.style.display = "flex";
+        //     let consumer2 = document.querySelector(".consumer2")
+        //     consumer2.style.display = "none";
+        // }
     
     })
 
@@ -52,14 +53,14 @@ export default function Index() {
     const twirlFunction = () => {
         setState({businessBoolean: !state.businessBoolean})
         if (state.businessBoolean) {
-            let business = document.querySelector(".business")
+            let business = document.querySelector(".business2")
             business.style.display = "flex"
-            let consumer = document.querySelector(".consumer")
+            let consumer = document.querySelector(".consumer2")
             consumer.style.display = "none"
         } else if (!state.businessBoolean) {
-            let consumer = document.querySelector(".consumer")
+            let consumer = document.querySelector(".consumer2")
             consumer.style.display = "flex"
-            let business = document.querySelector(".business")
+            let business = document.querySelector(".business2")
             business.style.display = "none"
         }
     }
@@ -146,6 +147,10 @@ export default function Index() {
     <Business></Business>
     </div>
 
+    <div className="business2">
+    <Business2></Business2>
+    </div>
+
     <div className="consumer-container">
     
     <div className="consumer">
@@ -198,6 +203,14 @@ export default function Index() {
         top:5px;
     }
 
+    .business {
+        display: none;
+    }
+
+    .business2 {
+        display: none;
+    }
+
     .balloon-cursor {
         position: absolute;
         border-radius: 50%;
@@ -232,8 +245,12 @@ export default function Index() {
         margin-left: 312px;
     }
 
-    .consumer2 {
+    .consumer {
         display: none;
+    }
+
+    .consumer2 {
+        display: flex;
     }
 
     .business {
