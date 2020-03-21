@@ -32,9 +32,6 @@ export default class Nav extends React.Component {
         return (
     <div className="nav-parent">
     <div className="nav-child">
-            <video preload="auto" autoPlay loop className="nav-video" width="1536" height="2048">
-        <source src="/Tree.mp4" type="video/mp4"></source>
-        </video>
 
     </div>
     <style jsx>{` 

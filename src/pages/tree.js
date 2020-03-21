@@ -9,9 +9,6 @@ function TreeView() {
         <div className="tree-view-parent">
         <div className="tree-view-child">
         <Dock></Dock>
-        <video preload="auto" autoPlay loop className="fullscreen-video" width="1536" height="2048">
-        <source src="/Tree.mp4" type="video/mp4"></source>
-        </video>
         </div>
         <style jsx>{`
 

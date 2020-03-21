@@ -85,11 +85,11 @@ export default class Business2 extends React.Component {
 
     render() { 
         return (
-    <div className="consumer-parent2">
-    <div className="consumer-child2">
-    <div className="consumer-image-container2">
-    <img className="consumer-image2" src={ blank } alt="text" />
-    <div className="consumer-image-background2"></div>
+    <div className="business-parent2">
+    <div className="business-child2">
+    <div className="business-image-container2">
+    <img className="business-image2" src={ blank } alt="text" />
+    <div className="business-image-background2"></div>
     </div>
     <div className="parent">
     <div className="tree-parent2">
@@ -378,7 +378,7 @@ export default class Business2 extends React.Component {
     </div>
     </div>
     <style jsx>{` 
-    .consumer-parent2 {
+    .business-parent2 {
         height:2048px;
         width: 1536px;
         display:flex;
@@ -388,7 +388,7 @@ export default class Business2 extends React.Component {
         justify-content: center;
     }
     
-    .consumer-child2 {
+    .business-child2 {
         display: flex;
         height:2048px;
         width: 1536px;
@@ -1194,12 +1194,12 @@ export default class Business2 extends React.Component {
     }
 
 
-    .consumer-image-container2 {
+    .business-image-container2 {
         display: flex;
     }
 
 
-    .consumer-image2 {
+    .business-image2 {
         position: relative;
         z-index: 0;
         height: 2000px;
