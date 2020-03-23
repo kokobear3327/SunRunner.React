@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './compose-button.css';\nimport React from 'react';\nexport default function ComposeButton() {\n  return __jsx(\"div\", {\n    className: \"business-compose-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"business-compose-button\"\n  }, \"Compose\"));\n}","map":null,"metadata":{},"sourceType":"module"}

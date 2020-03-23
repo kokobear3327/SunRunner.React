@@ -13,8 +13,9 @@ const Layout = (props) => {
 
   <div>
     <Head>
-      <title className="title-parent">Sun Runner</title>
+      <title className="title-parent">Welcome : )</title>
       <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"/>
+      <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     </Head>
     <div className="highest-parent">
       {props.children}

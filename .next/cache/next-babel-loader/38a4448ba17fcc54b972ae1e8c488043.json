@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './reviews-button.css';\nimport React from 'react';\nexport default function ReviewsButton() {\n  return __jsx(\"div\", {\n    className: \"reviews-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"reviews-button\"\n  }, \"Reviews\"));\n}","map":null,"metadata":{},"sourceType":"module"}

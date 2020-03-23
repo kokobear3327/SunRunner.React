@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './labor-button.css';\nimport React from 'react';\nexport default function LaborButton() {\n  return __jsx(\"div\", {\n    className: \"labor-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"labor-button\"\n  }, \"Labor\"));\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './health-button.css';\nimport React from 'react';\nexport default function HealthButton() {\n  return __jsx(\"div\", {\n    className: \"health-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"health-button\"\n  }, \"Health\"));\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"const isPreviousTemplate = (state = false, action) => {\n  switch (action.type) {\n    case 'CLICKED_PREVIOUS_TEMPLATE':\n      return state = true;\n\n    case 'CLICKED_PREVIOUS_TEMPLATE2':\n      return state = false;\n\n    default:\n      return state = false;\n  }\n};\n\nexport default isPreviousTemplate;","map":null,"metadata":{},"sourceType":"module"}

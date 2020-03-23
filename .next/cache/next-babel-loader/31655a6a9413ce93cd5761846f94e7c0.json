@@ -1,0 +1,1 @@
+{"ast":null,"code":"const isNews = (state = false, action) => {\n  switch (action.type) {\n    case 'MOUSED_OVER_NEWS':\n      return state = true;\n\n    case 'MOUSED_OFF':\n      return state = false;\n\n    default:\n      return 1;\n  }\n};\n\nexport default isNews;","map":null,"metadata":{},"sourceType":"module"}

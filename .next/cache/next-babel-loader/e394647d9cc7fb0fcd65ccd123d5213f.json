@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './balance-button.css';\nimport React from 'react';\nexport default function BalanceButton() {\n  return __jsx(\"div\", {\n    className: \"business-balance-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"business-balance-button\"\n  }, \"Balance\"));\n}","map":null,"metadata":{},"sourceType":"module"}

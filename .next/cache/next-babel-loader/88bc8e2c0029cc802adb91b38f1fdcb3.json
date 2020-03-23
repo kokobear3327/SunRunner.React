@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './phone-button.css';\nimport React from 'react';\nexport default function PhoneButton() {\n  return __jsx(\"div\", {\n    className: \"business-phone-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"business-phone-button\"\n  }, \"Phone\"));\n}","map":null,"metadata":{},"sourceType":"module"}

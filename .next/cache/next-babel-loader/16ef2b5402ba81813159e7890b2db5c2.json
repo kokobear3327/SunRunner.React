@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\n\nfunction DoctorsButton() {\n  return __jsx(\"div\", {\n    className: \"doctors-button-container\"\n  }, __jsx(\"button\", {\n    className: \"doctors-button\"\n  }, \"Doctors\"));\n}\n\nexport default DoctorsButton;","map":null,"metadata":{},"sourceType":"module"}

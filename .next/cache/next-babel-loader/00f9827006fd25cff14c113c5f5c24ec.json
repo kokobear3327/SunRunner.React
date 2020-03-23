@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './wall-one-button.css';\nimport React from 'react';\nexport default function WallOneButton() {\n  return __jsx(\"div\", {\n    className: \"business-wall-one-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"business-wall-one-button\"\n  }, \"Wall 1\"));\n}","map":null,"metadata":{},"sourceType":"module"}

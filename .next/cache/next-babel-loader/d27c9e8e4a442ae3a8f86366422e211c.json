@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './messages-button.css';\nimport React from 'react';\nexport default function MessagesButton() {\n  return __jsx(\"div\", {\n    className: \"messages-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"messages-button\"\n  }, \"Messages\"));\n}","map":null,"metadata":{},"sourceType":"module"}

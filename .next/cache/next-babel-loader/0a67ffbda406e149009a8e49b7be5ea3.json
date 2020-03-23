@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport './research-button.css';\nimport React from 'react';\nexport default function ResearchButton() {\n  return __jsx(\"div\", {\n    className: \"research-button-parent\"\n  }, __jsx(\"button\", {\n    className: \"research-button\"\n  }, \"Research\"));\n}","map":null,"metadata":{},"sourceType":"module"}

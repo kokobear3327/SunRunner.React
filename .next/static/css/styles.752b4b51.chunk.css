@@ -1,0 +1,1296 @@
+.consumer-image {
+    top: 60px;
+    position: relative;
+
+}
+
+.consumer-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.consumer-child {
+    padding-top: 430px;
+}
+.consumer-dock-panel-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consumer-dock-panel {
+        width: 1507px;
+        height: 76px;
+        font-family: Montserrat;
+        font-size: 23px;
+        background-color: #000000;
+        background-image: linear-gradient(0deg, #000000 0%, #414141 74%);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 1964px;
+        background-color: black;
+        color: white;
+        border: black;
+    } 
+
+    .search-bar-parent {
+        pointer-events: none;
+    }
+
+    .search-bar-png2 {
+        width: 1507px;
+        top:0px;
+        padding-bottom: 158px;
+    }
+
+    .oea-text {
+        font-family: Montserrat;
+        font-size: 38px;
+        bottom: -37px;
+        position: absolute;
+        left: 523px;
+    }
+.business-remaining-buttons-parent {
+    display: flex;
+}
+.capex-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capex-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  1839px;
+    bottom: 849px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.labor-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.labor-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  1189px;
+    bottom: 849px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.operations-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.operations-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  1339px;
+    bottom: 1364px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-dashboard-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-dashboard-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  1240px;
+    bottom: 269px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-goods-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-goods-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  1100px;
+    bottom: 674px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-services-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-services-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    bottom: 674px;
+    position: relative;
+    left: 1124px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-tree-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-tree-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left: 893px;
+    bottom: 1752px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.remaining-buttons-parent {
+    display: flex;
+}
+.business-applications-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-applications-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  1410px;
+    bottom: 1430px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-projects-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-projects-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:500px;
+    bottom: 1270px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-templates-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-templates-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left:  854px;
+    bottom: 1265px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-drive-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-drive-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left:  1100px;
+    bottom: 619px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-network-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-network-one-button {
+    width: 140px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    left: 638px;
+    position: relative;
+    bottom: 580px;
+    background-color: black;
+    color: white;
+    border:black;
+    white-space: nowrap;
+}
+.business-network-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-network-two-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    left: 544px;
+    bottom: 432px;
+    white-space: nowrap;
+}
+.business-wall-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-wall-one-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right: 179px;
+    bottom: 429px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-wall-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-wall-two-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right: 233px;
+    bottom: 570px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-social-media-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-social-media-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  420px;
+    bottom: 1114px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.business-analytics-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-analytics-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  66px;
+    bottom: 1120px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-calendars-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-calendars-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  908px;
+    bottom:1440px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-phone-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-phone-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  900px;
+    bottom:1020px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-messages-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-messages-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  1154px;
+    bottom:1020px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-research-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-research-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  1228px;
+    bottom: 623px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-compose-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-compose-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 4px;
+    height: 45px;
+    position: relative;
+    right:  289px;
+    bottom: 1018px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-mailbox-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-mailbox-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  243px;
+    bottom: 1018px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-legal-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-legal-info {
+    position: relative;
+    bottom: 1620px;
+    font-family: Montserrat;
+    color: white;
+    right: 1274px;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border:black;
+    white-space: nowrap;
+}
+.business-lawyers-button-parent {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.business-lawyers-button {
+    position: relative;
+    bottom: 1460px;
+    font-family: Montserrat;
+    color: white;
+    right:1370px;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    border:black;
+}
+.business-doctors-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-doctors-button {
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 30px;
+    position: relative;
+    right: 1003px;
+    bottom: 1468px;
+    background-color: black;
+    color: white;
+    border:black;
+}
+
+
+.business-medical-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-medical-info {
+    width: 168px;
+    height: 45px;
+    position: relative;
+    font-family: Montserrat;
+    font-size: 25px;
+    right: 1093px;
+    bottom: 1610px;
+    background-color: black;
+    color: white;
+    border: black;
+}
+.business-financials-parent {
+    display: flex;
+}
+.business-income-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-income-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  1597px;
+    bottom: 982px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-balance-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-balance-button {
+    width: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  1627px;
+    bottom: 1112px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.business-flows-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.business-flows-button {
+    width: 10px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  1557px;
+    bottom: 982px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+}
+.legal-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legal-info {
+    position: relative;
+    bottom: 530px;
+    font-family: Montserrat;
+    color: white;
+    left: 150px;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.reviews-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right: 432px;
+    bottom: 1318px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.investments-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .investments-button {
+        position: relative;
+        bottom: 892px;
+        font-family: Montserrat;
+        color: white;
+        font-size: 25px;
+        right: 152px;
+        background-color: black;
+        color: white;
+        border:black;
+        white-space: nowrap;
+        background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+.goods-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goods-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right: 160px;
+    bottom: 1663px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-button {
+    width: 143px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 10px;
+    height: 45px;
+    position: relative;
+    right: 144px;
+    bottom: 1663px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.messaging-buttons-parent {
+    display: flex;
+}
+.mailbox-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mailbox-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  95px;
+    bottom: 1363px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.compose-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compose-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 4px;
+    height: 45px;
+    position: relative;
+    left:  90px;
+    bottom: 1363px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.consumer-financials-parent {
+    display: flex;
+}
+.income-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.income-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  650px;
+    bottom: 1439px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.balance-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  614px;
+    bottom: 1312px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tree-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree-button {
+    width: 265px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right: 160px;
+    bottom: 209px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lawyers-button-parent {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.lawyers-button {
+    position: relative;
+    bottom: 623px;
+    font-family: Montserrat;
+    color: white;
+    left:100px;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.doctors-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctors-button {
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 30px;
+    position: relative;
+    right: 403px;
+    bottom: 582px;
+    background-color: black;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.flows-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flows-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  592px;
+    bottom: 1439px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.remaining-buttons-parent {
+    display: flex;
+}
+.applications-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.applications-button {
+    width: 160px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  130px;
+    bottom: 1028px;
+    background-color: black;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.projects-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    left:  860px;
+    bottom: 1358px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.templates-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.templates-button {
+    width: 160px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left:  663px;
+    bottom: 1200px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.drive-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drive-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    right:  305px;
+    bottom: 1870px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.network-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-one-button {
+    width: 140px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    right: 140px;
+    position: relative;
+    bottom: 2050px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    white-space: nowrap;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.network-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-two-button {
+    width: 129px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    color: white;
+    border:black;
+    text-decoration: none;
+    right: 240px;
+    bottom: 1900px;
+    white-space: nowrap;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wall-one-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wall-one-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left:  185px;
+    bottom: 2038px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wall-two-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wall-two-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 20px;
+    height: 45px;
+    position: relative;
+    left: 7px;
+    bottom: 1900px;
+    background-color: black;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-media-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-button {
+    width: 160px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  615px;
+    bottom: 1210px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.health-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.health-button {
+    width: 121px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  797px;
+    bottom: 1346px;
+    background-color: black;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.calendars-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendars-button {
+    width: 150px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  90px;
+    bottom: 1028px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.phone-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-button {
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  300px;
+    bottom: 1450px;
+    color: white;
+    border:black;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.messages-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages-button {
+    width: 130px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  278px;
+    bottom: 1450px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.research-button-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-button {
+    width: 120px;
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-left: 2px;
+    height: 45px;
+    position: relative;
+    right:  435px;
+    bottom: 1870px;
+    background-color: transparent;
+    color: white;
+    border:black;
+    text-decoration: none;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgb(212,212,245), rgb(47, 164, 231));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
